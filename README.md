@@ -1,2 +1,2 @@
 # Aero-Docs
-Open source documentation for the Aero Engine.
+This repository contains the source code for the developer documentation on the Aero platform.
