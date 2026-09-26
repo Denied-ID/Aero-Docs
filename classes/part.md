@@ -1,8 +1,4 @@
-﻿---
-group: Building
----
-
-# Part
+﻿# Part
 
 A solid block. The basic building piece.
 
@@ -17,4 +13,4 @@ This page is still being written. Check back soon for the full property and meth
 
 ## See also
 
-- [API reference](../api/api.md)
+- [API Reference](../api/api.md)

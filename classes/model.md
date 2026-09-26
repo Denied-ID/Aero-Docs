@@ -1,8 +1,4 @@
-﻿---
-group: Building
----
-
-# Model
+﻿# Model
 
 A group of parts that move as one.
 
@@ -17,4 +13,4 @@ This page is still being written. Check back soon for the full property and meth
 
 ## See also
 
-- [API reference](../api/api.md)
+- [API Reference](../api/api.md)

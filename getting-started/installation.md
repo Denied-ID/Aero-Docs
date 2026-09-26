@@ -16,7 +16,7 @@ A 64-bit Windows 10 or 11 PC. There is nothing else that you should need to inst
 
 ## What you can do
 
-Feel free to look around the demo place. Click a part in the viewport, then check the Properties panel to see how it is put together. When you are ready, the Studio tour walks through every panel.
+Feel free to look around the demo place. Click a part in the viewport, then check the Properties panel to see how it is put together. When you are ready, the Studio Tour walks through every panel.
 
 Save with File, then Save. Places are saved as .aepl files. Keep them somewhere safe, since there is no cloud saving yet.
 
@@ -26,4 +26,4 @@ Start with [Troubleshooting](troubleshooting.md). Script errors land in the Outp
 
 ## Where to go next
 
-Read the [Studio tour](../studio/studio-tour.md) to learn the editor, then browse the [API reference](../api/api.md) when you start scripting.
+Read the [Studio Tour](../studio/studio-tour.md) to learn the editor, then browse the [API Reference](../api/api.md) when you start scripting.

@@ -9,7 +9,7 @@ Member tables are being filled in page by page. Names follow the live bindings.
 | Guide | About |
 | --- | --- |
 | [Installation](../getting-started/installation.md) | Install Studio and open your first place. |
-| [Studio tour](../studio/studio-tour.md) | Panels, toolbar, saving, and playtesting. |
+| [Studio Tour](../studio/studio-tour.md) | Panels, toolbar, saving, and playtesting. |
 | [Troubleshooting](../getting-started/troubleshooting.md) | Output errors, crash dialogs, and fixes. |
 
 ## Classes

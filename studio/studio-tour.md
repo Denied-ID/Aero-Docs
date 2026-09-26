@@ -50,4 +50,4 @@ Under Help you will find About. Studio comes in a dark and a light theme, and yo
 
 ## Where to go next
 
-Browse the [API reference](../api/api.md) when you start adding behavior to your place.
+Browse the [API Reference](../api/api.md) when you start adding behavior to your place.

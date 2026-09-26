@@ -1,8 +1,4 @@
-﻿---
-group: Lights
----
-
-# SpotLight
+﻿# SpotLight
 
 Light that shines in one direction, like a flashlight.
 
@@ -17,4 +13,4 @@ This page is still being written. Check back soon for the full property and meth
 
 ## See also
 
-- [API reference](../api/api.md)
+- [API Reference](../api/api.md)
