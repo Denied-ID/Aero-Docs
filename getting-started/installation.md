@@ -16,7 +16,7 @@ A 64-bit Windows 10 or 11 PC. The install is per-user, inside your own profile, 
 
 ## Starting your apps
 
-Open **Aero Client** or **Aero Studio** from the Start Menu. Each shortcut checks that app for updates first and applies them before starting, with a progress window only while something is actually downloading. When everything is current, the app just starts. There is no separate launcher window to go through.
+Open **Aero Client** or **Aero Studio** from the Start Menu. Each shortcut checks that app for updates first and applies them before starting, with a progress window only while something is actually downloading. When everything is current, the app just starts.
 
 Your apps show their build as **Build N** with the source commit next to it. The Client menu footer shows it, and Studio shows it in Help > About. Studio's product line says alpha, like `0.0.1.6-alpha`. The Client and Server also print it for a `--version` flag. Quote that line in a bug report.
 
