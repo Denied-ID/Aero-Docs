@@ -29,9 +29,9 @@ Two dialogs you may see:
 | A download failed verification and was discarded | A file arrived damaged, so it was thrown away | Try again; nothing half-installed is kept |
 | A shortcut says it could not find its executable | That app's files are missing or broken | Run Aero Setup, uninstall, then install again |
 | Starting an app says Aero does not look installed here | There is no install where it looked | Run Aero Setup to install first |
-| The setup file itself says it is damaged | The download arrived incomplete | Download it again from the Downloads page |
+| The setup file says it is damaged | The download arrived incomplete | Download it again from the Downloads page |
 | Starting an app says your saved sign-in expired | The stored approval stopped working | Run Aero Setup and sign in again to reconnect |
-| An update says Aero did not reopen afterwards | The new copy landed but did not start | Start it from the Start Menu; your install is already updated |
+| An update finished but the app did not start | The update is already in place | Start it from the Start Menu |
 
 ## Common problems
 

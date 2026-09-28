@@ -8,7 +8,7 @@ A 64-bit Windows 10 or 11 PC. The install is per-user, inside your own profile, 
 
 ## Installing with Aero Setup
 
-1. On the Downloads page, pick **Download for Windows**. That saves a single file, named like `AeroSetup-0.0.1.6.exe` — the number is the build, and it goes up with every release.
+1. On the Downloads page, pick **Download for Windows**. That saves a single file, like `AeroSetup-0.0.1.6.exe`. The number is the build. It goes up with every release.
 2. Run it and choose **Sign in with Aero**. Your browser opens so you can approve access there; the installer never sees your password.
 3. Pick which pieces to keep: the Client, Studio, or both. You can change this later.
 4. Pick where Aero lives. The default is a folder inside your local app data, and anything already there is left alone.
@@ -18,7 +18,7 @@ A 64-bit Windows 10 or 11 PC. The install is per-user, inside your own profile, 
 
 Open **Aero Client** or **Aero Studio** from the Start Menu. Each shortcut checks that app for updates first and applies them before starting, with a progress window only while something is actually downloading. When everything is current, the app just starts. There is no separate launcher window to go through.
 
-Your apps report their build as **Build N** with the source commit beside it: the Client menu footer shows it, and Studio shows it in Help > About next to the product line (currently alpha, like `0.0.1.6-alpha`). The Client and Server also answer a `--version` flag with the same line, which is what to quote in a bug report.
+Your apps show their build as **Build N** with the source commit next to it. The Client menu footer shows it, and Studio shows it in Help > About. Studio's product line says alpha, like `0.0.1.6-alpha`. The Client and Server also print it for a `--version` flag. Quote that line in a bug report.
 
 ## Staying up to date
 
