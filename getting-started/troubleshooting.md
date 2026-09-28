@@ -1,6 +1,6 @@
 # Troubleshooting
 
-When something breaks, the reason is written down somewhere. There are two places to look: the Output panel inside Studio, and the crash dialog with its logs folder. This page covers both, then the problems people hit most.
+When something breaks, the reason is written down somewhere. There are three places to look: the Output panel inside Studio, the crash dialog with its logs folder, and the installer or updater window, which states plainly what failed. This page covers all three, then the problems people hit most.
 
 ## The Output panel
 
@@ -18,6 +18,20 @@ Two dialogs you may see:
 
 - A DirectX error naming device creation. The engine found no graphics device it could use, not even software rendering. Update your graphics drivers and Windows first, then report it with the logs if it persists.
 - An unhandled exception with an address and a code. That is a native crash. There is nothing to fix on your side, so send the log and the dump.
+
+## Installer and updater problems
+
+| What you see | What it means | What to do |
+| --- | --- | --- |
+| Setup says your saved sign-in expired | The stored approval stopped working | Run Aero Setup and sign in again to reconnect |
+| Connected, but no builds are available to this connection yet | Your account cannot see any builds right now | Try again later; if it persists, the account may need access granted |
+| Not enough disk space to install | The install does not fit on that drive | Free up space and try again |
+| A download failed verification and was discarded | A file arrived damaged, so it was thrown away | Try again; nothing half-installed is kept |
+| A shortcut says it could not find its executable | That app's files are missing or broken | Run Aero Setup, uninstall, then install again |
+| Starting an app says Aero does not look installed here | There is no install where it looked | Run Aero Setup to install first |
+| The setup file itself says it is damaged | The download arrived incomplete | Download it again from the Downloads page |
+| Starting an app says your saved sign-in expired | The stored approval stopped working | Run Aero Setup and sign in again to reconnect |
+| An update says Aero did not reopen afterwards | The new copy landed but did not start | Start it from the Start Menu; your install is already updated |
 
 ## Common problems
 

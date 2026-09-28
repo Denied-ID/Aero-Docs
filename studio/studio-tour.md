@@ -46,7 +46,7 @@ View switches the viewport between Lit, Unlit, and Wireframe, and toggles a smal
 
 Edit holds Settings and Keyboard Shortcuts. Both apply the moment you change them. There is no restart step.
 
-Under Help you will find About. Studio comes in a dark and a light theme, and you can rearrange the panels under View.
+Under Help you will find About. It names your exact build and the source commit it was cut from, which is what to quote in a bug report. Studio comes in a dark and a light theme, and you can rearrange the panels under View.
 
 ## Where to go next
 
