@@ -24,9 +24,9 @@ Two dialogs you may see:
 | What you see | What it means | What to do |
 | --- | --- | --- |
 | Setup says your saved sign-in expired | The stored approval stopped working | Run Aero Setup and sign in again to reconnect |
-| Connected, but no builds are available to this connection yet | Your account cannot see any builds right now | Try again later; if it persists, the account may need access granted |
+| Connected, but no builds are available to this connection yet | Your account cannot see any builds right now | Reauthenticate the installer through the Aero platform. |
 | Not enough disk space to install | The install does not fit on that drive | Free up space and try again |
-| A download failed verification and was discarded | A file arrived damaged, so it was thrown away | Try again; nothing half-installed is kept |
+| A download failed verification and was discarded | A file arrived damaged, so it was thrown away | Try reinstalling again. |
 | A shortcut says it could not find its executable | That app's files are missing or broken | Run Aero Setup, uninstall, then install again |
 | Starting an app says Aero does not look installed here | There is no install where it looked | Run Aero Setup to install first |
 | The setup file says it is damaged | The download arrived incomplete | Download it again from the Downloads page |

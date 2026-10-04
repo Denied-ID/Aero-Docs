@@ -9,7 +9,7 @@ A 64-bit Windows 10 or 11 PC. The install is per-user, inside your own profile, 
 ## Installing with Aero Setup
 
 1. On the Downloads page, pick **Download for Windows**. That saves a single file, like `AeroSetup-0.0.1.6.exe`. The number is the build. It goes up with every release.
-2. Run it and choose **Sign in with Aero**. Your browser opens so you can approve access there; the installer never sees your password.
+2. Run it and choose **Sign in with Aero**. Your browser should open so you can approve access there. The installer never sees your password.
 3. Pick which pieces to keep: the Client, Studio, or both. You can change this later.
 4. Pick where Aero lives. The default is a folder inside your local app data, and anything already there is left alone.
 5. Choose **Install**. When it finishes, the last page offers to launch what you just installed.
@@ -24,7 +24,7 @@ Your apps show their build as **Build N** with the source commit next to it. The
 
 There is nothing to do by hand. Launching an app brings it current, and the updater itself updates the same way: if a newer one is available, it downloads, restarts once, and carries on with your launch. If an update is ever interrupted, relaunching picks up from a clean state.
 
-The Downloads page also lists per-component zips for manual use. Those need a signed-in account; the installer is the normal path.
+The Downloads page also lists per-component zips for manual use. Those need a signed-in account to download, though the installer is the best way to get Aero executables.
 
 ## Changing or removing Aero
 
