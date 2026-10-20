@@ -1,16 +1,40 @@
 ﻿# MeshPart
 
-A part that uses a custom mesh shape.
+A part whose shape comes from a mesh file.
 
-This page is still being written. Check back soon for the full property and method lists.
+A `MeshPart` takes everything a [Part](part.md) has and swaps the box shape for a glTF mesh. Its size still controls placement and collision; the mesh controls what you see.
 
 ## Properties
 
-| Property | What it is |
-| --- | --- |
-| Name | The name you see in the Explorer. |
-| Parent | Where it sits in the place tree. |
+| Property | Type | What it does |
+| --- | --- | --- |
+| MeshId | string | Path to the mesh. It must end in `.gltf` or `.glb`, and values longer than 512 bytes are dropped. Setting it clears any mesh data already embedded in the part. |
+| DoubleSided | boolean | Draws back faces as well as front faces. |
+
+Both properties belong to MeshPart alone. A plain Part raises an error if you write them.
+
+`MeshId` is forgiving in a way that hides mistakes: a value with the wrong extension is cleared instead of rejected, so the part quietly renders as a box.
+
+## Members
+
+MeshPart has every [Part](part.md) member, plus the shared Instance members in [Instance](../globals/instance.md).
+
+A MeshPart is not a subclass of Part for `IsA`, so `IsA("Part")` is false even though all the Part properties work.
+
+## Example
+
+```lua
+local rock = Instance.new("MeshPart")
+rock.Name = "Rock"
+rock.Size = Vector3.new(6, 4, 6)
+rock.Position = Vector3.new(0, 2, 0)
+rock.MeshId = "content/meshes/rock.glb"
+rock.DoubleSided = false
+rock.Parent = workspace
+```
 
 ## See also
 
+- [Part](part.md): the box-shaped version.
+- [Instance](../globals/instance.md): the shared members.
 - [API Reference](../api/api.md)

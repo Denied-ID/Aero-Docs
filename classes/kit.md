@@ -2,8 +2,6 @@
 
 A named build that lives in the place. Copies sharing a `KitId` stay in sync while you edit.
 
-This page is still being written. Check back soon for the full property and method lists.
-
 ## Properties
 
 | Property | What it is |

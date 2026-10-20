@@ -1,20 +1,22 @@
 ﻿# CoreGui
 
-Built in interface elements like chat and the health bar.
+The engine's own interface.
 
-This page is still being written. Check back soon for the full property and method lists.
+`CoreGui` holds the interface the engine draws itself: the player list, the health display, the backpack, chat, and the emotes menu. Its contents are built by the engine, not authored by scripts.
 
-## The player menu
+## Members
 
-Pressing Escape opens the menu. It has Settings, Help, and About tabs. The About tab shows the copyright line and the full third-party licence terms. The footer names the exact build, like **Build 6**, with the source commit next to it.
+CoreGui has no properties, events, or methods beyond the shared Instance members. See [Instance](../globals/instance.md).
 
-## Properties
+To show or hide the parts of it, call [StarterGui](startergui.md)`:`SetCoreGuiEnabled` from a LocalScript:
 
-| Property | What it is |
-| --- | --- |
-| Name | The name you see in the Explorer. |
-| Parent | Where it sits in the place tree. |
+```lua
+local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
+```
 
 ## See also
 
+- [StarterGui](startergui.md): the switch for these elements.
+- [ScreenGui](../classes/screengui.md): interface you author yourself.
 - [API Reference](../api/api.md)
