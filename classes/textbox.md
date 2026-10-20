@@ -32,6 +32,7 @@ screen.Parent = playerGui
 local field = Instance.new("TextBox", screen)
 field.Size = UDim2.new(0, 260, 0, 40)
 field.Position = UDim2.new(0.5, -130, 0.5, -20)
+field.BackgroundTransparency = 0
 field.Text = ""
 field.PlaceholderText = "Type a name"
 field.TextSize = 18

@@ -8,17 +8,17 @@ A `ScrollingFrame` shows part of a larger area and lets the player scroll to the
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| CanvasSize | UDim2 | The size of the scrollable area. |
-| CanvasPosition | Vector2 | How far the canvas is scrolled, in pixels. |
-| ScrollingEnabled | boolean | Whether the player can scroll it. |
-| ScrollBarThickness | number | Width of the bar in pixels. Default 12. |
-| ScrollBarImageColor3 | Color3 | The bar color. |
-| VerticalScrollBarInset | number | 0 hides the bar, 1 always shows it. |
+| CanvasSize | UDim2 | The size of the scrollable area. Children lay out against it. |
+| CanvasPosition | Vector2 | How far the canvas is scrolled, in pixels. Assigning a value wins over an ease already in flight. |
+| ScrollingEnabled | boolean | Whether the mouse wheel moves the canvas. |
+| ScrollBarThickness | number | Width reserved on the right when `VerticalScrollBarInset` is 1, in pixels. Default 12. |
+| ScrollBarImageColor3 | Color3 | Stored for scripts that draw their own bar. The engine draws no bar, so on its own this changes nothing. |
+| VerticalScrollBarInset | number | 0 reserves nothing, 1 takes `ScrollBarThickness` off the children's width. Clamped to those two values. |
 | AbsoluteCanvasSize | Vector2 | The canvas size in pixels. Read-only. |
 
-`VerticalScrollBarInset` is clamped to 0 or 1, so other numbers quietly become one of those.
+There is no scrollbar in the engine. `ScrollBarThickness` and `VerticalScrollBarInset` exist so content can be laid out clear of a bar you add yourself as ordinary widgets beside the frame; a bar parented inside the frame would scroll away with the canvas.
 
-The mouse wheel goes to the scrolling frame around the object under the pointer that is `Active`, so set `Active` on the frame or on the content that should scroll.
+The mouse wheel goes to the innermost scrolling frame around the object under the pointer that is `Active`, so set `Active` on the frame or on the content that should scroll.
 
 ## Members
 
@@ -36,7 +36,10 @@ screen.Parent = playerGui
 local list = Instance.new("ScrollingFrame", screen)
 list.Size = UDim2.new(0, 240, 0, 300)
 list.Position = UDim2.new(0, 16, 0, 16)
+list.BackgroundTransparency = 0
+list.BackgroundColor3 = Color3.fromRGB(20, 20, 24)
 list.CanvasSize = UDim2.new(0, 0, 0, 540)
+list.VerticalScrollBarInset = 1
 list.ScrollBarThickness = 8
 list.Active = true
 

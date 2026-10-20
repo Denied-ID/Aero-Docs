@@ -11,7 +11,7 @@ A `ScreenGui` is the root of an interface tree. Frames, labels, and buttons only
 | Enabled | boolean | Whether the layer draws at all. |
 | DisplayOrder | number | Draw order between layers. Higher values draw above lower ones. |
 | IgnoreGuiInset | boolean | Whether the layer draws over the top bar inset. |
-| ResetOnSpawn | boolean | Whether the layer is dropped and rebuilt when the character respawns. |
+| ResetOnSpawn | boolean | Whether the layer is dropped and rebuilt when the character respawns. Default true. |
 
 ## Members
 

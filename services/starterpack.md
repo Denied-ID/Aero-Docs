@@ -12,8 +12,6 @@ StarterPack has no properties, events, or methods beyond the shared Instance mem
 
 ```lua
 -- A Script in StarterPack
-local player = game:GetService("Players"):GetPlayers()[1]
-
 print(script.Parent.Name)     -- Backpack, in the player's copy
 ```
 

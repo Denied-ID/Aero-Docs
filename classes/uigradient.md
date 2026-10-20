@@ -27,6 +27,7 @@ UIGradient has no methods of its own. It also has the shared Instance members; s
 local bar = Instance.new("Frame")
 bar.Size = UDim2.new(0, 240, 0, 24)
 bar.BackgroundColor3 = Color3.new(1, 1, 1)
+bar.BackgroundTransparency = 0
 
 local gradient = Instance.new("UIGradient", bar)
 gradient.Color0 = Color3.fromRGB(80, 200, 255)

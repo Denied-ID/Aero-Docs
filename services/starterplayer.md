@@ -14,14 +14,7 @@ StarterPlayer has no properties, events, or methods beyond the shared Instance m
 -- LocalScript in StarterPlayer
 local Players = game:GetService("Players")
 
-print(script:GetFullName())    -- StarterPlayer.Camera
-
-local cameraScript = nil
-for _, child in ipairs(script.Parent:GetChildren()) do
-    if child:IsA("LocalScript") then
-        cameraScript = child
-    end
-end
+print("client ready for", Players.LocalPlayer.Name)
 ```
 
 ## See also

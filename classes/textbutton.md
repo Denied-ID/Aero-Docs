@@ -23,6 +23,7 @@ local button = Instance.new("TextButton", screen)
 button.Size = UDim2.new(0, 180, 0, 44)
 button.Position = UDim2.new(0.5, -90, 0.5, -22)
 button.BackgroundColor3 = Color3.fromRGB(45, 110, 200)
+button.BackgroundTransparency = 0
 button.Text = "Play"
 button.TextColor3 = Color3.new(1, 1, 1)
 button.TextSize = 18

@@ -20,6 +20,7 @@ UICorner has no methods of its own. It also has the shared Instance members; see
 local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0, 160, 0, 48)
 frame.BackgroundColor3 = Color3.fromRGB(40, 40, 46)
+frame.BackgroundTransparency = 0
 
 local corner = Instance.new("UICorner", frame)
 corner.CornerRadius = UDim.new(0.25, 0)

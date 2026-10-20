@@ -21,7 +21,7 @@ The read-only pair is what layout code uses after a resize, because it has alrea
 | Property | Type | What it does |
 | --- | --- | --- |
 | BackgroundColor3 | Color3 | The fill color. |
-| BackgroundTransparency | number | 0 is solid, 1 is invisible. |
+| BackgroundTransparency | number | 0 is solid, 1 is invisible. Default is 1, so a new frame draws nothing until you lower it. |
 | BorderColor3 | Color3 | The border color. |
 | BorderSizePixel | number | Border width in pixels. 0 removes the border. |
 | Visible | boolean | Whether the frame and everything inside it draws. |
@@ -64,6 +64,7 @@ panel.Name = "Panel"
 panel.Size = UDim2.new(0, 220, 0, 90)
 panel.Position = UDim2.new(0.5, -110, 0, 16)
 panel.BackgroundColor3 = Color3.fromRGB(24, 24, 28)
+panel.BackgroundTransparency = 0
 panel.BorderSizePixel = 1
 panel.BorderColor3 = Color3.fromRGB(70, 70, 80)
 
