@@ -21,6 +21,7 @@ Member tables are being filled in page by page. Names follow the live bindings.
 | [Humanoid](../classes/humanoid.md) | Makes a model walk, jump, and take damage. |
 | [ImageLabel](../classes/imagelabel.md) | A picture on the screen. |
 | [InputObject](../classes/inputobject.md) | Describes one input, like a key press. |
+| [Kit](../classes/kit.md) | A named build; linked copies stay in sync while you edit. |
 | [LocalScript](../classes/localscript.md) | Luau code that runs on each player machine. |
 | [MeshPart](../classes/meshpart.md) | A part that uses a custom mesh shape. |
 | [Model](../classes/model.md) | A group of parts that move as one. |
@@ -48,8 +49,11 @@ Member tables are being filled in page by page. Names follow the live bindings.
 | Symbol | About |
 | --- | --- |
 | [CoreGui](../services/coregui.md) | Built in interface elements like chat and the health bar. |
+| [Kits](../services/kits.md) | Named builds that live in the place; copies can stay linked. |
 | [Lighting](../services/lighting.md) | Sun, sky, and atmosphere for the place. |
+| [Perf](../services/perf.md) | Frame timings and per-script cost, written to the Output. |
 | [Players](../services/players.md) | Everyone in the game. Handles spawning characters. |
+| [Physics](../services/physics.md) | What scripts do to the simulated world, like blasts. |
 | [ReplicatedStorage](../services/replicatedstorage.md) | A shared folder that both server and client scripts can see. |
 | [RunService](../services/runservice.md) | Tells scripts what is running: editing, Play, or Run. |
 | [ServerScriptService](../services/serverscriptservice.md) | A safe place to keep server scripts. |
