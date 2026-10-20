@@ -57,6 +57,7 @@ Member tables are being filled in page by page. Names follow the live bindings.
 | [StarterGui](../services/startergui.md) | Interface objects kept here are copied to each player. |
 | [StarterPack](../services/starterpack.md) | Tools kept here are copied to each player. |
 | [StarterPlayer](../services/starterplayer.md) | Settings for how characters spawn. |
+| [Store](../services/store.md) | Saves values with the place, on the server. |
 | [TweenService](../services/tweenservice.md) | Animates properties smoothly over time. |
 | [UserInputService](../services/userinputservice.md) | Keyboard, mouse, and gamepad input on the client. |
 | [Workspace](../services/workspace.md) | The place world. Everything you see lives under it. |
