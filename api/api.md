@@ -1,8 +1,6 @@
 ﻿# API Reference
 
-Every name Luau scripts can use, in one list. Classes are objects you add, services are always there, functions do things, and globals are values and roots.
-
-Member tables are being filled in page by page. Names follow the live bindings.
+Everything Luau scripts can access.
 
 ## Guides
 

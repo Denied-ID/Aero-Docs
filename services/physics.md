@@ -1,6 +1,6 @@
 # Physics
 
-What scripts do to the simulated world. Physics itself runs on the server, and every method here is a server-side command.
+What scripts do to the simulated world.
 
 ## Methods
 
