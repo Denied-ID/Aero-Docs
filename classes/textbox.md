@@ -10,7 +10,7 @@ A `TextBox` is a [TextLabel](textlabel.md) that accepts typing. It has the text 
 | --- | --- | --- |
 | PlaceholderText | string | Text shown while the field is empty. |
 | PlaceholderColor3 | Color3 | Color of the placeholder. Default is a mid grey. |
-| ClearTextOnFocus | boolean | Clears the text when the player starts typing. Default true. |
+| ClearTextOnFocus | boolean | Clears the text when the field gains focus, before the first keystroke. Default true. |
 | TextEditable | boolean | Whether the player can change the text. Default true. |
 | MultiLine | boolean | Accepts line breaks. Default false. |
 

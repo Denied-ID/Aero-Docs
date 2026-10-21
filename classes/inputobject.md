@@ -1,6 +1,6 @@
 ﻿# InputObject
 
-One input, described.
+What one input event carries.
 
 An `InputObject` is handed to [UserInputService](../services/userinputservice.md) listeners. It says what was pressed or moved and where it happened. You read them; the engine creates them.
 

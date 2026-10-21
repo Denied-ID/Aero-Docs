@@ -9,9 +9,9 @@ Everyone connected, and the signals for joining and leaving.
 | Member | Type | What it does |
 | --- | --- | --- |
 | LocalPlayer | Player or nil | The player for this client. Read-only, and always nil on the server. |
-| MaxPlayers | number | The player limit. Writable, with no clamp. |
-| PlayerAdded | event | Fires with the player when someone joins. |
-| PlayerRemoving | event | Fires with the player before they leave. |
+| MaxPlayers | number | The player limit. Stored and replicated; nothing refuses a connection because of it yet. |
+| PlayerAdded | event | Fires on the server when someone joins. |
+| PlayerRemoving | event | Fires on the server before someone leaves. |
 
 ## Methods
 
@@ -38,6 +38,8 @@ end
 ```
 
 `LocalPlayer` is set on a client. Reading it on the server gives nil, so guard it before use.
+
+`PlayerAdded` and `PlayerRemoving` fire on the server only. A client sees players arrive as they replicate, but gets neither signal, so a client script that needs to react to a join has to watch for the Player instance another way.
 
 ## Example
 

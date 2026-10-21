@@ -28,7 +28,12 @@ A `Tween` is built by [TweenService](../services/tweenservice.md) and then playe
 ```lua
 local TweenService = game:GetService("TweenService")
 
-local lamp = workspace:FindFirstChild("Lamp")
+local lamp = Instance.new("Part")
+lamp.Name = "Lamp"
+lamp.Anchored = true
+lamp.Position = Vector3.new(0, 8, 0)
+lamp.Parent = workspace
+
 local tween = TweenService:Create(
     lamp,
     TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),

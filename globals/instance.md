@@ -24,7 +24,7 @@ The class name must be one the engine can build on demand:
 | Lights | PointLight, SpotLight, SurfaceLight |
 | Animation | Tween |
 
-An unknown name raises `NotAClass is not a valid class name`. Workspace and the services are already created for the place, so `Instance.new("Workspace")` raises the same error.
+An unknown name raises `NotAClass is not a valid class name`. Workspace is created with the place and cannot be built again, so `Instance.new("Workspace")` raises it too.
 
 ## Members every Instance has
 
@@ -81,7 +81,7 @@ connection:Disconnect()
 | Connected | boolean | True until the connection is disconnected. |
 | Disconnect() | nothing | Stops the callback. Calling it twice is safe. |
 
-`Connect`, `Once`, `Wait`, and `Disconnect` also have lowercase aliases. A connection to an instance drops when that instance is destroyed.
+`Connect`, `Once`, `Wait`, and `Disconnect` also have lowercase aliases.
 
 ## Methods
 
@@ -91,7 +91,7 @@ Every instance sees every method. A method only works on the class it belongs to
 | --- | --- | --- |
 | FindFirstChild(name, recursive?) | any | Returns the first child with that name, or a descendant when `recursive` is truthy. |
 | FindFirstChildOfClass(className) | any | Returns the first direct child of that class. |
-| FindFirstChildWhichIsA(className, recursive?) | any | Like `FindFirstChildOfClass`, but accepts a base class name. |
+| FindFirstChildWhichIsA(className, recursive?) | any | The same lookup as `FindFirstChildOfClass` here; both accept a base class name. |
 | FindFirstAncestor(name) | any | Walks up the tree to the first ancestor with that name. |
 | FindFirstAncestorOfClass(className) | any | Walks up to the first ancestor of that class. |
 | WaitForChild(name, timeout?) | any | Yields until a child with that name exists. Returns nil if the timeout passes first. Without a timeout it waits forever. |
@@ -119,6 +119,7 @@ Every instance sees every method. A method only works on the class it belongs to
 | FireAllClients(...) | RemoteEvent | Sends values from the server to every player. |
 | InvokeServer(...) | RemoteFunction | Calls the server and waits for its return values. |
 | Raycast(origin, direction, maxDistance?, params?) | Workspace | Returns the first thing hit along a ray. |
+| Explode(center, radius, power, options?) | Physics | Pushes bodies away from a blast. See [Physics](../services/physics.md). |
 | GetMouseLocation() | UserInputService | The mouse position in pixels. |
 | GetMouseDelta() | UserInputService | How far the mouse moved. |
 | IsKeyDown(keyCode) | UserInputService | Whether a key is held. |

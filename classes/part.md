@@ -1,6 +1,6 @@
 ﻿# Part
 
-A solid block. The basic building piece.
+A solid block, and the basic building piece.
 
 A `Part` is a physical object with a position, a size, a look, and a collision shape. Most of a place is made of parts.
 
@@ -25,7 +25,7 @@ part.Parent = workspace
 
 Writing `CFrame` or `Position` on a part that belongs to a character moves the whole character so the limb lands there, not just the limb.
 
-Sphere and Cylinder parts use one extent for all three axes. Setting `Size` on one of them applies the X value to all three, and reading it back gives that uniform size.
+A Sphere uses its X value for all three axes. A Cylinder uses X for both X and Z and keeps Y, so setting `Size` to `(2, 5, 9)` on one reads back as `(2, 5, 2)`.
 
 ## Appearance
 
@@ -56,15 +56,15 @@ Sphere and Cylinder parts use one extent for all three axes. Setting `Size` on o
 | Mass | number | Read-only. The size cubed times the density, or 0 when `Massless`. |
 | Massless | boolean | Excludes the part from the assembly's mass. |
 | Velocity | Vector3 | World velocity in studs per second. |
-| AssemblyLinearVelocity | Vector3 | The linear velocity of the whole assembly, in studs per second. |
-| AssemblyAngularVelocity | Vector3 | The angular velocity of the whole assembly, in the solver's units. |
+| AssemblyLinearVelocity | Vector3 | The part's own linear velocity. It reads and writes the same value as `Velocity`. |
+| AssemblyAngularVelocity | Vector3 | The part's own angular velocity, in the solver's units. Nothing propagates it to other parts. |
 | CustomPhysicalProperties | table or nil | Density, Friction, Elasticity, FrictionWeight, and ElasticityWeight, as a table. `nil` clears it. |
 
 Writing a velocity value wakes a sleeping part, but only when the value actually changes.
 
 ## Surfaces
 
-`TopSurface`, `BottomSurface`, `FrontSurface`, `BackSurface`, `RightSurface`, and `LeftSurface` each take an `Enum.SurfaceType`, a name, or a number. Only `Studs` and `Inlet` change how a face draws; the others are stored and render as smooth.
+`TopSurface`, `BottomSurface`, `FrontSurface`, `BackSurface`, `RightSurface`, and `LeftSurface` each take an `Enum.SurfaceType`, a name, or a number. Only `Studs` and `Inlet` are kept. Any other value is replaced by `Smooth`, and reading the face back gives `Smooth`.
 
 ## Members
 

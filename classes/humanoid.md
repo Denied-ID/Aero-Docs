@@ -9,23 +9,23 @@ A `Humanoid` sits inside a character model next to the parts that make up its bo
 | Property | Type | What it does |
 | --- | --- | --- |
 | WalkSpeed | number | Movement speed in studs per second. |
-| JumpPower | number | How hard the character jumps. |
+| JumpPower | number | Stored, but the jump arc uses a fixed jump height, so changing this does not change a jump yet. |
 | Health | number | Current health. |
-| MaxHealth | number | The value used for health bars and for clamping damage. |
+| MaxHealth | number | The value the health bar is drawn against. Replicated health is capped to it. |
 | AutoRotate | boolean | Whether the character turns to face the direction it moves. |
 
 None of these values are clamped. Setting `Health` above `MaxHealth` or a negative `WalkSpeed` stores the number as given.
 
-The engine sets `Health` to 0 when the character's root falls below the world floor, which is how a fall out of the map kills a character.
+The engine sets `Health` to 0 when the character's root falls below `y = -25` world units, about -100 studs. That kill plane is how a fall out of the map ends a life.
 
 ## Events
 
 | Event | Callback arguments | When it fires |
 | --- | --- | --- |
 | Died | none | Health reached 0. |
-| StateChanged | oldState, newState | The character moved between standing, running, jumping, and dead. |
+| StateChanged | oldState, newState | The character moved between its states. |
 
-The state names are `Standing`, `Running`, `Jumping`, and `Dead`. There is no `State` property to read, so keep the last value from `StateChanged` if you need to know it later.
+The state names are `Standing`, `Running`, `Jumping`, `Freefall`, `KnockedBack`, and `Dead`. There is no `State` property to read, so keep the last value from `StateChanged` if you need to know it later.
 
 ## Members
 

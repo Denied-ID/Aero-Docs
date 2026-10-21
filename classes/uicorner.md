@@ -17,7 +17,12 @@ UICorner has no methods of its own. It also has the shared Instance members; see
 ## Example
 
 ```lua
-local frame = Instance.new("Frame")
+local playerGui = game:GetService("Players").LocalPlayer.PlayerGui
+
+local screen = Instance.new("ScreenGui")
+screen.Parent = playerGui
+
+local frame = Instance.new("Frame", screen)
 frame.Size = UDim2.new(0, 160, 0, 48)
 frame.BackgroundColor3 = Color3.fromRGB(40, 40, 46)
 frame.BackgroundTransparency = 0

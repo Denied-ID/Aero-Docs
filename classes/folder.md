@@ -1,6 +1,6 @@
 ﻿# Folder
 
-Keeps the Explorer organized. Holds anything.
+A container that keeps the Explorer organized and can hold anything.
 
 A `Folder` is a container with no behavior of its own. Parts, scripts, other folders, and interface objects can all live under one, which gives scripts a single name to find and a single object to clone.
 

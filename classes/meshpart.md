@@ -13,7 +13,7 @@ A `MeshPart` takes everything a [Part](part.md) has and swaps the box shape for 
 
 Both properties belong to MeshPart alone. A plain Part raises an error if you write them.
 
-`MeshId` is forgiving in a way that hides mistakes: a value with the wrong extension is cleared instead of rejected, so the part quietly renders as a box.
+`MeshId` is forgiving in a way that hides mistakes: a value with the wrong extension is cleared instead of rejected, so the part quietly renders as a box. A file that cannot be opened has the same result, and the block shape stays until a mesh loads.
 
 ## Members
 

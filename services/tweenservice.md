@@ -14,6 +14,10 @@ Animates properties smoothly over time.
 
 ## What can be tweened
 
+Only three kinds of target animate: a [Part](../classes/part.md), a [Humanoid](../classes/humanoid.md), and the [SoundService](soundservice.md). `Create` accepts any instance, so a tween on a Frame or a Model runs, fires `Completed`, and moves nothing.
+
+On those targets, five value types are interpolated:
+
 | Value type | Example |
 | --- | --- |
 | number | `Transparency = 1` |

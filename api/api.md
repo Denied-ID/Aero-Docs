@@ -14,24 +14,24 @@ Everything Luau scripts can access.
 
 | Symbol | About |
 | --- | --- |
-| [Folder](../classes/folder.md) | Keeps the Explorer organized. Holds anything. |
+| [Folder](../classes/folder.md) | A container that keeps the Explorer organized. |
 | [Frame](../classes/frame.md) | A box that holds other interface objects. |
-| [Humanoid](../classes/humanoid.md) | Makes a model walk, jump, and take damage. |
+| [Humanoid](../classes/humanoid.md) | Moves a character: walking, jumping, and dying. |
 | [ImageLabel](../classes/imagelabel.md) | A picture on the screen. |
 | [InputObject](../classes/inputobject.md) | Describes one input, like a key press. |
 | [Kit](../classes/kit.md) | A named build; linked copies stay in sync while you edit. |
-| [LocalScript](../classes/localscript.md) | Luau code that runs on each player machine. |
+| [LocalScript](../classes/localscript.md) | Luau code that runs on each player's machine. |
 | [MeshPart](../classes/meshpart.md) | A part that uses a custom mesh shape. |
-| [Model](../classes/model.md) | A group of parts that move as one. |
-| [ModuleScript](../classes/modulescript.md) | A library of shared Luau functions. |
-| [Part](../classes/part.md) | A solid block. The basic building piece. |
+| [Model](../classes/model.md) | A group of parts you can handle as one. |
+| [ModuleScript](../classes/modulescript.md) | Luau code that runs only when required. |
+| [Part](../classes/part.md) | A solid block, and the basic building piece. |
 | [Player](../classes/player.md) | One person in the game. |
 | [PointLight](../classes/pointlight.md) | Light that shines in all directions from one point. |
-| [RemoteEvent](../classes/remoteevent.md) | Sends one way messages between client and server. |
-| [RemoteFunction](../classes/remotefunction.md) | Asks the other side a question and waits for the answer. |
+| [RemoteEvent](../classes/remoteevent.md) | Sends messages between the server and clients. |
+| [RemoteFunction](../classes/remotefunction.md) | Asks the server a question and waits for the answer. |
 | [ScreenGui](../classes/screengui.md) | A screen interface. Holds buttons and labels. |
 | [Script](../classes/script.md) | Luau code that runs on the server. |
-| [ScrollingFrame](../classes/scrollingframe.md) | A box with a scroll bar. |
+| [ScrollingFrame](../classes/scrollingframe.md) | A frame with a scrollable canvas inside it. |
 | [SpotLight](../classes/spotlight.md) | Light that shines in one direction, like a flashlight. |
 | [SurfaceLight](../classes/surfacelight.md) | Light that shines off one face of a part. |
 | [TextBox](../classes/textbox.md) | A box players can type into. |
@@ -46,23 +46,23 @@ Everything Luau scripts can access.
 
 | Symbol | About |
 | --- | --- |
-| [CoreGui](../services/coregui.md) | Built in interface elements like chat and the health bar. |
+| [CoreGui](../services/coregui.md) | The engine's own interface, such as chat and the player list. |
 | [Kits](../services/kits.md) | Named builds that live in the place; copies can stay linked. |
 | [Lighting](../services/lighting.md) | Sun, sky, and atmosphere for the place. |
 | [Perf](../services/perf.md) | Frame timings and per-script cost, written to the Output. |
-| [Players](../services/players.md) | Everyone in the game. Handles spawning characters. |
+| [Players](../services/players.md) | Everyone connected, with the signals for joining and leaving. |
 | [Physics](../services/physics.md) | What scripts do to the simulated world, like blasts. |
 | [ReplicatedStorage](../services/replicatedstorage.md) | A shared folder that both server and client scripts can see. |
-| [RunService](../services/runservice.md) | Tells scripts what is running: editing, Play, or Run. |
-| [ServerScriptService](../services/serverscriptservice.md) | A safe place to keep server scripts. |
+| [RunService](../services/runservice.md) | The engine's clock, and where the script is running. |
+| [ServerScriptService](../services/serverscriptservice.md) | Server-only content, kept off clients. |
 | [SoundService](../services/soundservice.md) | Global sound settings for the place. |
 | [StarterGui](../services/startergui.md) | Interface objects kept here are copied to each player. |
-| [StarterPack](../services/starterpack.md) | Tools kept here are copied to each player. |
-| [StarterPlayer](../services/starterplayer.md) | Settings for how characters spawn. |
+| [StarterPack](../services/starterpack.md) | Contents kept here are copied to each player's backpack. |
+| [StarterPlayer](../services/starterplayer.md) | Client scripts that run on each player in place. |
 | [Store](../services/store.md) | Saves values with the place, on the server. |
 | [TweenService](../services/tweenservice.md) | Animates properties smoothly over time. |
-| [UserInputService](../services/userinputservice.md) | Keyboard, mouse, and gamepad input on the client. |
-| [Workspace](../services/workspace.md) | The place world. Everything you see lives under it. |
+| [UserInputService](../services/userinputservice.md) | Keyboard and mouse input on the client. |
+| [Workspace](../services/workspace.md) | The place world, and its ray query. |
 
 ## Functions
 
@@ -81,7 +81,7 @@ Everything Luau scripts can access.
 | [CFrame](../globals/cframe.md) | A position plus a rotation in 3D. |
 | [Color3](../globals/color3.md) | A color mixed from red, green, and blue. |
 | [Enum](../globals/enum.md) | Named lists of options. |
-| [game](../globals/game.md) | The place itself. Start here with GetService. |
+| [game](../globals/game.md) | The root of the instance tree, and the way to reach every service. |
 | [Instance](../globals/instance.md) | The base of every object, with Instance.new to create them. |
 | [Random](../globals/random.md) | Random numbers with its own seed. |
 | [TweenInfo](../globals/tweeninfo.md) | Timing settings for an animation. |

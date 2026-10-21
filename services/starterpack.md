@@ -2,7 +2,7 @@
 
 The contents every player's backpack starts with.
 
-Children of `StarterPack` are copied into each player's Backpack when their character spawns. A script inside one of them is skipped where it sits and runs from the copy the player receives.
+Children of `StarterPack` are copied into each player's Backpack when the player joins, and the Backpack is refilled from the templates on each respawn. A script inside one of them is skipped where it sits and runs from the copy the player receives.
 
 ## Members
 

@@ -1,35 +1,35 @@
 ﻿# UserInputService
 
-Keyboard, mouse, touch, and gamepad input on the client.
+Keyboard and mouse input on the client.
 
-`UserInputService` reports input as it happens and answers questions about what is held right now. It only works on a client, where there is a keyboard and a pointer to read.
+`UserInputService` reports input as it happens and answers questions about what is held right now. It only works on a client, where there is a keyboard and a pointer to read. Touch and gamepad have no path through the engine yet.
 
 ## Properties
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| KeyboardEnabled | boolean | Whether a keyboard is present. Read-only. |
-| MouseEnabled | boolean | Whether a mouse is present. Read-only. |
-| TouchEnabled | boolean | Whether touch input is present. Read-only. |
-| GamepadEnabled | boolean | Whether a gamepad is present. Read-only. |
-| MouseBehavior | number | How the mouse is captured: 0 default, 1 lock to center, 2 lock where it is. Writable, with no validation. |
+| KeyboardEnabled | boolean | Always true. Read-only. |
+| MouseEnabled | boolean | Always true. Read-only. |
+| TouchEnabled | boolean | Always false, because touch input is not implemented. Read-only. |
+| GamepadEnabled | boolean | Always false, because gamepad input is not implemented. Read-only. |
+| MouseBehavior | number | Stored, but nothing reads it yet, so the mouse is never captured. |
 
 ## Events
 
 | Event | Callback arguments | When it fires |
 | --- | --- | --- |
-| InputBegan | input, gameProcessed | A key, button, or touch went down. |
+| InputBegan | input, gameProcessed | A key or mouse button went down. |
 | InputEnded | input, gameProcessed | It came back up. |
-| InputChanged | input, gameProcessed | It moved or changed state. |
+| InputChanged | input, gameProcessed | The mouse wheel turned. |
 
-`input` is an [InputObject](../classes/inputobject.md). `gameProcessed` is true when the engine's own interface has already handled the event, which is the usual reason a click on a menu should not also fire a game action.
+`input` is an [InputObject](../classes/inputobject.md). The `gameProcessed` flag exists for the day the engine's own interface claims an event, but every event sent so far passes false.
 
 ## Methods
 
 | Method | Returns | What it does |
 | --- | --- | --- |
 | GetMouseLocation() | Vector2 | The pointer position in screen pixels. |
-| GetMouseDelta() | Vector2 | How far the pointer moved since the last check. |
+| GetMouseDelta() | Vector2 | How far the pointer moved during this frame. Reading it twice in one frame gives the same number. |
 | IsKeyDown(keyCode) | boolean | Whether that key is held. |
 | IsMouseButtonPressed(button) | boolean | Whether that mouse button is held. |
 
@@ -47,13 +47,14 @@ UserInputService.InputBegan:Connect(function (input, gameProcessed)
 
     if input.KeyCode == Enum.KeyCode.F then
         print("flashlight")
+    elseif input.UserInputType == Enum.UserInputType.MouseButton1 then
+        print("clicked at", input.Position.X, input.Position.Y)
     end
 end)
 
 UserInputService.InputChanged:Connect(function (input, gameProcessed)
-    if not gameProcessed and input.UserInputType == Enum.UserInputType.MouseMovement then
-        local pointer = UserInputService:GetMouseLocation()
-        print(pointer.X, pointer.Y)
+    if input.UserInputType == Enum.UserInputType.MouseWheel then
+        print("wheel", input.Position.Z)
     end
 end)
 ```

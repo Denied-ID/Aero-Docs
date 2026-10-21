@@ -68,7 +68,7 @@ The other constructors live on the `CFrame` table:
 | a * b | Combines two frames. The position becomes `a.Position + a.Rotation * b.Position`, and the rotation becomes `a.Rotation * b.Rotation`. |
 | a * v | Moves the point `v` into world space, including the position. Same as `PointToWorldSpace`. |
 | a + v, a - v | Moves the position by the Vector3 `v` and keeps the rotation. |
-| a == b | True when all twelve values are within `1e-5`. |
+| a == b | True when all twelve values are closer than `1e-5`. |
 
 `CFrame + CFrame` raises an error, and so does `Vector3 * CFrame`. There is no division operator.
 
@@ -87,11 +87,13 @@ local base = CFrame.new(0, 5, 0)
 local door = base * CFrame.Angles(0, math.rad(90), 0)
 
 print(door.Position)      -- 0, 5, 0
-print(door.LookVector)    -- -1, 0, 0
+print(door.LookVector)    -- -1, 0, 4.37114e-08
 
 local hinge = door * Vector3.new(0, 0, -3)
-print(hinge)              -- -3, 5, 0
+print(hinge.X, hinge.Y, hinge.Z)   -- -3, 5, 1.31134e-07
 ```
+
+The near-zero values are what 90 degrees comes out as in single precision. Use `math.rad(90)` for reading, and compare frames with `==` rather than exact component values.
 
 ## See also
 

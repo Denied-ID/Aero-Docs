@@ -32,7 +32,7 @@ Both members are read-only. Read the numbers through them, as in `size.X.Scale`.
 | a + b, a - b | Adds or subtracts each of the four numbers. Both sides must be UDim2. |
 | -a | Negates all four numbers. |
 | a * n, n * a | Multiplies the scale of each axis. Offsets are left alone. |
-| a == b | True when all four numbers are within `1e-4`. |
+| a == b | True when all four numbers are closer than `1e-4`. |
 
 The multiplication rule differs from UDim, where a number scales both the scale and the offset. There is no division operator.
 

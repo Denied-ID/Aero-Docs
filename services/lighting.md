@@ -13,14 +13,16 @@ Sun, sky, and atmosphere for the place.
 | DayOfYear | number | Day of the year from 1 to 365. Default 80, about the spring equinox. |
 | GeographicLatitude | number | Latitude in degrees, from -90 to 90. Default 41.733299. |
 | Brightness | number | Overall light intensity. Clamped to 0 and up. Default 1. |
-| Ambient | Color3 | Light that reaches surfaces in shadow. Not clamped. |
-| OutdoorAmbient | Color3 | Ambient light outside. Not clamped. |
+| Ambient | Color3 | The ambient light at night. Not clamped. |
+| OutdoorAmbient | Color3 | The ambient light during the day. Not clamped. |
 | ColorShift_Top | Color3 | Tint added to surfaces facing up. Clamped from 0 to 1 per channel. |
 | ColorShift_Bottom | Color3 | Tint added to surfaces facing down. Clamped from 0 to 1 per channel. |
 | ShadowSoftness | number | How soft shadow edges are, from 0 to 1. Default 0.5. |
 | GlobalShadows | boolean | Whether the sun and moon cast shadows. Default true. |
 
 `ClockTime` and `TimeOfDay` are two views of one value. Setting either updates the other.
+
+`Ambient` and `OutdoorAmbient` are blended by how high the sun is. At night the world takes `Ambient`; during the day it takes `OutdoorAmbient`, and twilight mixes the two.
 
 An invalid `TimeOfDay` string is ignored, and the clock keeps its previous time. No error is raised, so a typo shows up as a time that never changes.
 

@@ -2,13 +2,13 @@
 
 A frame with a scrollable canvas inside it.
 
-A `ScrollingFrame` shows part of a larger area and lets the player scroll to the rest. Children are laid out on the canvas, not on the visible frame, so the canvas usually needs to be taller than the frame.
+A `ScrollingFrame` shows part of a larger area and lets the player scroll to the rest. Children are laid out against the canvas height while their X follows the frame's own width, so the canvas usually needs to be taller than the frame.
 
 ## Properties
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| CanvasSize | UDim2 | The size of the scrollable area. Children lay out against it. |
+| CanvasSize | UDim2 | The size of the scrollable area. Children lay out against its Y; their X uses the frame's own width. |
 | CanvasPosition | Vector2 | How far the canvas is scrolled, in pixels. Assigning a value wins over an ease already in flight. |
 | ScrollingEnabled | boolean | Whether the mouse wheel moves the canvas. |
 | ScrollBarThickness | number | Width reserved on the right when `VerticalScrollBarInset` is 1, in pixels. Default 12. |

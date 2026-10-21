@@ -59,7 +59,7 @@ Printing one gives its name.
 local brick = BrickColor.new("Bright red")
 print(brick.Name)       -- Bright red
 print(brick.Number)     -- 21
-print(brick.Color)      -- 1, 0, 0
+print(brick.Color)      -- 0.768627, 0.156863, 0.109804
 
 local grey = BrickColor.new(9999)
 print(grey.Name)        -- Medium stone grey

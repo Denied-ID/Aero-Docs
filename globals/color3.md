@@ -44,7 +44,7 @@ The channels are read-only.
 | a * b | Component-wise product. |
 | a * n, n * a | Scales each channel by the number. |
 | a / n | Divides each channel by the number. |
-| a == b | True when every channel is within `1e-4`. |
+| a == b | True when every channel is closer than `1e-4`. |
 
 There is no division between two colors, and dividing by zero does not raise. The channel becomes infinity or NaN instead.
 

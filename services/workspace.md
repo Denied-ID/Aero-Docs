@@ -48,13 +48,13 @@ On a client, physics runs on the server, so the ray sees the interpolated positi
 ## Example
 
 ```lua
-local origin = Vector3.new(0, 10, 0)
-local direction = Vector3.new(0, -1, 0)
+local platform = Instance.new("Part")
+platform.Name = "Platform"
+platform.Size = Vector3.new(40, 1, 40)
+platform.Anchored = true
+platform.Parent = workspace
 
-local result = workspace:Raycast(origin, direction, 100, {
-    IgnoreCanCollide = true,
-    FilterDescendantsInstances = { workspace.Character },
-})
+local result = workspace:Raycast(Vector3.new(0, 10, 0), Vector3.new(0, -1, 0), 100)
 
 if result then
     print("hit", result.Instance.Name, "at", result.Position, "in", result.Distance, "studs")

@@ -11,7 +11,7 @@ A `Frame` is the basic interface container. It has a position, a size, a backgro
 | Position | UDim2 | Where the frame sits inside its parent. |
 | Size | UDim2 | How large the frame is. |
 | AnchorPoint | UDim2 | Which point of the frame `Position` refers to. `0.5, 0.5` centers it. |
-| AbsolutePosition | Vector2 | The position in pixels on screen. Read-only. |
+| AbsolutePosition | Vector2 | The position in pixels relative to the parent's top-left. Read-only. |
 | AbsoluteSize | Vector2 | The size in pixels on screen. Read-only. |
 
 The read-only pair is what layout code uses after a resize, because it has already applied the scale parts.
@@ -67,6 +67,7 @@ panel.BackgroundColor3 = Color3.fromRGB(24, 24, 28)
 panel.BackgroundTransparency = 0
 panel.BorderSizePixel = 1
 panel.BorderColor3 = Color3.fromRGB(70, 70, 80)
+panel.Active = true
 
 panel.MouseEnter:Connect(function ()
     panel.BackgroundColor3 = Color3.fromRGB(40, 40, 48)

@@ -24,7 +24,12 @@ UIGradient has no methods of its own. It also has the shared Instance members; s
 ## Example
 
 ```lua
-local bar = Instance.new("Frame")
+local playerGui = game:GetService("Players").LocalPlayer.PlayerGui
+
+local screen = Instance.new("ScreenGui")
+screen.Parent = playerGui
+
+local bar = Instance.new("Frame", screen)
 bar.Size = UDim2.new(0, 240, 0, 24)
 bar.BackgroundColor3 = Color3.new(1, 1, 1)
 bar.BackgroundTransparency = 0

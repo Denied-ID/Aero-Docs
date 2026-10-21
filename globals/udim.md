@@ -28,7 +28,7 @@ Both members are read-only.
 | --- | --- |
 | a + b, a - b | Adds or subtracts scale and offset separately. |
 | a * n, n * a | Multiplies both the scale and the offset. |
-| a == b | True when both parts are within `1e-4`. |
+| a == b | True when both parts are closer than `1e-4`. |
 
 There is no unary minus and no division. To subtract a UDim, subtract it.
 

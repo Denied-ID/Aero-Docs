@@ -46,7 +46,7 @@ This type accepts either case: `X` or `x`, `Magnitude` or `magnitude`.
 | a * b | Component-wise product. |
 | a * n, n * a | Scales each component. |
 | a / b, a / n | Component-wise division, or division by a number. |
-| a == b | True when both components are within `1e-4` of each other. |
+| a == b | True when both components are closer than `1e-4` to each other. |
 
 Division by zero does not raise here. The affected component becomes infinity or NaN, which is easy to miss, so guard the divisor yourself.
 

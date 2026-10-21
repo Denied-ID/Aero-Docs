@@ -8,13 +8,13 @@ The engine's clock: signals for each step and queries about where the script is 
 
 | Event | Callback arguments | When it fires |
 | --- | --- | --- |
-| PreSimulation | deltaTime | Before physics for the step. |
-| Stepped | time, deltaTime | During the step, with the accumulated clock in seconds. |
-| Heartbeat | deltaTime | After physics for the step. |
-| PostSimulation | deltaTime | At the end of the step. |
+| PreSimulation | deltaTime | First of the four per-frame signals. |
+| Stepped | time, deltaTime | Second, with the accumulated clock in seconds. |
+| Heartbeat | deltaTime | Third. |
+| PostSimulation | deltaTime | Fourth, at the end of the group. |
 | RenderStepped | deltaTime | Before each rendered frame, on the client. |
 
-`RenderStepped` only fires on a client. The other four fire on both sides.
+The first four run in the order listed, once per frame, after that frame's physics steps. `RenderStepped` only fires on a client, and it runs before the camera moves for the frame.
 
 ## Methods
 
@@ -41,7 +41,7 @@ end)
 
 if RunService:IsClient() then
     RunService:BindToRenderStep("Hud", Enum.RenderPriority.Last.Value, function (deltaTime)
-        -- Runs before each frame, after the camera.
+        -- Runs before the camera moves this frame.
     end)
 end
 ```

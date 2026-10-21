@@ -2,7 +2,7 @@
 
 A layer of interface that covers the screen.
 
-A `ScreenGui` is the root of an interface tree. Frames, labels, and buttons only draw when they sit under one. A client copies `ScreenGui` objects from StarterGui into its PlayerGui, and that copy is what the player sees.
+A `ScreenGui` is the root of an interface tree. Frames, labels, and buttons only draw when they sit under one. The engine copies `ScreenGui` objects from StarterGui into each player's PlayerGui when the player joins, and that copy is what the player sees.
 
 ## Properties
 

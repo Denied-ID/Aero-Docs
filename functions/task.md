@@ -2,7 +2,7 @@
 
 Pausing and scheduling for scripts.
 
-The `task` library starts code on its own thread and controls when that thread runs. Every thread it creates belongs to the script that scheduled it, so `script` still points at the right instance and errors still report against it.
+The `task` library starts code on its own thread and controls when that thread runs. A thread started from script code remembers that script, so `script` still points at the right instance in it. A thread started inside a signal handler has no script of its own, and a failure there reports as `Script error [?]`.
 
 ## Members
 
@@ -15,7 +15,7 @@ The `task` library starts code on its own thread and controls when that thread r
 
 ## Waiting
 
-`task.wait()` with no argument waits one frame, which is 1/60 of a second. A negative duration counts as zero, so it waits for the next frame instead of skipping ahead.
+`task.wait()` with no argument sleeps 1/60 of a second. At 60 frames per second that is one frame; above 60 the sleep spans more than one. A negative duration counts as zero, so it waits for the next update instead of skipping ahead.
 
 The return value is how long the wait really took, not the duration you asked for:
 
