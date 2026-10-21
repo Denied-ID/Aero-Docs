@@ -1,6 +1,6 @@
 ﻿# API Reference
 
-Everything Luau scripts can access. Each class, service, function, and value type has its own page below. Starting from zero? The [guides](../guides/index.md) cover installation, the editor, and a first script.
+Everything Luau scripts can access. New to Aero? Start with the [guides](../guides/index.md).
 
 ## Classes
 
