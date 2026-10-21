@@ -20,9 +20,23 @@ Syncing happens while you edit. During play, scripts change their own copies and
 
 A saved kit is one `.aekit` file holding the kit and everything inside it. Studio keeps two libraries: a folder named after the place, beside its `.aepl` file, and a global folder at `%LOCALAPPDATA%\Aero\Kits` shared by every place. A place called `Harbor.aepl` keeps its kits in `Harbor.kits\`.
 
-Open the Kit Tray from View > Kit Tray to see both libraries. Double-click a kit to insert it, or use Import Kit... to read a `.aekit` from anywhere. Every insert keeps the file's `KitId`, so two copies of the same saved kit start out linked. When the place already holds a kit with that id, the tray inserts the copy already in the place instead of the file.
+Open the Kit Tray from View > Kit Tray. It lives in the left column under Insert Objects and lists both libraries as This Place and Global, each with a count. The search box filters the list, and Studio watches both folders, so a kit saved by any means appears without pressing Refresh.
 
-Right-click a kit in the Explorer for these actions:
+Create Kit from Selection turns the selected Model, Folder, or Kit into a kit and writes it to the library under the name you type. Double-click a kit to insert it under the selection, or drag a row into the viewport or the Explorer to place it there. Import Kit... reads kits from any folder, and every insert keeps the file's `KitId`, so copies of the same saved kit start out linked. When the place already holds a kit with that id, the tray inserts the copy already in the place instead of the file.
+
+Right-click a tray row for these actions:
+
+| Action | What it does |
+| --- | --- |
+| Insert | Places the kit under the selection. |
+| Rename... | Renames the kit and its file. |
+| Duplicate | Makes a copy named " Copy" beside the original. |
+| Export Kit to File... | Writes the `.aekit` to a folder you pick. |
+| Promote to Global | Copies the kit to the global library and keeps the place copy. |
+| Show Details | Lists the part count, size, modified date, and file path. |
+| Delete | Removes the file from the library; placed copies stay in the place. |
+
+Right-click a Model, Folder, or Kit in the Explorer and open the Kit submenu for the in-place actions:
 
 | Action | What it does |
 | --- | --- |
@@ -32,7 +46,7 @@ Right-click a kit in the Explorer for these actions:
 | Save to Global Kits... | Writes the kit to the global library. |
 | Export Kit to File... | Writes a `.aekit` to a folder you pick, for handing the build to someone else. |
 
-Saving a kit that has no `KitId` yet gives it one, so the file has an identity to follow. A place that has never been saved has no folder of its own, so Save as Kit writes to the global library instead.
+Saving a kit that has no `KitId` yet gives it one, so the file has an identity to follow. Naming a kit on save also renames the kit in the place. A place that has never been saved has no folder of its own, so Save as Kit writes to the global library instead.
 
 ## How library files follow edits
 
