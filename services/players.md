@@ -9,7 +9,7 @@ Everyone connected, and the signals for joining and leaving.
 | Member | Type | What it does |
 | --- | --- | --- |
 | LocalPlayer | Player or nil | The player for this client. Read-only, and always nil on the server. |
-| MaxPlayers | number | The player limit. Stored and replicated; nothing refuses a connection because of it yet. |
+| MaxPlayers | number | The player limit. Stored and replicated; connections are not refused because of it. |
 | PlayerAdded | event | Fires on the server when someone joins. |
 | PlayerRemoving | event | Fires on the server before someone leaves. |
 

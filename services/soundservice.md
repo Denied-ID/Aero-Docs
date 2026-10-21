@@ -13,7 +13,7 @@ Settings for music and ambience.
 
 ## A note on audio
 
-The settings are stored and readable, but the engine does not mix audio yet. Changing them will not make anything audible.
+The settings are stored and readable, but the engine does not mix audio. Changing them makes nothing audible.
 
 ## Members
 

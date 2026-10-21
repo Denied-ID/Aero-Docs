@@ -2,7 +2,7 @@
 
 Keyboard and mouse input on the client.
 
-`UserInputService` reports input as it happens and answers questions about what is held right now. It only works on a client, where there is a keyboard and a pointer to read. Touch and gamepad have no path through the engine yet.
+`UserInputService` reports input as it happens and answers questions about what is held right now. It only works on a client, where there is a keyboard and a pointer to read. Touch and gamepad have no path through the engine.
 
 ## Properties
 
@@ -12,7 +12,7 @@ Keyboard and mouse input on the client.
 | MouseEnabled | boolean | Always true. Read-only. |
 | TouchEnabled | boolean | Always false, because touch input is not implemented. Read-only. |
 | GamepadEnabled | boolean | Always false, because gamepad input is not implemented. Read-only. |
-| MouseBehavior | number | Stored, but nothing reads it yet, so the mouse is never captured. |
+| MouseBehavior | number | Stored, but nothing reads it, so the mouse is never captured. |
 
 ## Events
 
@@ -22,7 +22,7 @@ Keyboard and mouse input on the client.
 | InputEnded | input, gameProcessed | It came back up. |
 | InputChanged | input, gameProcessed | The mouse wheel turned. |
 
-`input` is an [InputObject](../classes/inputobject.md). The `gameProcessed` flag exists for the day the engine's own interface claims an event, but every event sent so far passes false.
+`input` is an [InputObject](../classes/inputobject.md). The `gameProcessed` flag is false on every event; the engine's own interface does not claim input.
 
 ## Methods
 

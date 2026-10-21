@@ -26,7 +26,7 @@ The first four run in the order listed, once per frame, after that frame's physi
 | BindToRenderStep(name, priority, callback) | nothing | Calls `callback(deltaTime)` before each rendered frame. |
 | UnbindFromRenderStep(name) | nothing | Removes the binding with that name. |
 
-`BindToRenderStep` is client-only, like `RenderStepped`. Binding the same name again replaces the earlier callback. The priority argument is accepted but does not change the order yet.
+`BindToRenderStep` is client-only, like `RenderStepped`. Binding the same name again replaces the earlier callback. The priority argument is accepted and has no effect.
 
 ## Example
 
