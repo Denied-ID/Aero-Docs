@@ -9,7 +9,7 @@ A `Humanoid` sits inside a character model next to the parts that make up its bo
 | Property | Type | What it does |
 | --- | --- | --- |
 | WalkSpeed | number | Movement speed in studs per second. |
-| JumpPower | number | Stored, but the jump arc uses a fixed jump height, so changing this does not change a jump yet. |
+| JumpPower | number | Stored, but the jump arc uses a fixed jump height, so changing this does not change a jump. |
 | Health | number | Current health. |
 | MaxHealth | number | The value the health bar is drawn against. Replicated health is capped to it. |
 | AutoRotate | boolean | Whether the character turns to face the direction it moves. |

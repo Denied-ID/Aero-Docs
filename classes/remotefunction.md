@@ -57,5 +57,6 @@ print(ok, message)    -- true, bought
 ## See also
 
 - [RemoteEvent](remoteevent.md): messages that do not wait for an answer.
+- [Client and server](../scripting/client-and-server.md): the model this call crosses.
 - [Instance](../globals/instance.md): the shared members.
 - [API Reference](../api/api.md)

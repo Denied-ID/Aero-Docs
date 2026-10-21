@@ -40,29 +40,29 @@ Two items are equal when they come from the same list and have the same value. P
 
 ### Material
 
-| Item | Value |
-| --- | --- |
-| Plastic | 256 |
-| SmoothPlastic | 272 |
-| Neon | 288 |
-| Wood | 512 |
-| WoodPlanks | 528 |
-| Slate | 800 |
-| Concrete | 816 |
-| Granite | 832 |
-| Marble | 848 |
-| Brick | 864 |
-| Pebble | 880 |
-| Cobblestone | 896 |
-| CorrodedMetal | 1040 |
-| DiamondPlate | 1056 |
-| Foil | 1072 |
-| Metal | 1088 |
-| Grass | 1280 |
-| Sand | 1296 |
-| Fabric | 1312 |
-| Glass | 1568 |
-| ForceField | 1584 |
+| Item |
+| --- |
+| Plastic |
+| SmoothPlastic |
+| Neon |
+| Wood |
+| WoodPlanks |
+| Slate |
+| Concrete |
+| Granite |
+| Marble |
+| Brick |
+| Pebble |
+| Cobblestone |
+| CorrodedMetal |
+| DiamondPlate |
+| Foil |
+| Metal |
+| Grass |
+| Sand |
+| Fabric |
+| Glass |
+| ForceField |
 
 ### PartType
 
@@ -203,18 +203,18 @@ Two items are equal when they come from the same list and have the same value. P
 
 ### SurfaceType
 
-| Item | Value |
-| --- | --- |
-| Smooth | 0 |
-| Glue | 1 |
-| Weld | 2 |
-| Studs | 3 |
-| Inlet | 4 |
-| Universal | 5 |
-| Hinge | 6 |
-| Motor | 7 |
-| SteppingMotor | 8 |
-| SmoothNoOutlines | 10 |
+| Item |
+| --- |
+| Smooth |
+| Glue |
+| Weld |
+| Studs |
+| Inlet |
+| Universal |
+| Hinge |
+| Motor |
+| SteppingMotor |
+| SmoothNoOutlines |
 
 ## Example
 
@@ -226,7 +226,6 @@ if part.Material == Enum.Material.Neon then
     print("glowing")
 end
 
-print(Enum.Material.Neon.Value)      -- 288
 print(Enum.Material.Neon.EnumType)   -- Material
 ```
 

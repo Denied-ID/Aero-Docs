@@ -38,6 +38,7 @@ end)
 ## See also
 
 - [Script](script.md): code that runs on the server.
+- [Client and server](../scripting/client-and-server.md): the two halves of a place.
 - [UserInputService](../services/userinputservice.md): input on the client.
 - [Instance](../globals/instance.md): the shared members.
 - [API Reference](../api/api.md)
