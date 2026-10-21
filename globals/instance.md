@@ -1,4 +1,4 @@
-﻿# Instance
+# Instance
 
 The base of every object, with Instance.new to create them.
 
@@ -155,4 +155,4 @@ print(part:GetFullName())    -- Workspace.Loot.Part
 
 - [game](../globals/game.md): the root of the tree.
 - [Vector3](../globals/vector3.md): positions and directions.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

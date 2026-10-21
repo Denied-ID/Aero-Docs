@@ -1,4 +1,4 @@
-﻿# Color3
+# Color3
 
 A color mixed from red, green, and blue.
 
@@ -63,4 +63,4 @@ print(faded:ToHex())       -- ffc480
 
 - [BrickColor](brickcolor.md): a color picked from a fixed palette.
 - [Part](../classes/part.md): where a color usually goes.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

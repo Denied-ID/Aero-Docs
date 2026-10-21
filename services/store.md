@@ -43,4 +43,4 @@ print(store:Get("inventory")[1])
 
 ## See also
 
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

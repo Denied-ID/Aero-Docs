@@ -1,4 +1,4 @@
-﻿# warn
+# warn
 
 Writes a warning line to the Output panel.
 
@@ -25,5 +25,5 @@ The Output panel shows `Warn: Door is missing from the workspace`.
 ## See also
 
 - [print](print.md): the plain output call.
-- [Troubleshooting](../getting-started/troubleshooting.md): what to do with the errors you find.
-- [API Reference](../api/api.md)
+- [Troubleshooting](../guides/troubleshooting.md): what to do with the errors you find.
+- [API Reference](../api/index.md)

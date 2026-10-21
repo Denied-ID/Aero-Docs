@@ -1,4 +1,4 @@
-﻿# TextLabel
+# TextLabel
 
 A line of text on the screen.
 
@@ -53,4 +53,4 @@ label.TextYAlignment = 1
 - [TextButton](textbutton.md): text that can be clicked.
 - [TextBox](textbox.md): text the player can type.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

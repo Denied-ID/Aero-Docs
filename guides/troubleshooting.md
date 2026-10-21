@@ -46,4 +46,4 @@ Two dialogs you may see:
 
 ## Where to go next
 
-Back to [Installation](installation.md) if you are still setting up, or the [Studio Tour](../studio/studio-tour.md) to keep learning the editor.
+Back to [Installation](installation.md) if you are still setting up, or the [Studio Tour](studio-tour.md) to keep learning the editor.

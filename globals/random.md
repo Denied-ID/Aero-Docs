@@ -1,4 +1,4 @@
-﻿# Random
+# Random
 
 Random numbers with its own seed.
 
@@ -50,4 +50,4 @@ end
 
 - [BrickColor](brickcolor.md): a palette with its own random picker.
 - [Vector3](vector3.md): what `NextUnitVector` returns.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

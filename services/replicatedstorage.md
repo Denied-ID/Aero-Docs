@@ -1,4 +1,4 @@
-﻿# ReplicatedStorage
+# ReplicatedStorage
 
 Content both sides need.
 
@@ -27,4 +27,4 @@ Both sides can find the same instance by the same path, which is what makes it a
 - [RemoteEvent](../classes/remoteevent.md): a channel kept here.
 - [ModuleScript](../classes/modulescript.md): shared code kept here.
 - [ServerScriptService](serverscriptservice.md): the server-only container.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

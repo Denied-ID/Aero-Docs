@@ -1,4 +1,4 @@
-﻿# RunService
+# RunService
 
 The engine's clock: signals for each step and queries about where the script is running.
 
@@ -51,4 +51,4 @@ end
 - [task](../functions/task.md): scheduling without a per-frame signal.
 - [TweenService](tweenservice.md): animation that runs off the same clock.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

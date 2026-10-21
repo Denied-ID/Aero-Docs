@@ -1,4 +1,4 @@
-﻿# Enum
+# Enum
 
 Named lists of options.
 
@@ -233,4 +233,4 @@ print(Enum.Material.Neon.EnumType)   -- Material
 
 - [Instance](../globals/instance.md): objects whose properties take enum items.
 - [TweenInfo](tweeninfo.md): easing styles and directions.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

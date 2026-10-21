@@ -1,4 +1,4 @@
-﻿# require
+# require
 
 Loads a ModuleScript and returns what it returned.
 
@@ -48,4 +48,4 @@ print(MathUtil.clamp(12, 0, 10))    -- 10
 
 - [ModuleScript](../classes/modulescript.md): the instance `require` reads.
 - [Instance](../globals/instance.md): how to find the module in the tree.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

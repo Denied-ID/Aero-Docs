@@ -1,4 +1,4 @@
-﻿# UDim
+# UDim
 
 A length that scales with its parent, plus pixels.
 
@@ -45,4 +45,4 @@ print(doubled)    -- {0.1, 16}
 ## See also
 
 - [UDim2](udim2.md): a UDim for each axis.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

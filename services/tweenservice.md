@@ -1,4 +1,4 @@
-﻿# TweenService
+# TweenService
 
 Animates properties smoothly over time.
 
@@ -52,4 +52,4 @@ close:Play()
 - [Tween](../classes/tween.md): the object this service builds.
 - [TweenInfo](../globals/tweeninfo.md): duration, easing, and repeats.
 - [RunService](runservice.md): the clock the tween runs on.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

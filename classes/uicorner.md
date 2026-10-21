@@ -1,4 +1,4 @@
-﻿# UICorner
+# UICorner
 
 Rounds the corners of the interface object it sits in.
 
@@ -36,4 +36,4 @@ corner.CornerRadius = UDim.new(0.25, 0)
 - [UIStroke](uistroke.md): an outline around the same object.
 - [UIGradient](uigradient.md): a color gradient across it.
 - [Frame](frame.md): the usual parent.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

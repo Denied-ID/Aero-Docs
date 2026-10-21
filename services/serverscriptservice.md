@@ -1,4 +1,4 @@
-﻿# ServerScriptService
+# ServerScriptService
 
 Server-only content.
 
@@ -26,4 +26,4 @@ A Script placed here runs on the server. A LocalScript placed here never runs, b
 
 - [Script](../classes/script.md): the class that runs on the server.
 - [ReplicatedStorage](replicatedstorage.md): content shared with clients.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

@@ -1,4 +1,4 @@
-﻿# BrickColor
+# BrickColor
 
 A named color from the classic palette.
 
@@ -69,4 +69,4 @@ print(grey.Name)        -- Medium stone grey
 
 - [Color3](color3.md): colors mixed from channels.
 - [Part](../classes/part.md): the usual place a BrickColor ends up.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

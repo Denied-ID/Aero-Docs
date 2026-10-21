@@ -1,4 +1,4 @@
-﻿# RemoteEvent
+# RemoteEvent
 
 Sends values between the server and clients.
 
@@ -62,7 +62,7 @@ ping:FireServer("hello")
 ## See also
 
 - [RemoteFunction](remotefunction.md): a call that returns a value.
-- [Client and server](../scripting/client-and-server.md): the model this channel crosses.
+- [Client and server](../guides/client-and-server.md): the model this channel crosses.
 - [Players](../services/players.md): where players come from.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

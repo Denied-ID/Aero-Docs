@@ -1,4 +1,4 @@
-﻿# StarterGui
+# StarterGui
 
 The interface every player starts with.
 
@@ -39,4 +39,4 @@ Run this from a LocalScript, because each client controls its own interface.
 - [ScreenGui](../classes/screengui.md): the layers copied from here.
 - [CoreGui](coregui.md): the elements the methods above control.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

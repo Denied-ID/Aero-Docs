@@ -1,4 +1,4 @@
-﻿# Players
+# Players
 
 Everyone connected, and the signals for joining and leaving.
 
@@ -58,4 +58,4 @@ print(#Players:GetPlayers(), "players connected")
 - [Player](../classes/player.md): the player object.
 - [StarterGui](startergui.md): what each player's interface starts from.
 - [StarterPack](starterpack.md): what each player's backpack starts from.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

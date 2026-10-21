@@ -1,4 +1,4 @@
-﻿# print
+# print
 
 Writes a line to the Output panel.
 
@@ -26,4 +26,4 @@ print(crate)                 -- Crate
 
 - [warn](warn.md): the same output with a warning label.
 - [Perf](../services/perf.md): timings written to the Output.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

@@ -45,4 +45,4 @@ end
 
 ## See also
 
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

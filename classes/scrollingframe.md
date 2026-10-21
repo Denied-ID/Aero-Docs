@@ -1,4 +1,4 @@
-﻿# ScrollingFrame
+# ScrollingFrame
 
 A frame with a scrollable canvas inside it.
 
@@ -58,4 +58,4 @@ end
 - [Frame](frame.md): the members this class starts from.
 - [UDim2](../globals/udim2.md): canvas sizes.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

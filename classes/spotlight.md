@@ -1,4 +1,4 @@
-﻿# SpotLight
+# SpotLight
 
 A cone of light.
 
@@ -43,4 +43,4 @@ beam.Brightness = 4
 - [PointLight](pointlight.md): light in every direction.
 - [SurfaceLight](surfacelight.md): a cone from a surface.
 - [Enum](../globals/enum.md): the NormalId list.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

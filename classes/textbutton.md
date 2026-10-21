@@ -1,4 +1,4 @@
-﻿# TextButton
+# TextButton
 
 A button with a text label on it.
 
@@ -41,4 +41,4 @@ end)
 - [Frame](frame.md): the layout members.
 - [TextBox](textbox.md): text the player can type.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

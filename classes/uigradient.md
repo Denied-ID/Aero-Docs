@@ -1,4 +1,4 @@
-﻿# UIGradient
+# UIGradient
 
 Blends two colors across the interface object it sits in.
 
@@ -45,4 +45,4 @@ gradient.Rotation = 90
 - [UICorner](uicorner.md): rounded corners.
 - [UIStroke](uistroke.md): an outline.
 - [Frame](frame.md): the usual parent.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

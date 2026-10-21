@@ -1,4 +1,4 @@
-﻿# Vector2
+# Vector2
 
 A point on a flat surface, like a screen.
 
@@ -66,4 +66,4 @@ print(move.Unit)                       -- 0.6, 0.8
 
 - [Vector3](vector3.md): the 3D version.
 - [UDim2](udim2.md): how interface sizes are written.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

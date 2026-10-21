@@ -1,4 +1,4 @@
-﻿# ImageLabel
+# ImageLabel
 
 A picture on the screen.
 
@@ -42,4 +42,4 @@ icon.ImageColor3 = Color3.fromRGB(255, 220, 90)
 - [Frame](frame.md): the members this class starts from.
 - [TextLabel](textlabel.md): text instead of a picture.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

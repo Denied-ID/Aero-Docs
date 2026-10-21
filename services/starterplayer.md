@@ -1,4 +1,4 @@
-﻿# StarterPlayer
+# StarterPlayer
 
 Client-side content that runs where it sits.
 
@@ -22,4 +22,4 @@ print("client ready for", Players.LocalPlayer.Name)
 - [LocalScript](../classes/localscript.md): the class that runs here.
 - [StarterGui](startergui.md): interface copied into each player.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

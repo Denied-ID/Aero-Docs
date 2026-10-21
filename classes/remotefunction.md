@@ -1,4 +1,4 @@
-﻿# RemoteFunction
+# RemoteFunction
 
 Calls the server from a client and waits for the answer.
 
@@ -57,6 +57,6 @@ print(ok, message)    -- true, bought
 ## See also
 
 - [RemoteEvent](remoteevent.md): messages that do not wait for an answer.
-- [Client and server](../scripting/client-and-server.md): the model this call crosses.
+- [Client and server](../guides/client-and-server.md): the model this call crosses.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

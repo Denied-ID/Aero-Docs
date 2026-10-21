@@ -1,4 +1,4 @@
-﻿# Humanoid
+# Humanoid
 
 Makes a model walk, jump, and take damage.
 
@@ -66,4 +66,4 @@ Player has no `CharacterAdded` event. The character arrives as a change to `Play
 - [Player](player.md): the player a character belongs to.
 - [Model](model.md): the group a character is built in.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

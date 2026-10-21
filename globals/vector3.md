@@ -1,4 +1,4 @@
-﻿# Vector3
+# Vector3
 
 A point or direction in 3D space.
 
@@ -61,4 +61,4 @@ print(offset:Dot(Vector3.one))  -- 30
 
 - [CFrame](cframe.md): a position plus a rotation.
 - [Vector2](vector2.md): the flat version.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

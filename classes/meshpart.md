@@ -1,4 +1,4 @@
-﻿# MeshPart
+# MeshPart
 
 A part whose shape comes from a mesh file.
 
@@ -37,4 +37,4 @@ rock.Parent = workspace
 
 - [Part](part.md): the box-shaped version.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

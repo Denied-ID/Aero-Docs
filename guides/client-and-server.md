@@ -45,5 +45,5 @@ The [RemoteEvent](../classes/remoteevent.md) page shows the pair of scripts that
 ## See also
 
 - [Script](../classes/script.md) and [LocalScript](../classes/localscript.md): the two classes and where they start.
-- [Testing your place](../guides/testing-your-place.md): both halves running in one Studio process.
-- [API Reference](../api/api.md)
+- [Testing your place](testing-your-place.md): both halves running in one Studio process.
+- [API Reference](../api/index.md)

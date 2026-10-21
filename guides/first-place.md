@@ -1,6 +1,6 @@
 # Your first place
 
-Build a small place, script both halves of it, and play it. Every menu and key here is in the [Studio Tour](../studio/studio-tour.md), and every name in the scripts is in the [API reference](../api/api.md).
+Build a small place, script both halves of it, and play it. Every menu and key here is in the [Studio Tour](studio-tour.md), and every name in the scripts is in the [API reference](../api/index.md).
 
 ## Start the place
 
@@ -44,6 +44,6 @@ Press Shift+F5 to end the test. The place returns exactly as it was, so changes 
 
 ## Where to go next
 
-- [Client and server](../scripting/client-and-server.md): why the two scripts ran on two halves.
-- [Testing your place](../guides/testing-your-place.md): what Play actually started.
-- [API Reference](../api/api.md): everything scripts can reach.
+- [Client and server](client-and-server.md): why the two scripts ran on two halves.
+- [Testing your place](testing-your-place.md): what Play actually started.
+- [API Reference](../api/index.md): everything scripts can reach.

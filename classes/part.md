@@ -1,4 +1,4 @@
-﻿# Part
+# Part
 
 A solid block, and the basic building piece.
 
@@ -91,4 +91,4 @@ Any unanchored part starts falling as soon as it is parented into Workspace.
 - [CFrame](../globals/cframe.md): positions and rotations.
 - [Enum](../globals/enum.md): materials, shapes, and surface types.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

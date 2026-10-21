@@ -1,4 +1,4 @@
-﻿# CoreGui
+# CoreGui
 
 The engine's own interface.
 
@@ -19,4 +19,4 @@ StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
 
 - [StarterGui](startergui.md): the switch for these elements.
 - [ScreenGui](../classes/screengui.md): interface you author yourself.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)
