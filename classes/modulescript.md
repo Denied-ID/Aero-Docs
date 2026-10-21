@@ -1,4 +1,4 @@
-﻿# ModuleScript
+# ModuleScript
 
 Luau code that runs only when another script requires it.
 
@@ -36,4 +36,4 @@ print(Settings.respawnDelay)    -- 5
 - [require](../functions/require.md): how a module is loaded and cached.
 - [Script](script.md): code that starts by itself.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

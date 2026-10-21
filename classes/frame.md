@@ -1,4 +1,4 @@
-﻿# Frame
+# Frame
 
 A box that holds other interface objects.
 
@@ -80,4 +80,4 @@ end)
 - [TextLabel](textlabel.md): text inside a frame.
 - [UDim2](../globals/udim2.md): how position and size are written.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

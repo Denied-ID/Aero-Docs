@@ -1,4 +1,4 @@
-﻿# TweenInfo
+# TweenInfo
 
 Timing settings for an animation.
 
@@ -68,4 +68,4 @@ print(info.EasingStyle.Name)    -- Quad
 - [TweenService](../services/tweenservice.md): where a TweenInfo is used.
 - [Tween](../classes/tween.md): the animation object it configures.
 - [Enum](enum.md): the easing lists.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

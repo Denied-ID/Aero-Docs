@@ -1,4 +1,4 @@
-﻿# StarterPack
+# StarterPack
 
 The contents every player's backpack starts with.
 
@@ -22,4 +22,4 @@ The script above prints `Backpack`, not `StarterPack`, because the copy under th
 - [StarterGui](startergui.md): the same idea for interface.
 - [Player](../classes/player.md): where the Backpack appears.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

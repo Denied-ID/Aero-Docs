@@ -1,4 +1,4 @@
-﻿# Workspace
+# Workspace
 
 The place world.
 
@@ -68,4 +68,4 @@ end
 - [Part](../classes/part.md): the usual thing a ray hits.
 - [Vector3](../globals/vector3.md): origins and directions.
 - [game](../globals/game.md): the service container.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

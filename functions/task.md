@@ -1,4 +1,4 @@
-﻿# task
+# task
 
 Pausing and scheduling for scripts.
 
@@ -50,4 +50,4 @@ print("runs second")
 
 - [RunService](../services/runservice.md): signals that fire every step.
 - [script](../classes/script.md): the instance a scheduled thread belongs to.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

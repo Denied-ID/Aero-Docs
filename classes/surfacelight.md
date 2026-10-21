@@ -1,4 +1,4 @@
-﻿# SurfaceLight
+# SurfaceLight
 
 A cone of light from one face of a part.
 
@@ -41,4 +41,4 @@ glow.Angle = 90
 - [PointLight](pointlight.md): light in every direction.
 - [SpotLight](spotlight.md): a cone from a face too.
 - [Part](part.md): the usual parent.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

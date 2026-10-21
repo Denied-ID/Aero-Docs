@@ -1,4 +1,4 @@
-﻿# Lighting
+# Lighting
 
 Sun, sky, and atmosphere for the place.
 
@@ -53,4 +53,4 @@ print(Lighting:GetSunDirection())
 - [PointLight](../classes/pointlight.md): a local light source.
 - [Color3](../globals/color3.md): the color type used here.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

@@ -1,4 +1,4 @@
-﻿# ScreenGui
+# ScreenGui
 
 A layer of interface that covers the screen.
 
@@ -44,4 +44,4 @@ label.Text = "Ready"
 - [StarterGui](../services/startergui.md): the template each player receives.
 - [UDim2](../globals/udim2.md): sizes and positions.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

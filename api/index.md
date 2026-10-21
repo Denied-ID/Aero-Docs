@@ -1,16 +1,6 @@
 ﻿# API Reference
 
-Everything Luau scripts can access.
-
-## Guides
-
-| Guide | About |
-| --- | --- |
-| [Installation](../getting-started/installation.md) | Install Studio and open your first place. |
-| [Studio Tour](../studio/studio-tour.md) | Panels, toolbar, saving, and playtesting. |
-| [Testing your place](../guides/testing-your-place.md) | Play, Run, snapshots, and both halves in one Output. |
-| [Troubleshooting](../getting-started/troubleshooting.md) | Output errors, crash dialogs, and fixes. |
-| [Your first place](../tutorials/first-place.md) | Build and script a small place, then play it. |
+Everything Luau scripts can access. Each class, service, function, and value type has its own page below. Starting from zero? The [guides](../guides/index.md) cover installation, the editor, and a first script.
 
 ## Classes
 
@@ -80,7 +70,6 @@ Everything Luau scripts can access.
 
 | Page | About |
 | --- | --- |
-| [Client and server](../scripting/client-and-server.md) | Where code runs and what travels between the sides. |
 | [The Luau standard library](../scripting/luau.md) | What the VM provides beyond the engine's API. |
 
 ## Globals

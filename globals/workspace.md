@@ -1,4 +1,4 @@
-﻿# workspace
+# workspace
 
 Shortcut for the Workspace service.
 
@@ -24,4 +24,4 @@ Workspace has the shared Instance members plus the world properties and the `Ray
 
 - [Workspace](../services/workspace.md): the service page.
 - [Part](../classes/part.md): the most common thing to put here.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

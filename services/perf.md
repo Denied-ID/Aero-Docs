@@ -25,4 +25,4 @@ game:GetService("Perf"):Report()
 ## See also
 
 - [Testing your place](../guides/testing-your-place.md): the playtest pair the report measures.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

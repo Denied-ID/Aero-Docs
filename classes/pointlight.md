@@ -1,4 +1,4 @@
-﻿# PointLight
+# PointLight
 
 A light that shines in every direction from a point.
 
@@ -39,4 +39,4 @@ light.Shadows = true
 - [SpotLight](spotlight.md): a cone instead of every direction.
 - [SurfaceLight](surfacelight.md): light from one face of a part.
 - [Part](part.md): the usual parent.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

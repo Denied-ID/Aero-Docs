@@ -38,4 +38,4 @@ Start with [Troubleshooting](troubleshooting.md). Installer and update problems 
 
 ## Where to go next
 
-Read the [Studio Tour](../studio/studio-tour.md) to learn the editor, then browse the [API Reference](../api/api.md) when you start scripting.
+Read the [Studio Tour](studio-tour.md) to learn the editor, then browse the [API Reference](../api/index.md) when you start scripting.

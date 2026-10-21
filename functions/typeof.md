@@ -51,4 +51,4 @@ print(typeof(workspace))             -- Instance
 
 - [The Luau standard library](../scripting/luau.md): the rest of what the VM provides.
 - [Instance](../globals/instance.md): the objects typeof reports as Instance.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

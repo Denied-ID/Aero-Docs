@@ -1,4 +1,4 @@
-﻿# game
+# game
 
 The root of the instance tree, and the way to reach every service.
 
@@ -40,4 +40,4 @@ print(#Players:GetPlayers())
 
 - [workspace](workspace.md): the shortcut for the Workspace service.
 - [Instance](instance.md): the shared members every object has.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

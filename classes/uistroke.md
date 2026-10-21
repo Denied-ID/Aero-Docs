@@ -1,4 +1,4 @@
-﻿# UIStroke
+# UIStroke
 
 Draws an outline around the interface object it sits in.
 
@@ -48,4 +48,4 @@ stroke.LineJoinMode = 0
 - [UICorner](uicorner.md): rounded corners under the same outline.
 - [UIGradient](uigradient.md): a gradient across the fill.
 - [Frame](frame.md): the usual parent.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

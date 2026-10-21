@@ -1,4 +1,4 @@
-﻿# SoundService
+# SoundService
 
 Settings for music and ambience.
 
@@ -32,4 +32,4 @@ SoundService.AmbientReverb = "Hall"
 ## See also
 
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

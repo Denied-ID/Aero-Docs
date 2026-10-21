@@ -1,4 +1,4 @@
-﻿# UserInputService
+# UserInputService
 
 Keyboard and mouse input on the client.
 
@@ -64,4 +64,4 @@ end)
 - [InputObject](../classes/inputobject.md): what each event carries.
 - [LocalScript](../classes/localscript.md): where client input belongs.
 - [Enum](../globals/enum.md): key codes and input types.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

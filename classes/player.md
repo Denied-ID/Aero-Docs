@@ -1,4 +1,4 @@
-﻿# Player
+# Player
 
 One person in the game.
 
@@ -38,4 +38,4 @@ end)
 - [Players](../services/players.md): the list of players and the join signals.
 - [Humanoid](humanoid.md): the part of a character that moves and takes damage.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

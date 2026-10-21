@@ -1,4 +1,4 @@
-﻿# UDim2
+# UDim2
 
 A screen position and size that survives resizing.
 
@@ -53,4 +53,4 @@ print(centered.X.Scale) -- 0.5
 
 - [UDim](udim.md): one axis on its own.
 - [Frame](../classes/frame.md): an object placed with UDim2.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

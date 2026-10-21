@@ -2,7 +2,7 @@
 
 What the VM provides, on top of the engine's own API.
 
-Scripts on Aero are Luau scripts. Besides `game`, `Instance`, and everything else in the [API reference](../api/api.md), the VM ships a standard library of its own. This page lists what is available and where the engine has narrowed it. The Luau site, [luau.org](https://luau.org/), documents each function.
+Scripts on Aero are Luau scripts. Besides `game`, `Instance`, and everything else in the [API reference](../api/index.md), the VM ships a standard library of its own. This page lists what is available and where the engine has narrowed it. The Luau site, [luau.org](https://luau.org/), documents each function.
 
 ## Libraries
 
@@ -39,4 +39,4 @@ A script that runs too long without yielding is stopped. A single uninterrupted 
 
 - [typeof](../functions/typeof.md): names a value's type.
 - [task](../functions/task.md): Aero's scheduler, built on the same threads.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

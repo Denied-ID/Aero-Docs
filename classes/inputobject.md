@@ -1,4 +1,4 @@
-﻿# InputObject
+# InputObject
 
 What one input event carries.
 
@@ -43,4 +43,4 @@ end)
 - [UserInputService](../services/userinputservice.md): where input objects come from.
 - [Enum](../globals/enum.md): the key and input lists.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

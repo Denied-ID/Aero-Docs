@@ -1,4 +1,4 @@
-﻿# Folder
+# Folder
 
 A container that keeps the Explorer organized and can hold anything.
 
@@ -28,4 +28,4 @@ print(#loot:GetChildren())    -- 3
 
 - [Model](model.md): a group that also names a primary part.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

@@ -1,4 +1,4 @@
-﻿# Tween
+# Tween
 
 One animated property change.
 
@@ -52,4 +52,4 @@ tween:Play()
 - [TweenService](../services/tweenservice.md): builds a tween.
 - [TweenInfo](../globals/tweeninfo.md): the timing settings.
 - [Enum](../globals/enum.md): the PlaybackState list.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

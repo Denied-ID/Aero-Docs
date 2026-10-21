@@ -1,4 +1,4 @@
-﻿# CFrame
+# CFrame
 
 A position plus a rotation in 3D.
 
@@ -99,4 +99,4 @@ The near-zero values are what 90 degrees comes out as in single precision. Use `
 
 - [Vector3](vector3.md): points and directions.
 - [Part](../classes/part.md): the object most CFrames describe.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

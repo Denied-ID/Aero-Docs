@@ -1,4 +1,4 @@
-﻿# Model
+# Model
 
 A group of parts you can name and handle as one.
 
@@ -40,4 +40,4 @@ print(gate.PrimaryPart.Name)    -- Post
 - [Folder](folder.md): a container without a primary part.
 - [Part](part.md): what a model is usually made of.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

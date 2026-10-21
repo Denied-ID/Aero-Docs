@@ -1,4 +1,4 @@
-﻿# Script
+# Script
 
 Luau code that runs on the server.
 
@@ -35,6 +35,6 @@ print("server started")
 
 - [LocalScript](localscript.md): code that runs on each client.
 - [ModuleScript](modulescript.md): code that runs only when required.
-- [Client and server](../scripting/client-and-server.md): the two halves of a place.
+- [Client and server](../guides/client-and-server.md): the two halves of a place.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

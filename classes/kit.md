@@ -13,4 +13,4 @@ A named build that lives in the place. Copies sharing a `KitId` stay in sync whi
 ## See also
 
 - [Kits](../services/kits.md)
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

@@ -40,5 +40,5 @@ The [Store](../services/store.md) sidecar plays along too: a test reads the plac
 ## Where to go next
 
 - [Perf](../services/perf.md): reading the report.
-- [Troubleshooting](../getting-started/troubleshooting.md): when the test stops at a red line.
-- [Studio Tour](../studio/studio-tour.md): the rest of the toolbar.
+- [Troubleshooting](troubleshooting.md): when the test stops at a red line.
+- [Studio Tour](studio-tour.md): the rest of the toolbar.

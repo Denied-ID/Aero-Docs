@@ -1,4 +1,4 @@
-﻿# LocalScript
+# LocalScript
 
 Luau code that runs on each player's machine.
 
@@ -38,7 +38,7 @@ end)
 ## See also
 
 - [Script](script.md): code that runs on the server.
-- [Client and server](../scripting/client-and-server.md): the two halves of a place.
+- [Client and server](../guides/client-and-server.md): the two halves of a place.
 - [UserInputService](../services/userinputservice.md): input on the client.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)

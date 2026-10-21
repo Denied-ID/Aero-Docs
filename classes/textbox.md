@@ -1,4 +1,4 @@
-﻿# TextBox
+# TextBox
 
 A field the player can type into.
 
@@ -54,4 +54,4 @@ end)
 - [TextButton](textbutton.md): a button instead of a field.
 - [Frame](frame.md): the layout members.
 - [Instance](../globals/instance.md): the shared members.
-- [API Reference](../api/api.md)
+- [API Reference](../api/index.md)
