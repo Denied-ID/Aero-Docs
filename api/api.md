@@ -8,7 +8,9 @@ Everything Luau scripts can access.
 | --- | --- |
 | [Installation](../getting-started/installation.md) | Install Studio and open your first place. |
 | [Studio Tour](../studio/studio-tour.md) | Panels, toolbar, saving, and playtesting. |
+| [Testing your place](../guides/testing-your-place.md) | Play, Run, snapshots, and both halves in one Output. |
 | [Troubleshooting](../getting-started/troubleshooting.md) | Output errors, crash dialogs, and fixes. |
+| [Your first place](../tutorials/first-place.md) | Build and script a small place, then play it. |
 
 ## Classes
 
@@ -58,7 +60,7 @@ Everything Luau scripts can access.
 | [SoundService](../services/soundservice.md) | Global sound settings for the place. |
 | [StarterGui](../services/startergui.md) | Interface objects kept here are copied to each player. |
 | [StarterPack](../services/starterpack.md) | Contents kept here are copied to each player's backpack. |
-| [StarterPlayer](../services/starterplayer.md) | Client scripts that run on each player in place. |
+| [StarterPlayer](../services/starterplayer.md) | Client scripts that run in place on each player's client. |
 | [Store](../services/store.md) | Saves values with the place, on the server. |
 | [TweenService](../services/tweenservice.md) | Animates properties smoothly over time. |
 | [UserInputService](../services/userinputservice.md) | Keyboard and mouse input on the client. |
@@ -71,7 +73,15 @@ Everything Luau scripts can access.
 | [print](../functions/print.md) | Writes a line to the Output panel. |
 | [require](../functions/require.md) | Loads a ModuleScript and returns what it returned. |
 | [task](../functions/task.md) | Pausing and scheduling for scripts. |
+| [typeof](../functions/typeof.md) | Names the type of a value. |
 | [warn](../functions/warn.md) | Writes a warning line to the Output panel. |
+
+## Scripting
+
+| Page | About |
+| --- | --- |
+| [Client and server](../scripting/client-and-server.md) | Where code runs and what travels between the sides. |
+| [The Luau standard library](../scripting/luau.md) | What the VM provides beyond the engine's API. |
 
 ## Globals
 

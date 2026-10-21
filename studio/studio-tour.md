@@ -20,7 +20,7 @@ The top bar holds the tools you will use constantly.
 
 Select, Move, Scale, and Rotate change how dragging behaves. Keys 1 through 4 switch between them fast.
 
-Play starts a full test with everything running. Run starts a server only test with no player character. Pause freezes the test. Stop ends it and puts your place back exactly how it was. Step moves one frame at a time while paused.
+Play starts a full test with everything running. Run starts a server only test with no player character. Pause freezes the test. Reset ends it and puts your place back exactly how it was. Step moves one frame at a time while paused.
 
 Undo and Redo cover place edits, so you can experiment freely.
 
@@ -50,4 +50,4 @@ Under Help you will find About. It names your exact build and source commit. Quo
 
 ## Where to go next
 
-Browse the [API Reference](../api/api.md) when you start adding behavior to your place.
+Work through [Your first place](../tutorials/first-place.md) to build and script something small, then read [Testing your place](../guides/testing-your-place.md) to see what Play actually runs. Browse the [API Reference](../api/api.md) when you start adding behavior to your place.
