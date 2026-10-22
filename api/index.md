@@ -66,12 +66,6 @@ Everything Luau scripts can access. New to Aero? Start with the [guides](../guid
 | [typeof](../functions/typeof.md) | Names the type of a value. |
 | [warn](../functions/warn.md) | Writes a warning line to the Output panel. |
 
-## Scripting
-
-| Page | About |
-| --- | --- |
-| [The Luau standard library](../scripting/luau.md) | What the VM provides beyond the engine's API. |
-
 ## Globals
 
 | Symbol | About |
@@ -89,3 +83,9 @@ Everything Luau scripts can access. New to Aero? Start with the [guides](../guid
 | [Vector2](../globals/vector2.md) | A point on a flat surface, like a screen. |
 | [Vector3](../globals/vector3.md) | A point or direction in 3D space. |
 | [workspace](../globals/workspace.md) | Shortcut for the Workspace service. |
+
+## Scripting
+
+| Page | About |
+| --- | --- |
+| [The Luau standard library](../scripting/luau.md) | What the VM provides beyond the engine's API. |
