@@ -2,6 +2,8 @@
 
 Studio is where you build. One window, a 3D view in the middle, and panels around it for everything else.
 
+![Aero Studio with the Explorer, 3D viewport, and Properties panel](/_content/Aero.Shared/images/landing/interfaces/studio.png)
+
 ## The panels
 
 The viewport takes up the center. This is your place, rendered live. Click parts to select them and drag to move them. Scripts open as tabs over the viewport.
