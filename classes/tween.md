@@ -11,7 +11,12 @@ A `Tween` is built by [TweenService](../services/tweenservice.md) and then playe
 | Instance | Instance or nil | The object being animated. Read-only. |
 | TweenInfo | TweenInfo | The timing settings it was built with. Read-only. |
 | PlaybackState | Enum.PlaybackState | Where the animation is now. Read-only. |
-| Completed | event | Fires with the final PlaybackState. |
+
+## Events
+
+| Event | Callback arguments | When it fires |
+| --- | --- | --- |
+| Completed | playbackState | The tween reached the end of its cycle. `playbackState` is the final `Enum.PlaybackState`. |
 
 ## Methods
 

@@ -64,11 +64,9 @@ Writing a velocity value wakes a sleeping part, but only when the value actually
 
 ## Events
 
-| Event | What it does |
-| --- | --- |
-| Touched | Fires once when contact with another part begins, and passes the other part. |
-
-A pair that keeps touching does not fire again until the parts separate and meet again. The server detects the contact, and the event replays on every client, so handlers in Scripts and LocalScripts both work. A collapse that starts dozens of contacts in one tick caps what reaches clients.
+| Event | Callback arguments | When it fires |
+| --- | --- | --- |
+| Touched | otherPart | Contact with another part began. The server detects the contact and the event replays on clients, so handlers in Scripts and LocalScripts both work. A pair that keeps touching does not fire again until the parts separate and meet again, and a collapse that starts dozens of contacts in one tick caps what reaches clients. |
 
 ## Surfaces
 
