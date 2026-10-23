@@ -8,13 +8,13 @@ The engine's clock: signals for each step and queries about where the script is 
 
 | Event | Callback arguments | When it fires |
 | --- | --- | --- |
-| PreSimulation | deltaTime | First of the four per-frame signals. |
-| Stepped | time, deltaTime | Second, with the accumulated clock in seconds. |
-| Heartbeat | deltaTime | Third. |
-| PostSimulation | deltaTime | Fourth, at the end of the group. |
-| RenderStepped | deltaTime | Before each rendered frame, on the client. |
+| PreSimulation | deltaTime | First of the frame's script signals. State you change here is what the rest of the frame reads. |
+| Stepped | time, deltaTime | Second. `time` is the world clock in seconds since the place started; `deltaTime` is this frame's step. |
+| Heartbeat | deltaTime | The main once-per-frame tick for game logic. |
+| PostSimulation | deltaTime | Last of the four, so reads here see every change made this frame. |
+| RenderStepped | deltaTime | On a client, just before the frame is drawn. |
 
-The first four run in the order listed, once per frame, after that frame's physics steps. `RenderStepped` only fires on a client, and it runs before the camera moves for the frame.
+The first four run in that order once per frame, after the physics steps. `RenderStepped` fires on a client only.
 
 ## Methods
 
