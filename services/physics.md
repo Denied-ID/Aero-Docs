@@ -31,13 +31,26 @@ A blast that reaches a character does not write on the character directly. The s
 
 Fast debris does the same on contact: a loose brick thrown hard enough at a character knocks that character over, anywhere in the game, not just from a blast.
 
+## Contacts
+
+Parts report touches as events, so scripts can react to collisions without polling positions. Connect to a part's [Touched](../classes/part.md) event from a server script:
+
+```lua
+local pad = workspace.SpeedPad
+
+pad.Touched:Connect(function(other)
+    print(other.Name, "reached the pad")
+end)
+```
+
+The event fires once when contact begins, with the other part as the argument, and again only after the parts separate and meet again. It runs on the server, where the simulation lives.
+
 ## Example
 
 ```lua
 local Physics = game:GetService("Physics")
 
 local count, hits = Physics:Explode(barrel.Position, 12, 400)
-
 for _, hit in hits do
     print(hit.Instance.Name, "pushed", hit.Distance, "studs from the blast")
 end
