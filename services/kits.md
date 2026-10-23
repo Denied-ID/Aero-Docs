@@ -20,7 +20,7 @@ Syncing happens while you edit. During play, scripts change their own copies and
 
 A saved kit is one `.aekit` file holding the kit and everything inside it. Studio keeps two libraries: a folder named after the place, beside its `.aepl` file, and a global folder at `%LOCALAPPDATA%\Aero\Kits` shared by every place. A place called `Harbor.aepl` keeps its kits in `Harbor.kits\`.
 
-Open the Kit Tray from View > Kit Tray. It lives in the left column under Insert Objects and lists both libraries as This Place and Global, each with a count. The search box filters the list, and Studio watches both folders, so a kit saved by any means appears in the tray as soon as its file lands.
+Open the Kit Tray with its toolbar button, or from View > Kit Tray. The tray lives in the left column under Insert Objects and lists both libraries as This Place and Global, each with a count. The search box filters the list, and Studio watches both folders, so a kit saved by any means appears in the tray as soon as its file lands.
 
 Create Kit from Selection turns the selected Model, Folder, or Kit into a kit and writes it to the library under the name you type. Double-click a kit to insert it under the selection, or drag a row into the viewport or the Explorer to place it there. Import Kit... reads kits from any folder, and every insert keeps the file's `KitId`, so copies of the same saved kit start out linked. When the place already holds a kit with that id, the tray inserts the copy already in the place instead of the file.
 

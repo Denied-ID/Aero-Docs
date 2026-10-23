@@ -10,6 +10,21 @@ TextButton has every member of [TextLabel](textlabel.md), which includes every m
 
 There is no `Activated` event. Use `MouseButton1Click` for a left click and `MouseButton2Click` for a right click.
 
+## Events
+
+Every [GuiObject](textlabel.md) carries these; none of them passes arguments. A click fires `Down`, then `Up`, then `Click`.
+
+| Event | When it fires |
+| --- | --- |
+| MouseEnter | The pointer moved over the button. |
+| MouseLeave | The pointer moved off it. |
+| MouseButton1Click | A full left press and release on it. |
+| MouseButton1Down | A left press began. |
+| MouseButton1Up | A left press ended. |
+| MouseButton2Click | A full right press and release on it. |
+| MouseButton2Down | A right press began. |
+| MouseButton2Up | A right press ended. |
+
 ## Example
 
 ```lua
