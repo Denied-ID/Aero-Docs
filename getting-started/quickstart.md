@@ -36,16 +36,16 @@ local Players = game:GetService("Players")
 print("client ready for", Players.LocalPlayer.Name)
 ```
 
-Full guide: [Your first place](first-place.md).
+Full guide: [Your first place](../tutorials/first-place.md).
 
 ## 4. Play it
 
 Press F5. Output shows both halves: `server started` from the server script, and `client ready for` with a player name from the client script. Press Shift+F5 to stop.
 
-Full guide: [Testing your place](testing-your-place.md).
+Full guide: [Testing your place](../tutorials/testing-your-place.md).
 
 ## Where to go next
 
-- [Client and server](client-and-server.md): why the two scripts ran on two halves.
-- [Troubleshooting](troubleshooting.md): Output errors, crash dialogs, and fixes.
+- [Client and server](../guides/client-and-server.md): why the two scripts ran on two halves.
+- [Troubleshooting](../guides/troubleshooting.md): Output errors, crash dialogs, and fixes.
 - [API Reference](../api/index.md): everything scripts can reach.

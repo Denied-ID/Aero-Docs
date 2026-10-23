@@ -52,4 +52,4 @@ Under Help you will find About. It names your exact build and source commit. Quo
 
 ## Where to go next
 
-Work through [Your first place](first-place.md) to build and script something small, then read [Testing your place](testing-your-place.md). Browse the [API Reference](../api/index.md) when you start adding behavior to your place.
+Work through [Your first place](../tutorials/first-place.md) to build and script something small, then read [Testing your place](../tutorials/testing-your-place.md). Browse the [API Reference](../api/index.md) when you start adding behavior to your place.

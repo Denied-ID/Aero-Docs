@@ -1,6 +1,6 @@
 ﻿# API Reference
 
-Everything Luau scripts can access. New to Aero? Start with the [guides](../guides/index.md).
+Everything Luau scripts can access. New to Aero? Start with [Get started](../getting-started/index.md).
 
 ## Classes
 

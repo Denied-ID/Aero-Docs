@@ -74,5 +74,5 @@ A playtest reads the place's saved values and writes to a temporary copy, so tes
 - [Store](../services/store.md): the calls and their write timing.
 - [Players](../services/players.md): joins, leaves, and the players already present.
 - [RemoteEvent](../classes/remoteevent.md): sending a saved value to a client.
-- [Testing your place](testing-your-place.md): the playtest copy of the save.
+- [Testing your place](../tutorials/testing-your-place.md): the playtest copy of the save.
 - [API Reference](../api/index.md)
