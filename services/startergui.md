@@ -37,6 +37,7 @@ Run this from a LocalScript, because each client controls its own interface.
 ## See also
 
 - [ScreenGui](../classes/screengui.md): the layers copied from here.
+- [Building an interface](../guides/building-an-interface.md): a panel built from these templates.
 - [CoreGui](coregui.md): the elements the methods above control.
 - [Instance](../globals/instance.md): the shared members.
 - [API Reference](../api/index.md)

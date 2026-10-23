@@ -43,4 +43,5 @@ print(store:Get("inventory")[1])
 
 ## See also
 
+- [Saving data](../guides/saving-data.md): loading on join and saving on change.
 - [API Reference](../api/index.md)
