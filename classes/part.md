@@ -62,6 +62,12 @@ A Sphere uses its X value for all three axes. A Cylinder uses X for both X and Z
 
 Writing a velocity value wakes a sleeping part, but only when the value actually changes.
 
+## Events
+
+| Event | What it does |
+| --- | --- |
+| Touched | Fires once when contact with another part begins, and passes the other part. Server-side: the server simulates brick physics, so handlers run in server scripts. A pair that keeps touching does not fire again until they separate and meet again. |
+
 ## Surfaces
 
 `TopSurface`, `BottomSurface`, `FrontSurface`, `BackSurface`, `RightSurface`, and `LeftSurface` each take an `Enum.SurfaceType`, a name, or a number. Only `Studs` and `Inlet` are kept. Any other value is replaced by `Smooth`, and reading the face back gives `Smooth`.
