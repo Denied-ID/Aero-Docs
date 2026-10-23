@@ -63,5 +63,6 @@ end)
 
 - [InputObject](../classes/inputobject.md): what each event carries.
 - [LocalScript](../classes/localscript.md): where client input belongs.
+- [Player input](../guides/player-input.md): the guide that puts these events to work.
 - [Enum](../globals/enum.md): key codes and input types.
 - [API Reference](../api/index.md)
