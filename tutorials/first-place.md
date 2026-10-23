@@ -44,6 +44,6 @@ Press Shift+F5 to end the test. The place returns exactly as it was, so changes 
 
 ## Where to go next
 
-- [Client and server](client-and-server.md): why the two scripts ran on two halves.
+- [Client and server](../guides/client-and-server.md): why the two scripts ran on two halves.
 - [Testing your place](testing-your-place.md): the server and client behind Play.
 - [API Reference](../api/index.md): everything scripts can reach.

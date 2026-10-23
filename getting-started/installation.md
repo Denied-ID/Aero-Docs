@@ -34,7 +34,7 @@ You can also uninstall from Windows Settings, where the entry is listed as **Aer
 
 ## If something goes wrong
 
-Start with [Troubleshooting](troubleshooting.md). Installer and update problems have their own rows there, alongside the script errors and crashes.
+Start with [Troubleshooting](../guides/troubleshooting.md). Installer and update problems have their own rows there, alongside the script errors and crashes.
 
 ## Where to go next
 

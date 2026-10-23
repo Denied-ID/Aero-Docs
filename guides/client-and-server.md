@@ -47,5 +47,5 @@ The [RemoteEvent](../classes/remoteevent.md) page shows the pair of scripts that
 - [Script](../classes/script.md) and [LocalScript](../classes/localscript.md): the two classes and where they start.
 - [Player input](player-input.md): keys and clicks on the client half.
 - [Scripting best practices](scripting-best-practices.md): the habits this model rewards.
-- [Testing your place](testing-your-place.md): both halves running in one Studio process.
+- [Testing your place](../tutorials/testing-your-place.md): both halves running in one Studio process.
 - [API Reference](../api/index.md)
