@@ -43,7 +43,7 @@ pad.Touched:Connect(function(other)
 end)
 ```
 
-The event fires once when contact begins, with the other part as the argument, and again only after the parts separate and meet again. It runs on the server, where the simulation lives.
+The event fires once when contact begins, with the other part as the argument, and again only after the parts separate and meet again. The server detects the contact while clients replay the same events, so Scripts and LocalScripts can work together.
 
 ## Example
 

@@ -66,7 +66,9 @@ Writing a velocity value wakes a sleeping part, but only when the value actually
 
 | Event | What it does |
 | --- | --- |
-| Touched | Fires once when contact with another part begins, and passes the other part. Server-side: the server simulates brick physics, so handlers run in server scripts. A pair that keeps touching does not fire again until they separate and meet again. |
+| Touched | Fires once when contact with another part begins, and passes the other part. |
+
+A pair that keeps touching does not fire again until the parts separate and meet again. The server detects the contact, and the event replays on every client, so handlers in Scripts and LocalScripts both work. A collapse that starts dozens of contacts in one tick caps what reaches clients.
 
 ## Surfaces
 
