@@ -4,6 +4,7 @@ Start at the top and work down, or jump to the guide you need.
 
 | Guide | About |
 | --- | --- |
+| [Quickstart](quickstart.md) | Install Aero, build a small place, and play it, in four steps. |
 | [Installation](installation.md) | Install Studio and open your first place. |
 | [Studio Tour](studio-tour.md) | Panels, toolbar, saving, and playtesting. |
 | [Your first place](first-place.md) | Build and script a small place, then play it. |
