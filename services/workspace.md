@@ -14,7 +14,7 @@ The global `workspace` points at this service, so `workspace.Part` and `game:Get
 
 | Method | Returns | What it does |
 | --- | --- | --- |
-| Raycast(origin, direction, maxDistance, params) | table or nil | Finds the nearest part along a ray. |
+| Raycast(origin, direction, maxDistance, params) | table or nil | Finds the nearest part along a ray. The hit has `Instance`, `Position`, `Normal`, and `Distance`. |
 
 ### Raycast
 

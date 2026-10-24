@@ -118,7 +118,7 @@ Every instance sees every method. A method only works on the class it belongs to
 | FireClient(player, ...) | RemoteEvent | Sends values from the server to one player. |
 | FireAllClients(...) | RemoteEvent | Sends values from the server to every player. |
 | InvokeServer(...) | RemoteFunction | Calls the server and waits for its return values. |
-| Raycast(origin, direction, maxDistance?, params?) | Workspace | Returns the first thing hit along a ray. |
+| Raycast(origin, direction, maxDistance?, params?) | Workspace | Returns the first thing hit along a ray as a table with `Instance`, `Position`, `Normal`, and `Distance`, or `nil` when nothing is in range. |
 | Explode(center, radius, power, options?) | Physics | Pushes bodies away from a blast. See [Physics](../services/physics.md). |
 | GetMouseLocation() | UserInputService | The mouse position in pixels. |
 | GetMouseDelta() | UserInputService | How far the mouse moved. |

@@ -8,6 +8,7 @@ Saves values with the place, on the server.
 | --- | --- |
 | Get(key) | Returns the value saved under `key`, or `nil` when the key has none. |
 | Set(key, value) | Saves `value` under `key`. Passing `nil` deletes the key. |
+| Keys() | Returns every key, in alphabetical order. |
 
 `key` is a string. `value` can be a boolean, number, string, Vector3, CFrame, Color3, or a table of those. Tables cannot contain Instances, and the call raises an error if one does.
 
