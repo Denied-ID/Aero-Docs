@@ -6,7 +6,7 @@ What scripts do to the simulated world.
 
 | Method | What it does |
 | --- | --- |
-| Explode(center, radius, power, options?) | Detonates a blast at `center`. Returns the number of bodies it pushed, then a table describing each one. |
+| Explode(center, radius, power, options?) | Detonates a blast at `center`. Returns a table of hits, one per pushed body, each with `Instance`, `Distance`, `Direction`, and `DeltaVelocity`. |
 
 Call it from a Script. A LocalScript raises an error instead, because a client cannot change the simulation.
 
@@ -16,14 +16,25 @@ Call it from a Script. A LocalScript raises an error instead, because a client c
 
 | Field | Default | What it does |
 | --- | --- | --- |
-| Falloff | 2 | How fast the push fades with distance. 1 fades linearly, 2 quadratically. |
+| Falloff | Enum.BlastFalloff.Quadratic | How fast the push fades toward the edge of the radius. |
 | UpwardBias | 0.25 | How much the push tilts upward, 0 to 1. High values throw debris into the air. |
 | RespectWalls | true | When true, anchored geometry between the blast and a body blocks it. |
 | Visual | true | Whether clients draw the fireball and the light flash. |
-| VisualColor | warm orange | The Color3 of the fireball and the flash. |
+| VisualColor | warm orange | The Color3 of the explosion sphere. |
 | FilterDescendantsInstances | empty | Instances to skip, with everything under them. |
 
-The second return value is a table of hits. Each hit has `Instance`, `Distance` (studs from the epicenter to the body's surface), `Direction` (the unit vector of the push), and `DeltaVelocity` (the speed change the body received, in studs per second). Use it for damage, sounds, and scorch marks without running a second query.
+`Falloff` takes an `Enum.BlastFalloff`:
+
+| Item | What it does |
+| --- | --- |
+| Constant | Full push at every distance inside the radius. |
+| Linear | Fades evenly from the epicenter to the edge. |
+| Quadratic | The default: the fade steepens near the edge, so most of the push stays near the center. |
+| Sharp | Nearly everything at the center, almost nothing past half the radius. |
+
+A raw number works too: it is the exponent on the fade curve, so `1.5` sits between Linear and Quadratic.
+
+The return value is a table of hits, one per pushed body. Each hit has `Instance`, `Distance` (studs from the epicenter to the body's surface), `Direction` (the unit vector of the push), and `DeltaVelocity` (the speed change the body received, in studs per second). Use it for damage, sounds, and scorch marks without running a second query.
 
 ## Characters
 
@@ -50,7 +61,7 @@ The event fires once when contact begins, with the other part as the argument, a
 ```lua
 local Physics = game:GetService("Physics")
 
-local count, hits = Physics:Explode(barrel.Position, 12, 400)
+local hits = Physics:Explode(barrel.Position, 12, 400)
 for _, hit in hits do
     print(hit.Instance.Name, "pushed", hit.Distance, "studs from the blast")
 end
