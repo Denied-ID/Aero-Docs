@@ -44,7 +44,7 @@ Right-click a Model, Folder, or Kit in the Explorer and open the Kit submenu for
 
 | Action | What it does |
 | --- | --- |
-| Cast as Kit | Turns a Model or Folder into a kit with a fresh `KitId`, moving its contents inside. |
+| Cast as Kit | Stores any selected instance(s) into a kit with a fresh random `KitId`. |
 | Break from Kit | Clears `KitId` on one copy, so it stops following the others. |
 | Save as Kit... | Writes the kit to this place's library. |
 | Save to Global Kits... | Writes the kit to the global library. |
