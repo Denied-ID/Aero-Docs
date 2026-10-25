@@ -12,7 +12,7 @@ TweenInfo.new(time, easingStyle, easingDirection, repeatCount, reverses, delayTi
 
 Every argument is optional.
 
-| Argument | Type | Default | What it means |
+| Argument | Type | Default | What it does |
 | --- | --- | --- | --- |
 | time | number | 1 | How long one run lasts, in seconds. |
 | easingStyle | Enum.EasingStyle | Quad | The shape of the speed curve. |
@@ -35,7 +35,7 @@ A value that does not fit is quietly replaced by the default instead of raising 
 
 ## Members
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | Time | number | The duration in seconds. |
 | EasingStyle | Enum.EasingStyle | The easing shape. |

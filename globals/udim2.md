@@ -18,7 +18,7 @@ The two-UDim form only applies when both arguments are UDim values. Passing a si
 
 ## Members
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | X | UDim | The horizontal part. `Width` is an alias. |
 | Y | UDim | The vertical part. `Height` is an alias. |

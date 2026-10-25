@@ -34,7 +34,7 @@ The other constructors live on the `CFrame` table:
 
 ## Members
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | X, Y, Z | number | The position components. |
 | Position | Vector3 | The position. `p` is a shorter alias. |

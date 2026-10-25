@@ -10,7 +10,16 @@ Open Studio and choose File > New. A new place opens with a flat baseplate.
 
 Press Ctrl+I to open the Insert palette, pick Part, and drag it into the viewport. Add two or three this way.
 
-Select a part (the Select tool is key 1) and change it in the Properties panel: give it a color and a size. Try the Move (2), Scale (3), and Rotate (4) tools on it. Drag in the viewport to move the part, or set values directly in the Properties panel.
+Four toolbar tools change what a drag does, and keys 1 through 4 switch between them. Each one draws its handles in the part's own axes:
+
+| Tool | Key | The handles it draws |
+| --- | --- | --- |
+| Select | 1 | None. Clicking picks a part. |
+| Move | 2 | An arrow on each axis. |
+| Scale | 3 | A handle on each axis. |
+| Rotate | 4 | A ring around each axis, through the part's center. |
+
+Select a part, then change it in the Properties panel: give it a color and a size. Dragging in the viewport is one way; typing the values directly is the other.
 
 ## Add the server script
 

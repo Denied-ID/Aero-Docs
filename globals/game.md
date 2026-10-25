@@ -21,7 +21,17 @@ The root of the instance tree, and the way to reach every service.
 | `game:GetService("Nope")` | Error: `Nope is not a valid service name` |
 | `part:GetService("Players")` | Error: `GetService is only available on the DataModel (game)` |
 
-A place has all seventeen services: CoreGui, Kits, Lighting, Perf, Physics, Players, ReplicatedStorage, RunService, ServerScriptService, SoundService, StarterGui, StarterPack, StarterPlayer, Store, TweenService, UserInputService, and Workspace. `GetService` returns the existing one, so calling it from many scripts is normal. If a service has been removed, the call builds a new one and parents it under `game`.
+A place has all seventeen services. `GetService` returns the existing one, so calling it from many scripts is normal. If a service has been removed, the call builds a new one and parents it under `game`.
+
+| Group | Services |
+| --- | --- |
+| Engine | CoreGui, Lighting, Workspace |
+| Simulation | Physics, Perf |
+| Players and input | Players, UserInputService |
+| Scripts and sharing | ReplicatedStorage, RunService, ServerScriptService |
+| Interface content | StarterGui, StarterPlayer, StarterPack |
+| Sound | SoundService |
+| Content and data | Kits, Store, TweenService |
 
 Only services may sit directly under `game`. Moving anything else there raises an error that ends with `only services may live there`. Parts and models belong under Workspace.
 

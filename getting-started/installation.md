@@ -8,33 +8,38 @@ A 64-bit Windows 10 or 11 PC. The install is per-user, inside your own profile, 
 
 ## Installing with Aero Setup
 
-1. On the Downloads page, pick **Download for Windows**. That saves a single file, like `AeroSetup-0.0.1.6.exe`. The number is the build. It goes up with every release.
-2. Run it and choose **Sign in with Aero**. Your browser should open so you can approve access there. The installer never sees your password.
-3. Pick which pieces to keep: the Client, Studio, or both. You can change this later.
-4. Pick where Aero lives. The default is a folder inside your local app data, and anything already there is left alone.
-5. Choose **Install**. When it finishes, the last page offers to launch what you just installed.
+1. On the Downloads page, press **Download for Windows**. When you press that button, it downloads a setup executable to your device.
+2. Run it and choose **Sign in with Aero**. Your browser should open so you can approve access there. Aero uses OAuth to authenticate the installer to your account, which is very secure.
+
+The installer will never save your credentials, let alone see it. In case you ever want to revoke permissions from its authentication, you can do so via your account's [Privacy Settings](https://aeroengine.org/settings#privacy) at any time.
+
+3. After that, you can select what you want to install. If you want to build games, choose **Aero Studio**. If you want to play games, choose **Aero Client**.
+4. Now you can choose where Aero gets installed to. Aero gets installed to `%localappdata%/Aero` by default.
+5. Now choose **Install**! When it finishes, the last page allows you to launch what you just installed.
 
 ## Starting your apps
 
-Open **Aero Client** or **Aero Studio** from the Start Menu. Each shortcut checks that app for updates first and applies them before starting, with a progress window only while something is actually downloading. When everything is current, the app just starts.
+Open **Aero Client** or **Aero Studio** from the Start Menu. Each shortcut checks that app for updates first and applies them before starting, with a progress window only while something is actually downloading. If the server reports that everything is up-to-date, the app starts without issue.
 
-Your apps show their build as **Build N** with the source commit next to it. The Client menu footer shows it, and Studio shows it in Help > About. Studio's product line says alpha, like `0.0.1.6-alpha`. The Client and Server also print it for a `--version` flag. Quote that line in a bug report.
+Your apps show their build as **Build #** with the source commit next to it. The Client menu footer shows it, and Studio shows it in Help > About.
 
 ## Staying up to date
 
-There is nothing to do by hand. Launching an app brings it current, and the updater itself updates the same way: if a newer one is available, it downloads, restarts once, and carries on with your launch. If an update is ever interrupted, relaunching picks up from a clean state.
+Launching an app through its shortcut goes through the Aero Launcher, which automatically connects to Aero's servers to check for any available updates. If a newer build is available for that app, it automatically downloads said build, and then proceeds to launch. If an update is ever interrupted, relaunching picks up from where it left off.
 
-The Downloads page also lists per-component zips for manual use. Those need a signed-in account to download, though the installer is the best way to get Aero executables.
+The Downloads page also lists per-component zips for manual use. Those need a signed-in account to download, though the installer is the best way to get Aero executables seamlessly.
 
 ## Changing or removing Aero
 
-Run `AeroSetup.exe` again with Aero already installed and it opens a maintenance page instead of the installer: **Modify installation** walks the same screens to change components or locations, and **Uninstall Aero** removes the apps, the shortcuts, and the saved sign-in. Your `.aepl` place files live wherever you saved them and are never touched.
+Run `AeroSetup.exe` again with Aero already installed and it opens a maintenance page instead of the installer.
+
+**Modify installation** walks the same screens to change components or locations, and **Uninstall Aero** removes the apps, the shortcuts, and the saved OAuth sign-in. Your `.aepl` place files stay wherever you saved them and are never modified.
 
 You can also uninstall from Windows Settings, where the entry is listed as **Aero Launcher**.
 
 ## If something goes wrong
 
-Start with [Troubleshooting](../guides/troubleshooting.md). Installer and update problems have their own rows there, alongside the script errors and crashes.
+Start with [Troubleshooting](../guides/troubleshooting.md). Installer and updater problems have their own rows there, alongside the script errors and crashes.
 
 ## Where to go next
 

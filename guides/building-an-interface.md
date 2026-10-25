@@ -23,7 +23,17 @@ button.AnchorPoint = UDim2.new(0.5, 0.5, 0.5, 0.5)
 
 ## Words and buttons
 
-A [TextLabel](../classes/textlabel.md) draws text inside its bounds: `Text`, `TextColor3`, `TextSize`, and the two alignments, which are plain numbers, 0 left or top, 1 center or middle, 2 right or bottom. A [TextButton](../classes/textbutton.md) is a TextLabel the player can click. Connect `MouseButton1Click` for a left click; there is no Activated event.
+A [TextLabel](../classes/textlabel.md) draws text inside its bounds: `Text`, `TextColor3`, `TextSize`, and the two alignments. A [TextButton](../classes/textbutton.md) is a TextLabel the player can click. Connect `MouseButton1Click` for a left click; there is no Activated event.
+
+| Property | Type | What it does |
+| --- | --- | --- |
+| Text | string | The string to draw. |
+| TextColor3 | Color3 | The text color. |
+| TextSize | number | Height in pixels. Default 18. |
+| TextXAlignment | number | 0 left, 1 center, 2 right. |
+| TextYAlignment | number | 0 top, 1 middle, 2 bottom. |
+
+The two alignments are plain numbers, not enum items. [TextLabel](../classes/textlabel.md) holds the full property list.
 
 A [UICorner](../classes/uicorner.md) under any of them rounds the corners, and a UIStroke draws an outline.
 
@@ -58,7 +68,13 @@ end)
 
 ## Layers and respawns
 
-`Enabled` hides a whole layer, `DisplayOrder` stacks layers, with higher values on top, and `ResetOnSpawn` drops and rebuilds the layer when the character respawns. Turn the last off when an interface should carry over a respawn.
+Three [ScreenGui](../classes/screengui.md) properties control a whole layer:
+
+| Property | Type | What it does |
+| --- | --- | --- |
+| Enabled | boolean | Whether the layer draws at all. |
+| DisplayOrder | number | Draw order between layers, with higher values on top. |
+| ResetOnSpawn | boolean | Whether the layer is dropped and rebuilt when the character respawns. Default true, so turn it off when an interface should carry over a respawn. |
 
 ## Moving things
 

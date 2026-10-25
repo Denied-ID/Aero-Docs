@@ -15,7 +15,7 @@ Most interface code uses [UDim2](udim2.md), which holds a `UDim` for each axis. 
 
 ## Members
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | Scale | number | The fraction of the parent's size. |
 | Offset | number | The pixels added after the scale. |

@@ -6,55 +6,55 @@ Everything Luau scripts can access. New to Aero? Start with [Get started](../get
 
 | Symbol | About |
 | --- | --- |
-| [Folder](../classes/folder.md) | A container that keeps the Explorer organized. |
+| [Folder](../classes/folder.md) | A container that keeps the Explorer organized and can hold anything. |
 | [Frame](../classes/frame.md) | A box that holds other interface objects. |
-| [Humanoid](../classes/humanoid.md) | Moves a character: walking, jumping, and dying. |
+| [Humanoid](../classes/humanoid.md) | Makes a model walk, jump, and take damage. |
 | [ImageLabel](../classes/imagelabel.md) | A picture on the screen. |
-| [InputObject](../classes/inputobject.md) | Describes one input, like a key press. |
-| [Kit](../classes/kit.md) | A named build; linked copies stay in sync while you edit. |
+| [InputObject](../classes/inputobject.md) | What one input event carries. |
+| [Kit](../classes/kit.md) | A named build that lives in the place. Copies sharing a `KitId` stay in sync while you edit. |
 | [LocalScript](../classes/localscript.md) | Luau code that runs on each player's machine. |
-| [MeshPart](../classes/meshpart.md) | A part that uses a custom mesh shape. |
-| [Model](../classes/model.md) | A group of parts you can handle as one. |
-| [ModuleScript](../classes/modulescript.md) | Luau code that runs only when required. |
-| [Part](../classes/part.md) | A solid block, and the basic building piece. |
+| [MeshPart](../classes/meshpart.md) | A part whose shape comes from a mesh file. |
+| [Model](../classes/model.md) | A group of parts you can name and handle as one. |
+| [ModuleScript](../classes/modulescript.md) | Luau code that runs only when another script requires it. |
+| [Part](../classes/part.md) | A solid object which is used as a basic building piece. |
 | [Player](../classes/player.md) | One person in the game. |
-| [PointLight](../classes/pointlight.md) | Light that shines in all directions from one point. |
-| [RemoteEvent](../classes/remoteevent.md) | Sends messages between the server and clients. |
-| [RemoteFunction](../classes/remotefunction.md) | Asks the server a question and waits for the answer. |
-| [ScreenGui](../classes/screengui.md) | A screen interface. Holds buttons and labels. |
+| [PointLight](../classes/pointlight.md) | A light that shines in every direction from a point. |
+| [RemoteEvent](../classes/remoteevent.md) | Sends values between the server and clients. |
+| [RemoteFunction](../classes/remotefunction.md) | Calls the server from a client and waits for the answer. |
+| [ScreenGui](../classes/screengui.md) | A layer of interface that covers the screen. |
 | [Script](../classes/script.md) | Luau code that runs on the server. |
 | [ScrollingFrame](../classes/scrollingframe.md) | A frame with a scrollable canvas inside it. |
-| [SpotLight](../classes/spotlight.md) | Light that shines in one direction, like a flashlight. |
-| [SurfaceLight](../classes/surfacelight.md) | Light that shines off one face of a part. |
-| [TextBox](../classes/textbox.md) | A box players can type into. |
-| [TextButton](../classes/textbutton.md) | A button with text that players can press. |
-| [TextLabel](../classes/textlabel.md) | Text on the screen. |
-| [Tween](../classes/tween.md) | One animation played through TweenService. |
-| [UICorner](../classes/uicorner.md) | Rounds the corners of interface objects. |
-| [UIGradient](../classes/uigradient.md) | Blends colors across interface objects. |
-| [UIStroke](../classes/uistroke.md) | Draws an outline around interface objects. |
+| [SpotLight](../classes/spotlight.md) | A cone of light. |
+| [SurfaceLight](../classes/surfacelight.md) | A cone of light from one face of a part. |
+| [TextBox](../classes/textbox.md) | A field the player can type into. |
+| [TextButton](../classes/textbutton.md) | A button with a text label on it. |
+| [TextLabel](../classes/textlabel.md) | A line of text on the screen. |
+| [Tween](../classes/tween.md) | One animated property change. |
+| [UICorner](../classes/uicorner.md) | Rounds the corners of the interface object it sits in. |
+| [UIGradient](../classes/uigradient.md) | Blends two colors across the interface object it sits in. |
+| [UIStroke](../classes/uistroke.md) | Draws an outline around the interface object it sits in. |
 
 ## Services
 
 | Symbol | About |
 | --- | --- |
-| [CoreGui](../services/coregui.md) | The engine's own interface, such as chat and the player list. |
-| [Kits](../services/kits.md) | Named builds that live in the place; copies can stay linked. |
+| [CoreGui](../services/coregui.md) | The engine's own interface. |
+| [Kits](../services/kits.md) | A kit is a named build that lives in the place, and copies of one kit can stay linked. |
 | [Lighting](../services/lighting.md) | Sun, sky, and atmosphere for the place. |
-| [Perf](../services/perf.md) | Frame timings and per-script cost, written to the Output. |
-| [Players](../services/players.md) | Everyone connected, with the signals for joining and leaving. |
-| [Physics](../services/physics.md) | What scripts do to the simulated world, like blasts. |
-| [ReplicatedStorage](../services/replicatedstorage.md) | A shared folder that both server and client scripts can see. |
-| [RunService](../services/runservice.md) | The engine's clock, and where the script is running. |
-| [ServerScriptService](../services/serverscriptservice.md) | Server-only content, kept off clients. |
-| [SoundService](../services/soundservice.md) | Global sound settings for the place. |
-| [StarterGui](../services/startergui.md) | Interface objects kept here are copied to each player. |
-| [StarterPack](../services/starterpack.md) | Contents kept here are copied to each player's backpack. |
-| [StarterPlayer](../services/starterplayer.md) | Client scripts that run in place on each player's client. |
+| [Perf](../services/perf.md) | Frame timings and per-script cost, written to the Output on demand. |
+| [Players](../services/players.md) | Everyone connected, and the signals for joining and leaving. |
+| [Physics](../services/physics.md) | What scripts do to the simulated world. |
+| [ReplicatedStorage](../services/replicatedstorage.md) | Content both sides need. |
+| [RunService](../services/runservice.md) | The engine's clock: signals for each step and queries about where the script is running. |
+| [ServerScriptService](../services/serverscriptservice.md) | Server-only content. |
+| [SoundService](../services/soundservice.md) | Settings for music and ambience. |
+| [StarterGui](../services/startergui.md) | The interface every player starts with. |
+| [StarterPack](../services/starterpack.md) | The contents every player's backpack starts with. |
+| [StarterPlayer](../services/starterplayer.md) | Client-side content that runs where it sits. |
 | [Store](../services/store.md) | Saves values with the place, on the server. |
 | [TweenService](../services/tweenservice.md) | Animates properties smoothly over time. |
 | [UserInputService](../services/userinputservice.md) | Keyboard and mouse input on the client. |
-| [Workspace](../services/workspace.md) | The place world, and its ray query. |
+| [Workspace](../services/workspace.md) | The place world. |
 
 ## Functions
 
@@ -88,4 +88,4 @@ Everything Luau scripts can access. New to Aero? Start with [Get started](../get
 
 | Page | About |
 | --- | --- |
-| [The Luau standard library](../scripting/luau.md) | What the VM provides beyond the engine's API. |
+| [The Luau standard library](../scripting/luau.md) | What the VM provides, on top of the engine's own API. |

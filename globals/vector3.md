@@ -17,7 +17,7 @@ A point or direction in 3D space.
 
 The components are read-only. This type accepts capitalized names only: `X`, `Y`, and `Z`, not `x`, `y`, and `z`.
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | X, Y, Z | number | The components. |
 | Magnitude | number | Length: the square root of `x*x + y*y + z*z`. |

@@ -19,7 +19,7 @@ A point on a flat surface, like a screen.
 
 This type accepts either case: `X` or `x`, `Magnitude` or `magnitude`.
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | X, Y | number | The components. |
 | Magnitude | number | Length: the square root of `x*x + y*y`. |

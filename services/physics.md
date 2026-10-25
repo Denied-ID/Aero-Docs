@@ -6,7 +6,7 @@ What scripts do to the simulated world.
 
 | Method | What it does |
 | --- | --- |
-| Explode(center, radius, power, options?) | Detonates a blast at `center`. Returns a table of hits, one per pushed body, each with `Instance`, `Distance`, `Direction`, and `DeltaVelocity`. |
+| Explode(center, radius, power, options?) | Detonates a blast at `center`. Returns a table of hits, one per pushed body, each with `Instance`, `Position`, `Distance`, `Direction`, and `DeltaVelocity`. |
 
 Call it from a Script. A LocalScript raises an error instead, because a client cannot change the simulation.
 
@@ -23,18 +23,19 @@ Call it from a Script. A LocalScript raises an error instead, because a client c
 | VisualColor | warm orange | The Color3 of the explosion sphere. |
 | FilterDescendantsInstances | empty | Instances to skip, with everything under them. |
 
-`Falloff` takes an `Enum.BlastFalloff`:
-
-| Item | What it does |
-| --- | --- |
-| Constant | Full push at every distance inside the radius. |
-| Linear | Fades evenly from the epicenter to the edge. |
-| Quadratic | The default: the fade steepens near the edge, so most of the push stays near the center. |
-| Sharp | Nearly everything at the center, almost nothing past half the radius. |
+`Falloff` takes an `Enum.BlastFalloff`: [Enum](../globals/enum.md#blastfalloff) lists `Constant`, `Linear`, `Quadratic`, and `Sharp`. `Quadratic` is the default.
 
 A raw number works too: it is the exponent on the fade curve, so `1.5` sits between Linear and Quadratic.
 
-The return value is a table of hits, one per pushed body. Each hit has `Instance`, `Distance` (studs from the epicenter to the body's surface), `Direction` (the unit vector of the push), and `DeltaVelocity` (the speed change the body received, in studs per second). Use it for damage, sounds, and scorch marks without running a second query.
+The return value is a table of hits, one per pushed body. Use it for damage, sounds, and scorch marks without running a second query. Each hit holds:
+
+| Field | Type | What it holds |
+| --- | --- | --- |
+| Instance | Instance | The body that was pushed. |
+| Position | Vector3 | The point the blast applied its push to, in studs. |
+| Distance | number | Studs from the epicenter to the body, and 0 when the epicenter sits inside it. |
+| Direction | Vector3 | The unit vector the push points along. |
+| DeltaVelocity | Vector3 | The speed change the body received, in studs per second. |
 
 ## Characters
 
@@ -69,4 +70,7 @@ end
 
 ## See also
 
+- [Part](../classes/part.md): the bodies a blast pushes, and their collision flags.
+- [Enum](../globals/enum.md): the `BlastFalloff` list.
+- [Perf](perf.md): the physics stage a blast costs.
 - [API Reference](../api/index.md)

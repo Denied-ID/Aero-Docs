@@ -34,7 +34,7 @@ The `params` table accepts two fields:
 
 A hit returns a table with four fields:
 
-| Field | Type | What it is |
+| Field | Type | What it does |
 | --- | --- | --- |
 | Instance | Instance | The part that was hit. |
 | Position | Vector3 | The hit point, in studs. |

@@ -25,7 +25,18 @@ The engine sets `Health` to 0 when the character's root falls below `y = -25` wo
 | Died | none | Health reached 0. |
 | StateChanged | oldState, newState | The character moved between its states. |
 
-The state names are `Standing`, `Running`, `Jumping`, `Freefall`, `KnockedBack`, and `Dead`. There is no `State` property to read, so keep the last value from `StateChanged` if you need to know it later.
+The two arguments are state names. The engine passes one of these six:
+
+| State | When the character is in it |
+| --- | --- |
+| Standing | Grounded and not moving. |
+| Running | Grounded and moving. |
+| Jumping | Rising from a jump. |
+| Freefall | In the air and not rising. |
+| KnockedBack | Knocked over, before it stands again. |
+| Dead | Health reached 0. |
+
+There is no `State` property to read, so keep the last value from `StateChanged` if you need to know it later.
 
 ## Members
 

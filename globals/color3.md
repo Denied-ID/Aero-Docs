@@ -22,7 +22,7 @@ Each channel is a number from 0 to 1. `Color3` is used anywhere a color is set: 
 
 ## Members
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | R, G, B | number | The channels from 0 to 1. Lowercase `r`, `g`, and `b` also work. |
 

@@ -38,7 +38,7 @@ These constants return commonly used entries:
 
 ## Members
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | Number | number | The palette number. |
 | Name | string | The palette name, such as `Bright red`. |

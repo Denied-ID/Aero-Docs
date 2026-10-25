@@ -24,7 +24,7 @@ Select, Move, Scale, and Rotate change how dragging behaves. Keys 1 through 4 sw
 
 Play starts a full test with everything running. Run starts a server only test with no player character. Pause freezes the test. Reset ends it and puts your place back exactly how it was. Step moves one frame at a time while paused.
 
-Undo and Redo cover place edits, so you can experiment freely.
+Undo and Redo cover place edits, so you can experiment freely. Each one selects the parts it changed, so you can carry on with them right away.
 
 ## Saving and files
 

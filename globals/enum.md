@@ -94,7 +94,7 @@ See [Lighting](../services/lighting.md).
 | Quadratic | 2 | The fade steepens near the edge, so most of the push stays near the center. |
 | Sharp | 3 | Nearly everything at the center, almost nothing past half the radius. |
 
-A raw number works as well, and it is read as the exponent on the fade curve, so `1.5` sits between Linear and Quadratic. See [Physics](../services/physics.md).
+A raw number works as well, read as the exponent on the fade curve, so `1.5` sits between Linear and Quadratic. See [Physics](../services/physics.md).
 
 ### NormalId
 
@@ -227,20 +227,18 @@ A raw number works as well, and it is read as the exponent on the fade curve, so
 
 | Item | Value | What it does |
 | --- | --- | --- |
-| Smooth | 0 | A plain surface with no studs or inlet. The default, and what every value the engine cannot draw reads back as. |
-| Glue | 1 | A studless contact that the engine draws as a plain surface. |
-| Weld | 2 | A contact that the engine draws as a plain surface. |
-| Studs | 3 | Kept. Renders studs on the face. |
-| Inlet | 4 | Kept. Renders an inlet on the face. |
-| Universal | 5 | A legacy contact the engine draws as a plain surface. |
-| Hinge | 6 | A legacy contact the engine draws as a plain surface. |
-| Motor | 7 | A legacy contact the engine draws as a plain surface. |
-| SteppingMotor | 8 | A legacy contact the engine draws as a plain surface. |
-| SmoothNoOutlines | 10 | A plain surface with no outlines, drawn as a plain surface. |
+| Smooth | 0 | A plain face. The default, and what every other value reads back as. |
+| Glue | 1 | Kept as the number you give it, and drawn as a plain face. |
+| Weld | 2 | Kept as the number you give it, and drawn as a plain face. |
+| Studs | 3 | Kept, and drawn as studs. |
+| Inlet | 4 | Kept, and drawn as an inlet. |
+| Universal | 5 | Kept as the number you give it, and drawn as a plain face. |
+| Hinge | 6 | Kept as the number you give it, and drawn as a plain face. |
+| Motor | 7 | Kept as the number you give it, and drawn as a plain face. |
+| SteppingMotor | 8 | Kept as the number you give it, and drawn as a plain face. |
+| SmoothNoOutlines | 10 | Kept as the number you give it, and drawn as a plain face. |
 
-The engine draws three face contents: none, `Studs`, and `Inlet`. Any other value is stored as its given number but rendered and read back as `Smooth`. Only `Studs` and `Inlet` survive a write.
-
-Only `Studs` and `Inlet` change how a face draws. Every other item keeps its number but renders and reads back as `Smooth`.
+Only `Studs` and `Inlet` change how a face draws. Every other value is stored as the number you gave it and reads back as `Smooth`.
 
 ## Example
 

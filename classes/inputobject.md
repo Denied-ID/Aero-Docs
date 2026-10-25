@@ -6,7 +6,7 @@ An `InputObject` is handed to [UserInputService](../services/userinputservice.md
 
 ## Properties
 
-| Property | Type | What it is |
+| Property | Type | What it does |
 | --- | --- | --- |
 | KeyCode | Enum.KeyCode | The key involved, for keyboard input. |
 | UserInputType | Enum.UserInputType | Keyboard, mouse button, wheel, touch, or focus. |

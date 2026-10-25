@@ -1,8 +1,8 @@
 # Part
 
-A solid block, and the basic building piece.
+A solid object which is used as a basic building piece.
 
-A `Part` is a physical object with a position, a size, a look, and a collision shape. Most of a place is made of parts.
+A `Part` is a physical object with a position, a size, a look, and a collision shape. Most of any place consists of parts that build the look and style of the game.
 
 ## Creating one
 
@@ -21,7 +21,7 @@ part.Parent = workspace
 | CFrame | CFrame | Position and rotation together. |
 | Position | Vector3 | The center, in studs. |
 | Orientation | Vector3 | Rotation in degrees. `Rotation` is an alias. |
-| Size | Vector3 | Extents in studs. Each axis is clamped from 1 to 2048, and non-finite values are ignored. |
+| Size | Vector3 | Extents in studs. Each axis is clamped from 0.001 to 2048. |
 
 Writing `CFrame` or `Position` on a part that belongs to a character moves the whole character so the limb lands there, not just the limb.
 
@@ -38,13 +38,14 @@ A Sphere uses its X value for all three axes. A Cylinder uses X for both X and Z
 | Metallic | number | Clamped from 0 to 1. |
 | Roughness | number | Clamped from 0 to 1. |
 | Material | Enum.Material | The surface material, by enum item, name, or number. |
+| Shape | Enum.PartType | The primitive shape. Also takes the strings `Block`, `Ball`, `Sphere`, `Cylinder`, `Wedge`, and `CornerWedge`. |
 | StudTiling | Vector2 | Studs per stud on each axis, clamped from 0.01 to 64. |
 | StudOffset | Vector2 | Where the stud pattern starts, clamped from -100 to 100. |
 | StudBump | number | How far studs rise, clamped from 0 to 1. |
 
 `BrickColor` is only a view of `Color`: the part stores channels, not a palette number, so two palette colors with the same channels are indistinguishable when read back.
 
-`Shape` takes `Enum.PartType` or one of the strings `Block`, `Ball`, `Sphere`, `Cylinder`, `Wedge`, and `CornerWedge`. Prefer the strings. The enum values for `Ball` and `Cylinder` are numbered differently from the stored shapes, so assigning `Enum.PartType.Cylinder` gives you a sphere.
+`Shape` prefers the strings. The enum values for `Ball` and `Cylinder` are numbered differently from the stored shapes, so `Enum.PartType.Cylinder` gives you a sphere and `Enum.PartType.Ball` gives you a cylinder. [Enum](../globals/enum.md) holds the full list.
 
 ## Physics
 
@@ -72,7 +73,18 @@ It does not fire again while the two parts stay in contact, only after they sepa
 
 ## Surfaces
 
-`TopSurface`, `BottomSurface`, `FrontSurface`, `BackSurface`, `RightSurface`, and `LeftSurface` each take an `Enum.SurfaceType`, a name, or a number. Only `Studs` and `Inlet` are kept. Any other value is replaced by `Smooth`, and reading the face back gives `Smooth`.
+A part draws six faces, and each face has its own property. All six take an `Enum.SurfaceType`, a name, or a number.
+
+| Property | Face |
+| --- | --- |
+| TopSurface | Top |
+| BottomSurface | Bottom |
+| FrontSurface | Front |
+| BackSurface | Back |
+| RightSurface | Right |
+| LeftSurface | Left |
+
+The faces are the same ones `Enum.NormalId` lists. Only `Studs` and `Inlet` survive a write; every other value keeps its number but renders and reads back as `Smooth`. [Enum](../globals/enum.md) lists every item of both lists.
 
 ## Members
 
@@ -87,7 +99,6 @@ platform.Size = Vector3.new(20, 1, 20)
 platform.Position = Vector3.new(0, 0, 0)
 platform.Anchored = true
 platform.Color = Color3.fromRGB(90, 140, 200)
-platform.Material = Enum.Material.Slate
 platform.Parent = workspace
 ```
 

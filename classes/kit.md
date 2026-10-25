@@ -4,7 +4,7 @@ A named build that lives in the place. Copies sharing a `KitId` stay in sync whi
 
 ## Properties
 
-| Property | What it is |
+| Property | What it does |
 | --- | --- |
 | Name | The name you see in the Explorer. |
 | Parent | Where it sits in the place tree. |
