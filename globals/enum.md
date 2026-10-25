@@ -26,7 +26,7 @@ end
 
 ## Enum items
 
-| Member | Type | What it is |
+| Member | Type | What it does |
 | --- | --- | --- |
 | Name | string | The item name, such as `Plastic`. `name` is an alias. |
 | Value | number | The stored number. `value` is an alias. |
@@ -38,31 +38,33 @@ Two items are equal when they come from the same list and have the same value. P
 
 ## The lists
 
+Every list below carries the number the engine stores, which is what replication and save files use.
+
 ### Material
 
-| Item |
-| --- |
-| Plastic |
-| SmoothPlastic |
-| Neon |
-| Wood |
-| WoodPlanks |
-| Slate |
-| Concrete |
-| Granite |
-| Marble |
-| Brick |
-| Pebble |
-| Cobblestone |
-| CorrodedMetal |
-| DiamondPlate |
-| Foil |
-| Metal |
-| Grass |
-| Sand |
-| Fabric |
-| Glass |
-| ForceField |
+| Item | Value |
+| --- | --- |
+| Plastic | 256 |
+| SmoothPlastic | 272 |
+| Neon | 288 |
+| Wood | 512 |
+| WoodPlanks | 528 |
+| Slate | 800 |
+| Concrete | 816 |
+| Granite | 832 |
+| Marble | 848 |
+| Brick | 864 |
+| Pebble | 880 |
+| Cobblestone | 896 |
+| CorrodedMetal | 1040 |
+| DiamondPlate | 1056 |
+| Foil | 1072 |
+| Metal | 1088 |
+| Grass | 1280 |
+| Sand | 1296 |
+| Fabric | 1312 |
+| Glass | 1568 |
+| ForceField | 1584 |
 
 ### PartType
 
@@ -73,6 +75,26 @@ Two items are equal when they come from the same list and have the same value. P
 | Cylinder | 2 |
 | Wedge | 3 |
 | CornerWedge | 4 |
+
+### LightingTechnology
+
+| Item | Value | What it does |
+| --- | --- | --- |
+| Compatibility | 0 | The older flat lighting: ambient never varies by surface orientation. |
+| Dynamic | 1 | The directional look: ambient varies by surface orientation. |
+
+See [Lighting](../services/lighting.md).
+
+### BlastFalloff
+
+| Item | Value | What it does |
+| --- | --- | --- |
+| Constant | 0 | Full push at every distance inside the radius. |
+| Linear | 1 | Fades evenly from the epicenter to the edge. |
+| Quadratic | 2 | The fade steepens near the edge, so most of the push stays near the center. |
+| Sharp | 3 | Nearly everything at the center, almost nothing past half the radius. |
+
+A raw number works as well, and it is read as the exponent on the fade curve, so `1.5` sits between Linear and Quadratic. See [Physics](../services/physics.md).
 
 ### NormalId
 
@@ -203,18 +225,22 @@ Two items are equal when they come from the same list and have the same value. P
 
 ### SurfaceType
 
-| Item |
-| --- |
-| Smooth |
-| Glue |
-| Weld |
-| Studs |
-| Inlet |
-| Universal |
-| Hinge |
-| Motor |
-| SteppingMotor |
-| SmoothNoOutlines |
+| Item | Value | What it does |
+| --- | --- | --- |
+| Smooth | 0 | A plain surface with no studs or inlet. The default, and what every value the engine cannot draw reads back as. |
+| Glue | 1 | A studless contact that the engine draws as a plain surface. |
+| Weld | 2 | A contact that the engine draws as a plain surface. |
+| Studs | 3 | Kept. Renders studs on the face. |
+| Inlet | 4 | Kept. Renders an inlet on the face. |
+| Universal | 5 | A legacy contact the engine draws as a plain surface. |
+| Hinge | 6 | A legacy contact the engine draws as a plain surface. |
+| Motor | 7 | A legacy contact the engine draws as a plain surface. |
+| SteppingMotor | 8 | A legacy contact the engine draws as a plain surface. |
+| SmoothNoOutlines | 10 | A plain surface with no outlines, drawn as a plain surface. |
+
+The engine draws three face contents: none, `Studs`, and `Inlet`. Any other value is stored as its given number but rendered and read back as `Smooth`. Only `Studs` and `Inlet` survive a write.
+
+Only `Studs` and `Inlet` change how a face draws. Every other item keeps its number but renders and reads back as `Smooth`.
 
 ## Example
 
@@ -233,4 +259,6 @@ print(Enum.Material.Neon.EnumType)   -- Material
 
 - [Instance](../globals/instance.md): objects whose properties take enum items.
 - [TweenInfo](tweeninfo.md): easing styles and directions.
+- [Physics](../services/physics.md): blasts, and the falloff enum they take.
+- [Part](../classes/part.md): materials, shapes, and the surface faces.
 - [API Reference](../api/index.md)

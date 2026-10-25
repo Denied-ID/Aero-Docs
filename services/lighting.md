@@ -18,11 +18,16 @@ Sun, sky, and atmosphere for the place.
 | ColorShift_Top | Color3 | Tint added to surfaces facing up. Clamped from 0 to 1 per channel. |
 | ColorShift_Bottom | Color3 | Tint added to surfaces facing down. Clamped from 0 to 1 per channel. |
 | ShadowSoftness | number | How soft shadow edges are, from 0 to 1. Default 0.5. |
+| Technology | Enum.LightingTechnology | Which lighting model renders the place. `Compatibility` keeps the older flat lighting. `Dynamic` uses the new warm, directional look. Default `Dynamic`. |
 | GlobalShadows | boolean | Whether the sun and moon cast shadows. Default true. |
 
 `ClockTime` and `TimeOfDay` are two views of one value. Setting either updates the other.
 
 `Ambient` and `OutdoorAmbient` are blended by how high the sun is. At night the world takes `Ambient`; during the day it takes `OutdoorAmbient`, and twilight mixes the two.
+
+The ambient light is directional. Surfaces facing up get a sky-tinted share of it, surfaces facing down fall toward a darker ground tone, and vertical surfaces sit between the two.
+
+`Technology` picks the model behind that behavior. `Compatibility` renders the older flat lighting, where the ambient term never varies by surface orientation, and `Dynamic` is the directional look described here. Places saved before this property existed open as `Dynamic`.
 
 An invalid `TimeOfDay` string is ignored, and the clock keeps its previous time. No error is raised, so a typo shows up as a time that never changes.
 
