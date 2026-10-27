@@ -39,9 +39,6 @@ A Sphere uses its X value for all three axes. A Cylinder uses X for both X and Z
 | Roughness | number | Clamped from 0 to 1. |
 | Material | Enum.Material | The surface material, by enum item, name, or number. |
 | Shape | Enum.PartType | The primitive shape. Also takes the strings `Block`, `Ball`, `Sphere`, `Cylinder`, `Wedge`, and `CornerWedge`. |
-| StudTiling | Vector2 | Studs per stud on each axis, clamped from 0.01 to 64. |
-| StudOffset | Vector2 | Where the stud pattern starts, clamped from -100 to 100. |
-| StudBump | number | How far studs rise, clamped from 0 to 1. |
 
 `BrickColor` is only a view of `Color`: the part stores channels, not a palette number, so two palette colors with the same channels are indistinguishable when read back.
 

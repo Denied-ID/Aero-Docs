@@ -16,13 +16,12 @@ Animates properties smoothly over time.
 
 Only three kinds of target animate: a [Part](../classes/part.md), a [Humanoid](../classes/humanoid.md), and the [SoundService](soundservice.md). `Create` accepts any instance, so a tween on a Frame or a Model runs, fires `Completed`, and moves nothing.
 
-On those targets, five value types are interpolated:
+On those targets, four value types are interpolated:
 
 | Value type | Example |
 | --- | --- |
 | number | `Transparency = 1` |
 | Vector3 | `Position = Vector3.new(0, 10, 0)` |
-| Vector2 | `StudOffset = Vector2.new(1, 1)` |
 | Color3 | `Color = Color3.fromRGB(255, 80, 80)` |
 | CFrame | `CFrame = CFrame.new(0, 5, 0)` |
 

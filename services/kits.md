@@ -10,11 +10,11 @@ A kit is a named build that lives in the place, and copies of one kit can stay l
 
 ## Linking copies
 
-Kit copies that share the same `KitId` keep identical contents: add a brick, resize one, or recolor it and the change appears in all of them. Placement never syncs — every copy sits where it was put, and parts inside each copy keep their own positions. A part added to one copy appears in the others at the same spot relative to the kit. The most recent edit wins.
+Kit copies that share the same `KitId` keep identical contents: add a brick, resize one, recolor it, turn it, or move it and the change mirrors in all of them, read against each copy's own heading. A brick pulled two studs along one copy's staircase moves two studs along the other's staircase, whichever way that copy faces. Placement of the copy itself never syncs. Every copy sits where it was put, and dragging or turning a whole copy never moves the others. Scaling a whole copy resizes the build itself, so the copies stretch with it, each along its own axes. The most recent edit wins.
 
 The kit's own name, position, and parent belong to each copy and never sync, so every copy can sit where it needs to sit. Set `KitId` to an empty string to break one copy away; copies made with Clone or copy and paste keep the link.
 
-Syncing happens while you edit. During play, scripts change their own copies and nothing propagates.
+Syncing happens while you edit. Undo and redo roll the whole place back, copies included, and the next edit syncs from the restored state. During play, scripts change their own copies and nothing propagates.
 
 ## Saving builds
 

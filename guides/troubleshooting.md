@@ -14,6 +14,8 @@ If the viewport freezes during a test, read the red lines. The test stops at the
 
 A hard native crash is not a script error, so it does not go to Output. The app closes with a dialog instead. It names the error, saves a log and a crash dump, and offers to open the logs folder. Attach both files to a bug report.
 
+The folder keeps the current run plus the last three runs that ended without a normal shutdown, and deletes every other log the next time an Aero app starts. Each log opens with the build, your Windows version, processor, memory, graphics card and driver, and display mode, so a report already carries the machine it came from.
+
 Two dialogs you may see:
 
 - A DirectX error naming device creation. The engine found no graphics device it could use, not even software rendering. Update your graphics drivers and Windows first, then report it with the logs if it persists.
