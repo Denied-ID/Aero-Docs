@@ -28,19 +28,21 @@ Undo and Redo cover place edits, so you can experiment freely. Each one selects 
 
 ## Saving and files
 
-File holds New, Open, Save, and Save As. A new place with no name is called Untitled until you save it.
+The File menu has New, Open, Save, Save As, and Place History. A new place stays called Untitled until you save it.
 
-Studio tracks unsaved changes and asks before you throw them away. It also saves a backup copy in the background and offers to recover your work if it ever closes unexpectedly. Recent places are listed under File so you can jump back in.
+Studio keeps track of unsaved changes and asks before you throw them away. It also saves a backup copy in the background, so if Studio ever closes unexpectedly it will offer to recover your work. Recent places are listed under File if you want to jump back in.
 
-Place files use the .aepl extension. You never need to open one outside Studio.
+Place History records a version of the open place whenever you open it, save it, autosave, or start a playtest. Open File > Place History to see your versions with the newest first, along with what changed between each one and the version before it. You can search by checkpoint name or time, or use the All, Checkpoints, and Playtests filters to narrow things down. When you select a version, Studio counts what restoring it would add, remove, and change. The place diff groups those changes together, like “3 PointLight under Workspace.Light”. A comparison switch lets you check a version against the one before it or against your current place.
 
-Sometimes opening a file shows a Place Repaired message. It lists what Studio dropped or moved to load the file, then offers Save Now or Later. Saving can wait, but servers will not run the place until it is saved with the fixes.
+Place files use the .aepl extension, and you never need to open one outside Studio.
+
+Sometimes opening a file shows a Place Repaired message. It lists what Studio dropped or moved to get the file to load, and gives you the choice of Save Now or Later. You can wait on saving, but servers won’t run the place until it’s saved with the fixes.
 
 ## Copying and inserting
 
-Cut, Copy, Paste Into, Duplicate, and Delete work the way you would expect. Duplicate makes a copy next to the original. Press F to frame the selected part in the viewport.
+Cut, Copy, Paste, Paste Into, Duplicate, and Delete work the way you’d expect. Paste and Duplicate put copies next to the originals, while Paste Into drops the clipboard inside the selected object instead. Press F to frame the selected part in the viewport.
 
-To add something new, open the Insert palette and pick what you need. Parts and models go into the world. Scripts open in the editor as soon as you add them. Interface objects land where they belong on screen.
+To add something new, open the Insert palette and pick what you need. Parts and models go into the world, scripts open in the editor right away, and interface objects land where they belong on screen.
 
 ## View and settings
 

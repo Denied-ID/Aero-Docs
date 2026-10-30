@@ -39,9 +39,13 @@ The return value is a table of hits, one per pushed body. Use it for damage, sou
 
 ## Characters
 
-A blast that reaches a character does not write on the character directly. The server sends the fling to the player whose character it is, their game applies it, and everyone else sees the flight through the normal pose stream. The character flies on the push, slides to a stop, stays down for up to a second and a half depending on how hard it was hit, then gets up. Faster blasts hold characters down longer.
+A big enough blast sends a character flying. They tumble through the air, land wherever the debris and geometry leave them, stay down for about three seconds, then get back up. The tumble runs on the player’s own machine, so it looks smooth to them, and the server shares the resulting poses with everyone else.
 
-Fast debris does the same on contact: a loose brick thrown hard enough at a character knocks that character over, anywhere in the game, not just from a blast.
+Softer blasts don’t knock anyone over. The character gets shoved and staggers for a moment but stays on their feet. The cutoff is the same speed a debris strike needs. Fast debris also staggers characters anywhere in the game, not just near a blast.
+
+Anchored obstacles at head height can topple a character too. If you walk into a block or overhang above the waist, the character leans toward it, and if you keep pressing they fall over backward. Let go early and they straighten up, so you can brush a low beam while running under it. Walking straight into one is a different story.
+
+Slopes steeper than about 45 degrees get climbed rather than walked. The legs angle up the hill and the character moves slower, while the torso and head stay upright like a person climbing. Gentler ramps are crossed at full speed.
 
 ## Contacts
 

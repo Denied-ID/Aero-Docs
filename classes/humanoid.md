@@ -12,11 +12,14 @@ A `Humanoid` sits inside a character model next to the parts that make up its bo
 | JumpPower | number | Stored, but the jump arc uses a fixed jump height, so changing this does not change a jump. |
 | Health | number | Current health. |
 | MaxHealth | number | The value the health bar is drawn against. Replicated health is capped to it. |
+| BreakJointsOnDeath | boolean | What the body does on death. With the default `true`, the body parts separate and fall with physics. With `false`, the body stays assembled and falls over as one piece. |
 | AutoRotate | boolean | Whether the character turns to face the direction it moves. |
 
-None of these values are clamped. Setting `Health` above `MaxHealth` or a negative `WalkSpeed` stores the number as given.
+None of these values are clamped, so setting `Health` above `MaxHealth` or giving `WalkSpeed` a negative number just stores whatever you set.
 
-The engine sets `Health` to 0 when the character's root falls below `y = -25` world units, about -100 studs. That kill plane is how a fall out of the map ends a life.
+The engine sets `Health` to 0 when the character's root falls below `y = -25` world units, which is about -100 studs. That kill plane is how falling out of the map ends a life.
+
+A dead character topples to the ground. With `BreakJointsOnDeath` on, the body parts separate as they fall and stay where they land until the respawn replaces the character. With it off, the body keeps its shape the whole way down.
 
 ## Events
 
