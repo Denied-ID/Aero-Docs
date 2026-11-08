@@ -8,7 +8,7 @@ Settings for music and ambience.
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| MusicVolume | number | Music volume. Not clamped. |
+| AudioVolume | number | Music volume. Not clamped. |
 | AmbientReverb | string | The reverb preset name. Default `NoReverb`, and any string is accepted. |
 
 ## A note on audio
@@ -25,7 +25,7 @@ SoundService has no methods of its own. It also has the shared Instance members;
 local SoundService = game:GetService("SoundService")
 
 print(SoundService.AmbientReverb)    -- NoReverb
-SoundService.MusicVolume = 0.6
+SoundService.AudioVolume = 0.6
 SoundService.AmbientReverb = "Hall"
 ```
 

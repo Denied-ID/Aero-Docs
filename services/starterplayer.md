@@ -2,11 +2,24 @@
 
 Client-side content that runs where it sits.
 
-`StarterPlayer` holds the scripts that should run on each client. Unlike StarterGui and StarterPack, its contents are not copied: a LocalScript placed here runs in place on the client.
+`StarterPlayer` holds the scripts that should run on each client. Unlike StarterGui and StarterPack, its contents are not copied. A LocalScript placed here runs where it sits, on the client. It also holds the defaults a new character spawns with.
 
-## Members
+## Properties
 
-StarterPlayer has no properties, events, or methods beyond the shared Instance members. See [Instance](../globals/instance.md).
+| Property | Type | What it does |
+| --- | --- | --- |
+| WalkSpeed | number | Humanoid WalkSpeed for new characters. Default 16. |
+| JumpPower | number | Humanoid JumpPower for new characters. Default 50. |
+| UseJumpHeight | boolean | Whether spawning characters use JumpHeight instead of JumpPower. Default true. |
+| JumpHeight | number | Jump height in studs when UseJumpHeight is true. Default 7. |
+| MaxHealth | number | Humanoid MaxHealth for new characters. Default 100. |
+| AutoRotate | boolean | Whether new characters turn toward their movement. Default true. |
+| RespawnDelay | number | Seconds before a dead character respawns. Default 3. |
+| CharacterCollision | boolean | Whether characters collide with each other. Default true. |
+| CameraMinZoomDistance | number | Closest the orbit camera zooms in on a character. Default 2. |
+| CameraMaxZoomDistance | number | Farthest the orbit camera zooms out from a character. Default 20. |
+
+All ten are saved with the place and scriptable.
 
 ## Example
 

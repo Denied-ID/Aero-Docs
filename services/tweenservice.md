@@ -4,6 +4,12 @@ Animates properties smoothly over time.
 
 `TweenService` builds [Tween](../classes/tween.md) objects. You describe the target, the timing, and the properties to change, then play the tween and let the engine move the values.
 
+## Properties
+
+| Property | Type | What it does |
+| --- | --- | --- |
+| Paused | boolean | Freezes every active tween. New tweens wait until it is false again. Saved with the place. |
+
 ## Methods
 
 | Method | Returns | What it does |

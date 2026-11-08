@@ -1,6 +1,6 @@
 # ServerScriptService
 
-Server-only content.
+Scripts and data that never leave the server.
 
 Instances under `ServerScriptService` stay on the server. Clients never receive them, which makes it the place for server scripts and for data the players should not read.
 

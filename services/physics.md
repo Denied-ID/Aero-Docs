@@ -1,6 +1,22 @@
-# Physics
+?# Physics
 
 What scripts do to the simulated world.
+
+## Properties
+
+| Property | Type | What it does |
+| --- | --- | --- |
+| Paused | boolean | Freezes the simulation step. Scripts, tweens, input, and rendering keep running. Bodies stop moving. Saved with the place. |
+| Gravity | number | Downward acceleration in studs per second squared. Default 196.2. Saved and scriptable. |
+| Frequency | number | Fixed simulation rate in Hz. Default 60, clamped to 30-240. |
+| MaxSubSteps | number | Catch-up steps per frame. Default 2, clamped to 1-8. |
+| SleepEnabled | boolean | Lets settled bodies sleep. Off keeps every body awake. |
+| SleepTime | number | Seconds below the velocity gate before a body sleeps. Default 0.25. |
+| SleepVelocity | number | Speed in studs per second below which a body counts as still. |
+| FallLimit | number | World Y in studs below which a loose part is destroyed and a character's Humanoid dies so the respawn flow runs. Default -200. |
+| SubstepBudget | number | Awake bodies before the solver trades substeps for frame time. Default 800. |
+
+Read-only diagnostics report the last step's awake bodies, substeps, and contact pairs.
 
 ## Methods
 

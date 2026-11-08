@@ -9,7 +9,8 @@ Everyone connected, and the signals for joining and leaving.
 | Member | Type | What it does |
 | --- | --- | --- |
 | LocalPlayer | Player or nil | The player for this client. Read-only, and always nil on the server. |
-| MaxPlayers | number | The player limit. Stored and replicated; connections are not refused because of it. |
+| MaxPlayers | number | The player limit. The server refuses new connections once this many players are connected. |
+| CharacterAutoLoads | boolean | Whether players spawn a character on join and after death. When false, a character only appears once a script calls `Player:LoadCharacter`. Default true. |
 
 ## Events
 
@@ -23,6 +24,10 @@ Everyone connected, and the signals for joining and leaving.
 | Method | Returns | What it does |
 | --- | --- | --- |
 | GetPlayers() | array of Player | Every player currently connected. |
+
+`Player:LoadCharacter()` spawns a character for that player immediately. This can only be run on the server, and it is how a place with `CharacterAutoLoads` turned off brings players in.
+
+`Player:Kick(reason)` disconnects that player and shows them the reason text. This can only be run on the server.
 
 ## Connecting to joins
 

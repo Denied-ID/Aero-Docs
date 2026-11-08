@@ -46,7 +46,7 @@ Everything Luau scripts can access. New to Aero? Start with [Get started](../get
 | [Physics](../services/physics.md) | What scripts do to the simulated world. |
 | [ReplicatedStorage](../services/replicatedstorage.md) | Content both sides need. |
 | [RunService](../services/runservice.md) | The engine's clock: signals for each step and queries about where the script is running. |
-| [ServerScriptService](../services/serverscriptservice.md) | Server-only content. |
+| [ServerScriptService](../services/serverscriptservice.md) | Scripts and data that stay on the server. |
 | [SoundService](../services/soundservice.md) | Settings for music and ambience. |
 | [StarterGui](../services/startergui.md) | The interface every player starts with. |
 | [StarterPack](../services/starterpack.md) | The contents every player's backpack starts with. |

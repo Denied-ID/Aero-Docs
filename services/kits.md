@@ -12,13 +12,21 @@ A kit is a named build that lives in the place, and copies of one kit can stay l
 
 Kit copies that share the same `KitId` keep identical contents: add a brick, resize one, recolor it, turn it, or move it and the change mirrors in all of them, read against each copy's own heading. A brick pulled two studs along one copy's staircase moves two studs along the other's staircase, whichever way that copy faces. Placement of the copy itself never syncs. Every copy sits where it was put, and dragging or turning a whole copy never moves the others. Scaling a whole copy resizes the build itself, so the copies stretch with it, each along its own axes. The most recent edit wins.
 
-The kit's own name, position, and parent belong to each copy and never sync, so every copy can sit where it needs to sit. Set `KitId` to an empty string to break one copy away; copies made with Clone or copy and paste keep the link.
+The kit's own name, position, and parent belong to each copy and never sync, so every copy can sit where it needs to sit. Set `KitId` to an empty string to break one copy away, or clear the `KitId` row in Properties and confirm. Copies made with Clone or copy and paste keep the link. Typing another kit's `KitId` joins that group instead. When other copies already use the id, Studio warns that later edits can overwrite this copy's contents.
 
 Syncing happens while you edit. Undo and redo roll the whole place back, copies included, and the next edit syncs from the restored state. During play, scripts change their own copies and nothing propagates.
 
 ## Saving builds
 
 A saved kit is one `.aekit` file holding the kit and everything inside it. Studio keeps two libraries: a folder named after the place, beside its `.aepl` file, and a global folder at `%LOCALAPPDATA%\Aero\Kits` shared by every place. A place called `Harbor.aepl` keeps its kits in `Harbor.kits\`.
+
+## The Kits service
+
+The Kits service lists this place's saved kits as `KitDefinition` children. Each entry carries the kit's name, its `KitId`, and the `.aekit` file it came from. The list follows the place's kit folder, so a file added or removed outside Studio adds or removes its entry on the next load or tray refresh.
+
+Entries are read-only to scripts and to the Explorer. Deleting one in the Explorer removes it from the place but leaves the file on disk, and Studio remembers that `KitId` so the next sync does not bring the entry back. `Kits:Build` reads the entry's file, so a kit changed on disk is used the next time it is built. When the file is missing, the build falls back to a placed copy with that name.
+
+The entries are saved with the place, so the list survives a round trip even when the kit folder is not beside it.
 
 ## The Kit Tray
 
@@ -35,10 +43,11 @@ Right-click a tray row for these actions:
 | Duplicate | Makes a copy named " Copy" beside the original. |
 | Export Kit to File... | Writes the `.aekit` to a folder you pick. |
 | Promote to Global | Copies the kit to the global library and keeps the place copy. |
+| Move to This Place | Moves a global kit into this place's library. |
 | Update from Selection | Rewrites the kit file from a selected placed copy with the same `KitId`. Enabled once you select a copy of that kit in the Explorer. |
 | Reveal in Explorer | Opens the kit's folder with the file selected. |
 | Show Details | Lists the part count, size, modified date, and file path. |
-| Delete | Removes the file from the library; placed copies stay in the place. |
+| Delete | Removes the file from the library. |
 
 Right-click a Model, Folder, or Kit in the Explorer and open the Kit submenu for the in-place actions:
 

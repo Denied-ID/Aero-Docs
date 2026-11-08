@@ -2,17 +2,15 @@
 
 Keyboard and mouse input on the client.
 
-`UserInputService` reports input as it happens and answers questions about what is held right now. It only works on a client, where there is a keyboard and a pointer to read. Touch and gamepad have no path through the engine.
+`UserInputService` reports input as it happens and answers questions about what is held right now. It only works on a client, where there is a keyboard and a pointer to read.
 
 ## Properties
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| KeyboardEnabled | boolean | Always true. Read-only. |
-| MouseEnabled | boolean | Always true. Read-only. |
-| TouchEnabled | boolean | Always false, because touch input is not implemented. Read-only. |
-| GamepadEnabled | boolean | Always false, because gamepad input is not implemented. Read-only. |
-| MouseBehavior | number | Stored, but nothing reads it, so the mouse is never captured. |
+| KeyboardEnabled | boolean | Whether keyboard events fire. Off also clears held-key state. Saved with the place. |
+| MouseEnabled | boolean | Whether mouse button and wheel events fire. Off also clears pressed-button state. Saved with the place. |
+
 
 ## Events
 

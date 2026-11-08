@@ -83,6 +83,8 @@ A part draws six faces, and each face has its own property. All six take an `Enu
 
 The faces are the same ones `Enum.NormalId` lists. Only `Studs` and `Inlet` survive a write; every other value keeps its number but renders and reads back as `Smooth`. [Enum](../globals/enum.md) lists every item of both lists.
 
+A face set to `Studs` or `Inlet` draws that pattern on the part's real surface: flat on a Block, along the incline of a Wedge or CornerWedge, and wrapped around a Cylinder or Sphere. On a Sphere each surface slot owns the region facing it, so `TopSurface` covers the top cap and the six slots together cover the whole ball. Switching Shape keeps a face's setting, so studs configured on a block are still there after a round trip through another shape.
+
 ## Members
 
 Part has the members every Instance has, and no methods of its own. See [Instance](../globals/instance.md).

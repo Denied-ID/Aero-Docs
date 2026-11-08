@@ -27,7 +27,7 @@ Your apps show their build as **Build #** with the source commit next to it. The
 
 Launching an app through its shortcut goes through the Aero Launcher, which automatically connects to Aero's servers to check for any available updates. If a newer build is available for that app, it automatically downloads said build, and then proceeds to launch. If an update is ever interrupted, relaunching picks up from where it left off.
 
-The Downloads page also lists per-component zips for manual use. Those need a signed-in account to download, though the installer is the best way to get Aero executables seamlessly.
+The Downloads page also lists per-component zips for manual use. Those need a signed-in account to download, though the installer remains the easiest way to get Aero executables.
 
 ## Changing or removing Aero
 

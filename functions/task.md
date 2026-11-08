@@ -17,6 +17,8 @@ The `task` library starts code on its own thread and controls when that thread r
 
 `task.wait()` with no argument sleeps 1/60 of a second. At 60 frames per second that is one frame; above 60 the sleep spans more than one. A negative duration counts as zero, so it waits for the next update instead of skipping ahead.
 
+`wait(seconds?)` is the same function as `task.wait`, available as a global for scripts that use the older name.
+
 The return value is how long the wait really took, not the duration you asked for:
 
 ```lua

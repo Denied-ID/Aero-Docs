@@ -2,7 +2,7 @@
 
 Values that outlast the session, stored beside the place.
 
-The [Store](../services/store.md) service keeps saved values with the place itself, in a sidecar file next to the place file. Both calls are server-only; a LocalScript that tries either raises an error.
+The [Store](../services/store.md) service keeps saved values with the place itself, in a sidecar file next to the place file. Both calls can only be run on the server; a LocalScript that tries either raises an error.
 
 ## Read with a default
 

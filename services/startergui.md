@@ -2,13 +2,18 @@
 
 The interface every player starts with.
 
-Children of `StarterGui` are copied into each player's PlayerGui when the player joins. Edit the templates here; the copies are what players see. On a respawn, the reset setting below decides whether PlayerGui is rebuilt from the templates again.
+Children of `StarterGui` are copied into each player's PlayerGui when the player joins. Edit the templates here, because the copies are what players see. On a respawn, ScreenGuis with [ResetOnSpawn](../classes/screengui.md) are dropped and rebuilt from the templates again.
 
 ## Properties
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| ResetPlayerGuiOnSpawn | boolean | Whether PlayerGui is emptied and rebuilt from StarterGui on each spawn. |
+| CoreGuiPlayerList | boolean | Whether the player list is shown. |
+| CoreGuiHealth | boolean | Whether the health display is shown. |
+| CoreGuiChat | boolean | Whether the chat window is shown. |
+| CoreGuiConnectionMeter | boolean | Whether the connection meter is shown. |
+
+All four are saved with the place.
 
 ## Methods
 
@@ -17,9 +22,9 @@ Children of `StarterGui` are copied into each player's PlayerGui when the player
 | SetCoreGuiEnabled(type, enabled) | nothing | Shows or hides one of the engine's interface elements. |
 | GetCoreGuiEnabled(type) | boolean | Whether that element is enabled. |
 
-`type` is an `Enum.CoreGuiType`: `PlayerList`, `Health`, `Backpack`, `Chat`, `All`, or `EmotesMenu`. An invalid value raises `N is not a valid CoreGuiType`.
+`type` is an `Enum.CoreGuiType`: `PlayerList`, `Health`, `Chat`, `ConnectionMeter`, or `All`. An invalid value raises `N is not a valid CoreGuiType`.
 
-Only the player list, the health display, and chat have something to show or hide. The backpack and emotes menu record the flag and change nothing, and `GetCoreGuiEnabled` reads that recorded flag back.
+Only the player list, the health display, chat, and the connection meter have something to show or hide.
 
 ## Example
 

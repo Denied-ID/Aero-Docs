@@ -33,7 +33,7 @@ A place has all seventeen services. `GetService` returns the existing one, so ca
 | Sound | SoundService |
 | Content and data | Kits, Store, TweenService |
 
-Only services may sit directly under `game`. Moving anything else there raises an error that ends with `only services may live there`. Parts and models belong under Workspace.
+Only services may sit directly under `game`. Moving anything else there raises an error that ends with `only services may live there`. Parts and models belong under Workspace. A service cannot be destroyed, reparented, or renamed, and `game` itself is protected the same way.
 
 ## Example
 

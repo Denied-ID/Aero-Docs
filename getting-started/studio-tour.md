@@ -8,9 +8,9 @@ Studio is where you build. One window, a 3D view in the middle, and panels aroun
 
 The viewport takes up the center. This is your place, rendered live. Click parts to select them and drag to move them. Scripts open as tabs over the viewport.
 
-The Explorer sits on the right. It lists everything in the place as a tree. Right click anything for options.
+The Explorer sits on the right. It lists everything in the place as a tree. Right click anything for options. Services are listed at the root. Hide one from its context menu or bring it back from View > Services. The search box above the tree filters the list: `class:Part`, `name:Door`, or `Transparency>0.5` all narrow it.
 
-Properties sits next to the Explorer. It shows the settings of whatever you selected. Change a number or a color and the viewport updates right away.
+Properties sits next to the Explorer. It shows the settings of whatever you selected. Change a number or a color and the viewport updates right away. Right click a value to copy it or reset it to the class default, and use the search box to find a row by name.
 
 Output runs along the bottom. Script errors and printed messages show up here. Double click a line that mentions a script and Studio jumps straight to it.
 

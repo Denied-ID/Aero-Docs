@@ -42,7 +42,9 @@ local door = workspace.Door          -- same as workspace:FindFirstChild("Door")
 
 A property, event, or method always wins over a child with the same name.
 
-Setting `Parent` to `nil` removes the object from the tree. Moving an object into its own descendant raises an error, and so does parenting anything other than a service directly under `game`.
+Setting `Parent` to `nil` removes the object from the tree. Moving an object into its own descendant raises an error, and so does parenting anything other than a service directly under `game`. Services and `game` itself cannot be reparented or renamed. Under CoreGui and under a kit entry, nothing can be created, moved, or changed.
+
+Destroying a service or `game` raises an error, and `ClearAllChildren` is refused on CoreGui.
 
 ## Events
 
