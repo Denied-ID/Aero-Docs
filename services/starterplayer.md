@@ -18,8 +18,9 @@ Client-side content that runs where it sits.
 | CharacterCollision | boolean | Whether characters collide with each other. Default true. |
 | CameraMinZoomDistance | number | Closest the orbit camera zooms in on a character. Default 2. |
 | CameraMaxZoomDistance | number | Farthest the orbit camera zooms out from a character. Default 20. |
+| CameraFieldOfView | number | Horizontal field of view of the game camera, in degrees. Default 85. |
 
-All ten are saved with the place and scriptable.
+All eleven are saved with the place and scriptable.
 
 ## Example
 

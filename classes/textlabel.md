@@ -12,11 +12,15 @@ A `TextLabel` draws a string inside the bounds of a [Frame](frame.md). It has ev
 | TextColor3 | Color3 | The text color. |
 | TextTransparency | number | 0 is solid, 1 is invisible. |
 | TextSize | number | Height in pixels. Default 18. |
-| Font | string | The font name. Default `Arial`. This is a string, not an `Enum.Font`. |
+| Font | string or Enum.Font | The typeface. `Enum.Font.Sans` and `Enum.Font.Mono` are bundled with the engine; any other string names an installed system family, such as `Arial`. Default `Enum.Font.Sans`. |
+| FontWeight | number | Stroke weight from 100 (thin) to 900 (black). Default 400. The bundled sans offers 400, 500, 600 and 700; mono offers 400 and 700. System families use whatever weights they ship. |
+| FontItalic | boolean | Slants the text where the family has an italic face. |
 | TextXAlignment | number | 0 left, 1 center, 2 right. |
 | TextYAlignment | number | 0 top, 1 middle, 2 bottom. |
 | TextWrapped | boolean | Wraps long lines inside the frame. |
 | TextScaled | boolean | Stores the flag for scaling text to the frame. Text still renders at `TextSize`. |
+| TextUnderline | boolean | Draws a line under the text, using the font's own underline metrics. |
+| TextStrikethrough | boolean | Draws a line through the middle of the text. |
 | TextStrokeTransparency | number | 0 draws a full outline, 1 draws none. Default 1. |
 | TextStrokeColor3 | Color3 | The outline color. |
 | TextBounds | Vector2 | The measured size of the drawn text in pixels. Read-only, and zero until the label has been drawn once. |

@@ -223,6 +223,15 @@ A raw number works as well, read as the exponent on the fade curve, so `1.5` sit
 | All | 4 |
 | EmotesMenu | 5 |
 
+### Font
+
+| Item | Value | What it does |
+| --- | --- | --- |
+| Sans | 0 | The bundled sans family (Inter). The default font. |
+| Mono | 1 | The bundled mono family (JetBrains Mono). |
+
+These two ship with the engine, so text renders identically on every machine. A `Font` property also accepts any installed system family name as a string, such as `Arial`, which is how older places keep rendering.
+
 ### SurfaceType
 
 | Item | Value | What it does |

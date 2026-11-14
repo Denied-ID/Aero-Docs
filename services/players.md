@@ -19,6 +19,8 @@ Everyone connected, and the signals for joining and leaving.
 | PlayerAdded | player | Someone joined. Fires on the server only. |
 | PlayerRemoving | player | Someone is about to leave. Fires on the server only. |
 
+A player whose connection drops keeps their spot for about two minutes. If the server verified who they were and they rejoin in time, they come back with the same character where they left it, and neither PlayerAdded nor PlayerRemoving fires. Past the window, the leave runs as usual.
+
 ## Methods
 
 | Method | Returns | What it does |
