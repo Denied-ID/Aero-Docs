@@ -1,4 +1,4 @@
-﻿# API Reference
+# API Reference
 
 Everything Luau scripts can access. New to Aero? Start with [Get started](../getting-started/index.md).
 

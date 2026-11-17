@@ -1,4 +1,4 @@
-?# RunService
+# RunService
 
 The engine's clock: signals for each step and queries about where the script is running.
 

@@ -218,10 +218,9 @@ A raw number works as well, read as the exponent on the fade curve, so `1.5` sit
 | --- | --- |
 | PlayerList | 0 |
 | Health | 1 |
-| Backpack | 2 |
-| Chat | 3 |
+| Chat | 2 |
+| ConnectionMeter | 3 |
 | All | 4 |
-| EmotesMenu | 5 |
 
 ### Font
 

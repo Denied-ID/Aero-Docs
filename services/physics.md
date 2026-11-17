@@ -1,4 +1,4 @@
-?# Physics
+# Physics
 
 What scripts do to the simulated world.
 

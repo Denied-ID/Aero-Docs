@@ -12,7 +12,7 @@ There is no `Activated` event. Use `MouseButton1Click` for a left click and `Mou
 
 ## Events
 
-Every [GuiObject](textlabel.md) carries these; none of them passes arguments. A click fires `Down`, then `Up`, then `Click`.
+Every interface object carries these, and none of them passes arguments. A click fires `Down`, then `Up`, then `Click`.
 
 | Event | When it fires |
 | --- | --- |
