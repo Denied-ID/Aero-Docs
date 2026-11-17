@@ -1,6 +1,8 @@
 # Troubleshooting
 
-When something breaks, the reason is written down somewhere. There are three places to look, starting with the Output panel inside Studio. The others are the crash dialog with its logs folder, and the installer or updater window, which states plainly what failed. This page covers all three, then the problems people hit most.
+The reason something broke is written down in one of three places.
+
+The first is the Output panel inside Studio. The others are the crash dialog with its logs folder, and the installer or updater window, which states plainly what failed. This page covers all three, then the problems people hit most.
 
 ## The Output panel
 
@@ -16,7 +18,7 @@ A hard native crash is not a script error, so it does not go to Output. The app 
 
 The folder keeps the current run plus the last three runs that ended without a normal shutdown, and deletes every other log the next time an Aero app starts. Each log opens with the build, your Windows version, processor, memory, graphics card and driver, and display mode, so a report already carries the machine it came from.
 
-Two dialogs you may see are worth knowing.
+Two dialogs come up most often.
 
 - A DirectX error naming device creation. The engine found no graphics device it could use, not even software rendering. Update your graphics drivers and Windows first, then report it with the logs if it persists.
 - An unhandled exception with an address and a code. That is a native crash. There is nothing to fix on your side, so send the log and the dump.
@@ -48,4 +50,7 @@ Two dialogs you may see are worth knowing.
 
 ## See also
 
-Back to [Installation](../getting-started/installation.md) if you are still setting up, or the [Studio tour](../getting-started/studio-tour.md) to keep learning the editor.
+- [Installation](../getting-started/installation.md) (setting up from the start)
+- [Studio tour](../getting-started/studio-tour.md) (the editor, panel by panel)
+- [Testing your place](../tutorials/testing-your-place.md) (what Play runs)
+- [API Reference](../api/index.md)

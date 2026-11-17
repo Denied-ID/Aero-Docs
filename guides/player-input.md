@@ -50,7 +50,9 @@ end)
 
 `BindToRenderStep` runs before each rendered frame, on the client. Binding the same name again replaces the earlier callback, and `RunService:UnbindFromRenderStep("Sprint")` removes the whole thing.
 
-The wheel arrives through `InputChanged` with `UserInputType.MouseWheel`, and `GetMouseLocation()` and `GetMouseDelta()` answer where the pointer is and how far it moved this frame.
+## Mouse position and wheel
+
+The wheel arrives through `InputChanged` with `UserInputType.MouseWheel`, and the amount is in `Position.Z`. `GetMouseLocation()` and `GetMouseDelta()` answer where the pointer is and how far it moved this frame.
 
 ## The gameProcessed flag
 

@@ -1,6 +1,6 @@
 # How to
 
-The pages here cover what you build after the first place. That means where code runs, reading input, interfaces, saved data, and the habits and fixes that keep scripts healthy.
+The pages for what you build after the first place, from where code runs to how to ship it.
 
 - [Client and server](client-and-server.md)
 - [Player input](player-input.md)

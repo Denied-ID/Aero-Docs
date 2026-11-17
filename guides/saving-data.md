@@ -67,9 +67,7 @@ winsChanged:FireClient(player, wins)
 
 The client listens with `OnClientEvent` and draws what arrives.
 
-## Testing
-
-A playtest reads the place's saved values and writes to a temporary copy, so testing never changes the real save.
+A playtest reads the place's saved values and writes to a temporary copy, so testing never changes the real save. [Testing your place](../tutorials/testing-your-place.md) covers the rest of what a test run does.
 
 ## See also
 

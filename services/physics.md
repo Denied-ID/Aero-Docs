@@ -59,6 +59,8 @@ A big enough blast sends a character flying. They tumble through the air, land w
 
 Softer blasts don't knock anyone over. The character gets shoved and staggers for a moment but stays on their feet. The cutoff is the same speed a debris strike needs. Fast debris also staggers characters anywhere in the game, not just near a blast.
 
+## Obstacles and slopes
+
 Anchored obstacles at head height can topple a character too. If you walk into a block or overhang above the waist, the character leans toward it, and if you keep pressing they fall over backward. Let go early and they straighten up, so you can brush a low beam while running under it. Walking straight into one is a different story.
 
 Slopes steeper than about 45 degrees get climbed rather than walked. The legs angle up the hill and the character moves slower, while the torso and head stay upright like a person climbing. Gentler ramps are crossed at full speed.

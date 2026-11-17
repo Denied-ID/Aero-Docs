@@ -35,7 +35,7 @@ A [TextLabel](../classes/textlabel.md) draws text inside its bounds, and the set
 
 The two alignments are plain numbers, not enum items. [TextLabel](../classes/textlabel.md) holds the full property list.
 
-A [UICorner](../classes/uicorner.md) under any of them rounds the corners, and a UIStroke draws an outline.
+A [UICorner](../classes/uicorner.md) under any of them rounds the corners, and a [UIStroke](../classes/uistroke.md) draws an outline.
 
 ## Make it answer
 
