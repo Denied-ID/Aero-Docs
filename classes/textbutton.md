@@ -6,7 +6,7 @@ A `TextButton` is a [TextLabel](textlabel.md) the player can click. It has the s
 
 ## Members
 
-TextButton has every member of [TextLabel](textlabel.md), which includes every member of [Frame](frame.md), plus the shared Instance members in [Instance](../globals/instance.md).
+TextButton has every member of [TextLabel](textlabel.md), which includes every member of [Frame](frame.md), plus the shared [Instance](../globals/instance.md) members. It adds no methods of its own.
 
 There is no `Activated` event. Use `MouseButton1Click` for a left click and `MouseButton2Click` for a right click.
 

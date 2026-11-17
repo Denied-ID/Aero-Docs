@@ -41,6 +41,6 @@ You can also uninstall from Windows Settings, where the entry is listed as **Aer
 
 Start with [Troubleshooting](../guides/troubleshooting.md). Installer and updater problems have their own rows there, alongside the script errors and crashes.
 
-## Where to go next
+## See also
 
-Read the [Studio Tour](studio-tour.md) to learn the editor, then browse the [API Reference](../api/index.md) when you start scripting.
+Read the [Studio tour](studio-tour.md) to learn the editor, then browse the [API Reference](../api/index.md) when you start scripting.

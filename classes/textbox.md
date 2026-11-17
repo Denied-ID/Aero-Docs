@@ -16,7 +16,7 @@ A `TextBox` is a [TextLabel](textlabel.md) that accepts typing. It has the text 
 
 ## Members
 
-TextBox has every [TextLabel](textlabel.md) member, which includes every [Frame](frame.md) member, plus the shared Instance members in [Instance](../globals/instance.md).
+TextBox has every [TextLabel](textlabel.md) member, which includes every [Frame](frame.md) member, plus the shared [Instance](../globals/instance.md) members. It adds no methods of its own.
 
 The focus signals that exist inside the engine are not exposed to scripts. Read `Text` when you need the current value, for example from a button next to the field.
 

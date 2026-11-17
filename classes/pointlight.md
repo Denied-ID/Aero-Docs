@@ -16,7 +16,7 @@ Parent a `PointLight` to a part and the part lights its surroundings from its ce
 
 ## Members
 
-PointLight has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+PointLight adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

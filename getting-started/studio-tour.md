@@ -1,4 +1,4 @@
-# Studio Tour
+# Studio tour
 
 Studio is where you build. One window, a 3D view in the middle, and panels around it for everything else.
 
@@ -52,6 +52,6 @@ Edit holds Settings and Keyboard Shortcuts. Both apply the moment you change the
 
 Under Help you will find About. It names your exact build and source commit. Quote those in a bug report. Studio comes in a dark and a light theme, and you can rearrange the panels under View.
 
-## Where to go next
+## See also
 
 Work through [Your first place](../tutorials/first-place.md) to build and script something small, then read [Testing your place](../tutorials/testing-your-place.md). Browse the [API Reference](../api/index.md) when you start adding behavior to your place.

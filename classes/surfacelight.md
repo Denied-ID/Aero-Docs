@@ -18,7 +18,7 @@ Parent a `SurfaceLight` to a part and it shines out of the face you name. It has
 
 ## Members
 
-SurfaceLight has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+SurfaceLight adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

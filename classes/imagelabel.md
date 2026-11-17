@@ -17,7 +17,7 @@ Images are file paths, not asset ids.
 
 ## Members
 
-ImageLabel has every [Frame](frame.md) member, plus the shared Instance members in [Instance](../globals/instance.md). It has no methods of its own.
+ImageLabel has every [Frame](frame.md) member, plus the shared [Instance](../globals/instance.md) members. It adds no methods of its own.
 
 ## Example
 

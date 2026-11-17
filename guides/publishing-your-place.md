@@ -13,3 +13,10 @@ Publishing again is an update. Each publish becomes a new version, and the newes
 The Create page on the website is your management view. The Places tab lists everything you have published with its visibility, live player count, and visits. The Insights tab shows how your places are doing: visits over the last 30 days, total visits, unique players, which place is being played now, and a reach card with how often your places appeared on the Games page or home recommendations, how many of those looks became visits, and how many people chose not to see a place again. Reach counts start when the feature launched, so charts fill in over the first weeks.
 
 If Aero staff delist a place for breaking the [community guidelines](https://aeroengine.org/guidelines), it turns private, its servers stop, and you get the reason by email, on the place's page, and on your [Safety](https://aeroengine.org/safety) page. The visibility choices lock to private until staff relist the place. When you have fixed the problem, open the place's page and use Request review.
+
+## See also
+
+- [Joining a game](joining-a-game.md) (what a player sees on the other side)
+- [Saving data](saving-data.md) (values that travel with the place)
+- [Troubleshooting](troubleshooting.md) (installer and upload failures)
+- [API Reference](../api/index.md)

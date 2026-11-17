@@ -18,7 +18,7 @@ All five are read-only.
 
 ## Members
 
-An InputObject has no methods or events of its own, and the shared Instance members do not do much on one. See [Instance](../globals/instance.md).
+An InputObject adds no methods or events of its own, and the shared Instance members do little on one. See [Instance](../globals/instance.md).
 
 ## Example
 

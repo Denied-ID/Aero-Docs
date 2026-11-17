@@ -17,7 +17,7 @@ The settings are stored and readable, but the engine does not mix audio. Changin
 
 ## Members
 
-SoundService has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+SoundService adds no properties, events, or methods of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

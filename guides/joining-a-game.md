@@ -9,3 +9,10 @@ The Servers section lists the servers running for that game. Press Join on a ser
 The actions menu (the three dots next to Join) copies the place's ID or a link to the page, and reports the place when something breaks the [community guidelines](https://aeroengine.org/guidelines).
 
 If nothing opens when you press Join, the Aero Client is not installed. Install Aero from the downloads page and press Join again.
+
+## See also
+
+- [Publishing your place](publishing-your-place.md) (the other side of the same page)
+- [Installation](../getting-started/installation.md) (installing the Client)
+- [Troubleshooting](troubleshooting.md) (when a join does not open anything)
+- [API Reference](../api/index.md)

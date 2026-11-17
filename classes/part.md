@@ -87,7 +87,7 @@ A face set to `Studs` or `Inlet` draws that pattern on the part's real surface: 
 
 ## Members
 
-Part has the members every Instance has, and no methods of its own. See [Instance](../globals/instance.md).
+Part adds no members of its own beyond the properties above. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

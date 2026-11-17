@@ -12,7 +12,7 @@ A `Model` is a container for parts, usually the pieces of one object such as a g
 
 ## Members
 
-Model also has the members every Instance has. See [Instance](../globals/instance.md).
+Model adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

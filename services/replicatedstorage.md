@@ -6,7 +6,7 @@ Instances under `ReplicatedStorage` are copied to every client. It is the usual 
 
 ## Members
 
-ReplicatedStorage has no properties, events, or methods beyond the shared Instance members. See [Instance](../globals/instance.md).
+ReplicatedStorage adds no properties, events, or methods of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

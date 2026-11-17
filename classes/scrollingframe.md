@@ -22,7 +22,7 @@ The mouse wheel goes to the innermost scrolling frame around the object under th
 
 ## Members
 
-ScrollingFrame has every [Frame](frame.md) member, plus the shared Instance members in [Instance](../globals/instance.md). It has no methods of its own.
+ScrollingFrame has every [Frame](frame.md) member, plus the shared [Instance](../globals/instance.md) members. It adds no methods of its own.
 
 ## Example
 

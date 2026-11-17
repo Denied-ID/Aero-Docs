@@ -19,7 +19,7 @@ The `Rotation` here is unrelated to the rotation of a part.
 
 ## Members
 
-UIGradient has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+UIGradient adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

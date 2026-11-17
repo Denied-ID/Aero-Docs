@@ -37,8 +37,8 @@ The report names the server's scripts, physics, and replication stages, then the
 
 The [Store](../services/store.md) sidecar plays along too: a test reads the place's saved values and writes to a temporary copy, so playtesting never changes the real save.
 
-## Where to go next
+## See also
 
 - [Perf](../services/perf.md): reading the report.
 - [Troubleshooting](../guides/troubleshooting.md): when the test stops at a red line.
-- [Studio Tour](../getting-started/studio-tour.md): the rest of the toolbar.
+- [Studio tour](../getting-started/studio-tour.md): the rest of the toolbar.

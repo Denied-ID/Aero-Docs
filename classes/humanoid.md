@@ -43,7 +43,7 @@ There is no `State` property to read, so keep the last value from `StateChanged`
 
 ## Members
 
-Humanoid has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+Humanoid adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

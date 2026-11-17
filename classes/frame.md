@@ -48,7 +48,7 @@ Mouse events need `Active` set to true.
 
 ## Members
 
-Frame has no class-specific methods. It also has the shared Instance members; see [Instance](../globals/instance.md).
+Frame adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

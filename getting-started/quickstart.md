@@ -12,7 +12,7 @@ Full guide: [Installation](installation.md).
 
 Open Studio and meet the panels: the Explorer on the right, Properties beside it, Output along the bottom, and the Insert palette on the left with Ctrl+I.
 
-Full guide: [Studio Tour](studio-tour.md).
+Full guide: [Studio tour](studio-tour.md).
 
 ## 3. Build your first place
 
@@ -44,7 +44,7 @@ Press F5. Output shows both halves: `server started` from the server script, and
 
 Full guide: [Testing your place](../tutorials/testing-your-place.md).
 
-## Where to go next
+## See also
 
 - [Client and server](../guides/client-and-server.md): why the two scripts ran on two halves.
 - [Troubleshooting](../guides/troubleshooting.md): Output errors, crash dialogs, and fixes.

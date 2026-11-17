@@ -51,7 +51,7 @@ Press F5. The character appears on the baseplate, and Output along the bottom sh
 
 Press Shift+F5 to end the test. The place returns exactly as it was, so changes made during a test do not stay. Build in edit mode, test with Play, and edit again.
 
-## Where to go next
+## See also
 
 - [Client and server](../guides/client-and-server.md): why the two scripts ran on two halves.
 - [Testing your place](testing-your-place.md): the server and client behind Play.

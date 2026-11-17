@@ -13,7 +13,7 @@ A `ModuleScript` never starts on its own. It holds a chunk in `Source` that runs
 
 ## Members
 
-ModuleScript adds no events or methods. It also has the members every Instance has; see [Instance](../globals/instance.md).
+ModuleScript adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

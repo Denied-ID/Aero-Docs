@@ -12,7 +12,7 @@ Add a `UICorner` as a child of a [Frame](frame.md) or another interface object a
 
 ## Members
 
-UICorner has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+UICorner adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

@@ -46,6 +46,6 @@ Two dialogs you may see:
 | Test runs very slowly on an old machine | The engine likely fell back to software rendering | Update your drivers, or use another newer system or change graphics cards if possible |
 | Client closes with a DirectX error dialog | No graphics path worked at all | Update drivers and Windows, then report it with the logs folder contents if the issue persists |
 
-## Where to go next
+## See also
 
-Back to [Installation](../getting-started/installation.md) if you are still setting up, or the [Studio Tour](../getting-started/studio-tour.md) to keep learning the editor.
+Back to [Installation](../getting-started/installation.md) if you are still setting up, or the [Studio tour](../getting-started/studio-tour.md) to keep learning the editor.

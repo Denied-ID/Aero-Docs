@@ -4,4 +4,4 @@ The Quickstart is the short version of everything in this section; the other pag
 
 - [Quickstart](quickstart.md)
 - [Installation](installation.md)
-- [Studio Tour](studio-tour.md)
+- [Studio tour](studio-tour.md)

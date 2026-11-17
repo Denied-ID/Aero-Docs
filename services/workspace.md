@@ -6,7 +6,7 @@ The place world.
 
 ## Members
 
-Workspace has no properties of its own. It has the shared Instance members, including `ChildAdded` and `GetChildren`, which are how you find things in the world. See [Instance](../globals/instance.md).
+Workspace adds no properties of its own. What it has comes from [Instance](../globals/instance.md), including `ChildAdded` and `GetChildren`, which are how you find things in the world.
 
 The global `workspace` points at this service, so `workspace.Part` and `game:GetService("Workspace").Part` reach the same instance.
 

@@ -19,7 +19,7 @@ The outline is drawn around an opaque fill. On an object whose `BackgroundTransp
 
 ## Members
 
-UIStroke has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+UIStroke adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

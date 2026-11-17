@@ -6,7 +6,7 @@ Instances under `ServerScriptService` stay on the server. Clients never receive 
 
 ## Members
 
-ServerScriptService has no properties, events, or methods beyond the shared Instance members. See [Instance](../globals/instance.md).
+ServerScriptService adds no properties, events, or methods of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

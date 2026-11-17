@@ -17,7 +17,7 @@ Both properties belong to MeshPart alone. A plain Part raises an error if you wr
 
 ## Members
 
-MeshPart has every [Part](part.md) member, plus the shared Instance members in [Instance](../globals/instance.md).
+MeshPart has every [Part](part.md) member, plus the shared [Instance](../globals/instance.md) members. It adds no methods of its own.
 
 A MeshPart is not a subclass of Part for `IsA`, so `IsA("Part")` is false even though all the Part properties work.
 

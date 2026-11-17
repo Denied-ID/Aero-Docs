@@ -20,7 +20,7 @@ Parent a `SpotLight` to a part and it shines from one face in a cone. It has the
 
 ## Members
 
-SpotLight has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+SpotLight adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 

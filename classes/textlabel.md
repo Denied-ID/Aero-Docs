@@ -29,7 +29,7 @@ The alignment values are plain numbers, not enum items.
 
 ## Members
 
-TextLabel has every [Frame](frame.md) member, plus the shared Instance members in [Instance](../globals/instance.md). It has no methods of its own.
+TextLabel has every [Frame](frame.md) member, plus the shared [Instance](../globals/instance.md) members. It adds no methods of its own.
 
 ## Example
 
