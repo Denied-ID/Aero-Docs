@@ -33,7 +33,7 @@ A player whose connection drops keeps their spot for about two minutes. If the s
 
 ## Connecting to joins
 
-A script that connects to `PlayerAdded` may have missed players who joined before it ran. Loop `GetPlayers` after connecting to catch them:
+A script that connects to `PlayerAdded` may have missed players who joined before it ran. Loop `GetPlayers` after connecting to catch them.
 
 ```lua
 local Players = game:GetService("Players")
@@ -67,7 +67,7 @@ print(#Players:GetPlayers(), "players connected")
 
 ## See also
 
-- [Player](../classes/player.md): the player object.
-- [StarterGui](startergui.md): what each player's interface starts from.
-- [StarterPack](starterpack.md): what each player's backpack starts from.
+- [Player](../classes/player.md) (the player object)
+- [StarterGui](startergui.md) (what each player's interface starts from)
+- [StarterPack](starterpack.md) (what each player's backpack starts from)
 - [API Reference](../api/index.md)

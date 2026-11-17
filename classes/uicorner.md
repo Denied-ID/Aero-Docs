@@ -8,11 +8,11 @@ Add a `UICorner` as a child of a [Frame](frame.md) or another interface object a
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| CornerRadius | UDim | The corner radius. The scale part is a fraction of the parent's shorter side; the offset part is pixels. |
+| CornerRadius | UDim | The corner radius. The scale part is a fraction of the parent's shorter side, and the offset part is pixels. |
 
 ## Members
 
-UICorner has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+UICorner adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -33,7 +33,7 @@ corner.CornerRadius = UDim.new(0.25, 0)
 
 ## See also
 
-- [UIStroke](uistroke.md): an outline around the same object.
-- [UIGradient](uigradient.md): a color gradient across it.
-- [Frame](frame.md): the usual parent.
+- [UIStroke](uistroke.md) (an outline around the same object)
+- [UIGradient](uigradient.md) (a color gradient across it)
+- [Frame](frame.md) (the usual parent)
 - [API Reference](../api/index.md)

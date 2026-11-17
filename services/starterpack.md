@@ -6,7 +6,7 @@ Children of `StarterPack` are copied into each player's Backpack when the player
 
 ## Members
 
-StarterPack has no properties, events, or methods beyond the shared Instance members. See [Instance](../globals/instance.md).
+StarterPack adds no properties, events, or methods of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -19,7 +19,7 @@ The script above prints `Backpack`, not `StarterPack`, because the copy under th
 
 ## See also
 
-- [StarterGui](startergui.md): the same idea for interface.
-- [Player](../classes/player.md): where the Backpack appears.
-- [Instance](../globals/instance.md): the shared members.
+- [StarterGui](startergui.md) (the same idea for interface)
+- [Player](../classes/player.md) (where the Backpack appears)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

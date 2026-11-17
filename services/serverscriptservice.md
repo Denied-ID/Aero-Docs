@@ -6,7 +6,7 @@ Instances under `ServerScriptService` stay on the server. Clients never receive 
 
 ## Members
 
-ServerScriptService has no properties, events, or methods beyond the shared Instance members. See [Instance](../globals/instance.md).
+ServerScriptService adds no properties, events, or methods of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -24,6 +24,6 @@ A Script placed here runs on the server. A LocalScript placed here never runs, b
 
 ## See also
 
-- [Script](../classes/script.md): the class that runs on the server.
-- [ReplicatedStorage](replicatedstorage.md): content shared with clients.
+- [Script](../classes/script.md) (the class that runs on the server)
+- [ReplicatedStorage](replicatedstorage.md) (content shared with clients)
 - [API Reference](../api/index.md)

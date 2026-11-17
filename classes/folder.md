@@ -6,7 +6,7 @@ A `Folder` is a container with no behavior of its own. Parts, scripts, other fol
 
 ## Members
 
-A Folder adds nothing to the members every Instance has. See [Instance](../globals/instance.md) for `Name`, `Parent`, `ClassName`, the child signals, and the method list.
+A Folder adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -26,6 +26,6 @@ print(#loot:GetChildren())    -- 3
 
 ## See also
 
-- [Model](model.md): a group that also names a primary part.
-- [Instance](../globals/instance.md): the shared members.
+- [Model](model.md) (a group that also names a primary part)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

@@ -20,9 +20,9 @@ Animates properties smoothly over time.
 
 ## What can be tweened
 
-Only three kinds of target animate: a [Part](../classes/part.md), a [Humanoid](../classes/humanoid.md), and the [SoundService](soundservice.md). `Create` accepts any instance, so a tween on a Frame or a Model runs, fires `Completed`, and moves nothing.
+Only three kinds of target animate, which are a [Part](../classes/part.md), a [Humanoid](../classes/humanoid.md), and the [SoundService](soundservice.md). `Create` accepts any instance, so a tween on a Frame or a Model runs, fires `Completed`, and moves nothing.
 
-On those targets, four value types are interpolated:
+On those targets, four value types are interpolated.
 
 | Value type | Example |
 | --- | --- |
@@ -31,7 +31,7 @@ On those targets, four value types are interpolated:
 | Color3 | `Color = Color3.fromRGB(255, 80, 80)` |
 | CFrame | `CFrame = CFrame.new(0, 5, 0)` |
 
-Any other value type is skipped without an error, so a property set to a boolean or an Instance simply does not move. Check that a tween changed something rather than assuming it did.
+Any other value type is skipped without an error, so a property set to a boolean or an Instance does not move. Check that a tween changed something rather than assuming it did.
 
 ## Example
 
@@ -54,7 +54,7 @@ close:Play()
 
 ## See also
 
-- [Tween](../classes/tween.md): the object this service builds.
-- [TweenInfo](../globals/tweeninfo.md): duration, easing, and repeats.
-- [RunService](runservice.md): the clock the tween runs on.
+- [Tween](../classes/tween.md) (the object this service builds)
+- [TweenInfo](../globals/tweeninfo.md) (duration, easing, and repeats)
+- [RunService](runservice.md) (the clock the tween runs on)
 - [API Reference](../api/index.md)

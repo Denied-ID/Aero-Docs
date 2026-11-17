@@ -48,7 +48,7 @@ Mouse events need `Active` set to true.
 
 ## Members
 
-Frame has no class-specific methods. It also has the shared Instance members; see [Instance](../globals/instance.md).
+Frame adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -76,8 +76,8 @@ end)
 
 ## See also
 
-- [ScreenGui](screengui.md): the layer a frame draws in.
-- [TextLabel](textlabel.md): text inside a frame.
-- [UDim2](../globals/udim2.md): how position and size are written.
-- [Instance](../globals/instance.md): the shared members.
+- [ScreenGui](screengui.md) (the layer a frame draws in)
+- [TextLabel](textlabel.md) (text inside a frame)
+- [UDim2](../globals/udim2.md) (how position and size are written)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

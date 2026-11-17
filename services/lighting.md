@@ -23,7 +23,7 @@ Sun, sky, and atmosphere for the place.
 
 `ClockTime` and `TimeOfDay` are two views of one value. Setting either updates the other.
 
-`Ambient` and `OutdoorAmbient` are blended by how high the sun is. At night the world takes `Ambient`; during the day it takes `OutdoorAmbient`, and twilight mixes the two.
+`Ambient` and `OutdoorAmbient` are blended by how high the sun is. At night the world takes `Ambient`. During the day it takes `OutdoorAmbient`, and twilight mixes the two.
 
 The ambient light is directional. Surfaces facing up get a sky-tinted share of it, surfaces facing down fall toward a darker ground tone, and vertical surfaces sit between the two.
 
@@ -55,7 +55,7 @@ print(Lighting:GetSunDirection())
 
 ## See also
 
-- [PointLight](../classes/pointlight.md): a local light source.
-- [Color3](../globals/color3.md): the color type used here.
-- [Instance](../globals/instance.md): the shared members.
+- [PointLight](../classes/pointlight.md) (a local light source)
+- [Color3](../globals/color3.md) (the color type used here)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

@@ -1,6 +1,8 @@
 # Troubleshooting
 
-When something breaks, the reason is written down somewhere. There are three places to look: the Output panel inside Studio, the crash dialog with its logs folder, and the installer or updater window, which states plainly what failed. This page covers all three, then the problems people hit most.
+The reason something broke is written down in one of three places.
+
+The first is the Output panel inside Studio. The others are the crash dialog with its logs folder, and the installer or updater window, which states plainly what failed. This page covers all three, then the problems people hit most.
 
 ## The Output panel
 
@@ -16,7 +18,7 @@ A hard native crash is not a script error, so it does not go to Output. The app 
 
 The folder keeps the current run plus the last three runs that ended without a normal shutdown, and deletes every other log the next time an Aero app starts. Each log opens with the build, your Windows version, processor, memory, graphics card and driver, and display mode, so a report already carries the machine it came from.
 
-Two dialogs you may see:
+Two dialogs come up most often.
 
 - A DirectX error naming device creation. The engine found no graphics device it could use, not even software rendering. Update your graphics drivers and Windows first, then report it with the logs if it persists.
 - An unhandled exception with an address and a code. That is a native crash. There is nothing to fix on your side, so send the log and the dump.
@@ -40,12 +42,15 @@ Two dialogs you may see:
 | What you see | What it means | What to do |
 | --- | --- | --- |
 | Viewport freezes after pressing Play | A script threw during the test | Read the red lines in Output, fix the earliest error, Stop and Play again |
-| Script runs but does nothing, with no error | It may be running where you cannot see it | Check Play versus Run: Run starts server scripts only, with no player character |
+| Script runs but does nothing, with no error | It may be running where you cannot see it | Check Play versus Run. Run starts server scripts only, with no player character |
 | Place opens with a Place Repaired message | Studio dropped unsupported items or moved items so the file could load | Read what it lists, then pick Save Now or Later. Servers will not run the place until it is saved with the fixes |
 | Insert refused with Cannot create here | That parent cannot hold that object | Pick another spot in the Explorer and try again |
 | Test runs very slowly on an old machine | The engine likely fell back to software rendering | Update your drivers, or use another newer system or change graphics cards if possible |
 | Client closes with a DirectX error dialog | No graphics path worked at all | Update drivers and Windows, then report it with the logs folder contents if the issue persists |
 
-## Where to go next
+## See also
 
-Back to [Installation](../getting-started/installation.md) if you are still setting up, or the [Studio Tour](../getting-started/studio-tour.md) to keep learning the editor.
+- [Installation](../getting-started/installation.md) (setting up from the start)
+- [Studio tour](../getting-started/studio-tour.md) (the editor, panel by panel)
+- [Testing your place](../tutorials/testing-your-place.md) (what Play runs)
+- [API Reference](../api/index.md)

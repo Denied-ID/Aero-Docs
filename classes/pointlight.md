@@ -16,7 +16,7 @@ Parent a `PointLight` to a part and the part lights its surroundings from its ce
 
 ## Members
 
-PointLight has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+PointLight adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -36,7 +36,7 @@ light.Shadows = true
 
 ## See also
 
-- [SpotLight](spotlight.md): a cone instead of every direction.
-- [SurfaceLight](surfacelight.md): light from one face of a part.
-- [Part](part.md): the usual parent.
+- [SpotLight](spotlight.md) (a cone instead of every direction)
+- [SurfaceLight](surfacelight.md) (light from one face of a part)
+- [Part](part.md) (the usual parent)
 - [API Reference](../api/index.md)

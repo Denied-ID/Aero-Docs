@@ -19,7 +19,7 @@ The `Rotation` here is unrelated to the rotation of a part.
 
 ## Members
 
-UIGradient has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+UIGradient adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -42,7 +42,7 @@ gradient.Rotation = 90
 
 ## See also
 
-- [UICorner](uicorner.md): rounded corners.
-- [UIStroke](uistroke.md): an outline.
-- [Frame](frame.md): the usual parent.
+- [UICorner](uicorner.md) (rounded corners)
+- [UIStroke](uistroke.md) (an outline)
+- [Frame](frame.md) (the usual parent)
 - [API Reference](../api/index.md)

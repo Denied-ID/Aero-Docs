@@ -20,7 +20,7 @@ Keyboard and mouse input on the client.
 | InputEnded | input, gameProcessed | It came back up. |
 | InputChanged | input, gameProcessed | The mouse wheel turned. |
 
-`input` is an [InputObject](../classes/inputobject.md). The `gameProcessed` flag is false on every event; the engine's own interface does not claim input.
+`input` is an [InputObject](../classes/inputobject.md). The `gameProcessed` flag is false on every event, because the engine's own interface does not claim input.
 
 ## Methods
 
@@ -59,8 +59,8 @@ end)
 
 ## See also
 
-- [InputObject](../classes/inputobject.md): what each event carries.
-- [LocalScript](../classes/localscript.md): where client input belongs.
-- [Player input](../guides/player-input.md): the guide that puts these events to work.
-- [Enum](../globals/enum.md): key codes and input types.
+- [InputObject](../classes/inputobject.md) (what each event carries)
+- [LocalScript](../classes/localscript.md) (where client input belongs)
+- [Player input](../guides/player-input.md) (the guide that puts these events to work)
+- [Enum](../globals/enum.md) (key codes and input types)
 - [API Reference](../api/index.md)

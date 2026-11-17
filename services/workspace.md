@@ -6,7 +6,7 @@ The place world.
 
 ## Members
 
-Workspace has no properties of its own. It has the shared Instance members, including `ChildAdded` and `GetChildren`, which are how you find things in the world. See [Instance](../globals/instance.md).
+Workspace adds no properties of its own. What it has comes from [Instance](../globals/instance.md), including `ChildAdded` and `GetChildren`, which are how you find things in the world.
 
 The global `workspace` points at this service, so `workspace.Part` and `game:GetService("Workspace").Part` reach the same instance.
 
@@ -21,18 +21,18 @@ The global `workspace` points at this service, so `workspace.Part` and `game:Get
 | Argument | Type | What it does |
 | --- | --- | --- |
 | origin | Vector3 | Where the ray starts, in studs. |
-| direction | Vector3 | Where it points. The length does not matter; the direction is normalized. A zero vector raises `Raycast direction must be non-zero`. |
+| direction | Vector3 | Where it points. The length does not matter, because the direction is normalized. A zero vector raises `Raycast direction must be non-zero`. |
 | maxDistance | number | How far to look, in studs. Default 1000. |
 | params | table or nil | Optional filters. |
 
-The `params` table accepts two fields:
+The `params` table accepts two fields.
 
 | Field | Type | What it does |
 | --- | --- | --- |
 | IgnoreCanCollide | boolean | When true, parts with `CanCollide` off are skipped. |
 | FilterDescendantsInstances | array of Instance | Skips these instances and everything under them. |
 
-A hit returns a table with four fields:
+A hit returns a table with four fields.
 
 | Field | Type | What it does |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ end
 
 ## See also
 
-- [Part](../classes/part.md): the usual thing a ray hits.
-- [Vector3](../globals/vector3.md): origins and directions.
-- [game](../globals/game.md): the service container.
+- [Part](../classes/part.md) (the usual thing a ray hits)
+- [Vector3](../globals/vector3.md) (origins and directions)
+- [game](../globals/game.md) (the service container)
 - [API Reference](../api/index.md)

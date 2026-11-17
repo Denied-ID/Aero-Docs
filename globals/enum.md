@@ -16,7 +16,7 @@ An unknown type raises `Nope is not a valid member of Enum`. An unknown item on 
 
 ## Enum types
 
-Each type has a `GetEnumItems` method that returns its items in the order they were registered:
+Each type has a `GetEnumItems` method that returns its items in the order they were registered.
 
 ```lua
 for _, item in Enum.Material:GetEnumItems() do
@@ -80,8 +80,8 @@ Every list below carries the number the engine stores, which is what replication
 
 | Item | Value | What it does |
 | --- | --- | --- |
-| Compatibility | 0 | The older flat lighting: ambient never varies by surface orientation. |
-| Dynamic | 1 | The directional look: ambient varies by surface orientation. |
+| Compatibility | 0 | The older flat lighting, where ambient never varies by surface orientation. |
+| Dynamic | 1 | The directional look, where ambient varies by surface orientation. |
 
 See [Lighting](../services/lighting.md).
 
@@ -218,10 +218,9 @@ A raw number works as well, read as the exponent on the fade curve, so `1.5` sit
 | --- | --- |
 | PlayerList | 0 |
 | Health | 1 |
-| Backpack | 2 |
-| Chat | 3 |
+| Chat | 2 |
+| ConnectionMeter | 3 |
 | All | 4 |
-| EmotesMenu | 5 |
 
 ### Font
 
@@ -264,8 +263,8 @@ print(Enum.Material.Neon.EnumType)   -- Material
 
 ## See also
 
-- [Instance](../globals/instance.md): objects whose properties take enum items.
-- [TweenInfo](tweeninfo.md): easing styles and directions.
-- [Physics](../services/physics.md): blasts, and the falloff enum they take.
-- [Part](../classes/part.md): materials, shapes, and the surface faces.
+- [Instance](../globals/instance.md) (objects whose properties take enum items)
+- [TweenInfo](tweeninfo.md) (easing styles and directions)
+- [Physics](../services/physics.md) (blasts, and the falloff enum they take)
+- [Part](../classes/part.md) (materials, shapes, and the surface faces)
 - [API Reference](../api/index.md)

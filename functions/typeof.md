@@ -2,7 +2,7 @@
 
 Names the type of a value.
 
-`typeof` returns a string describing the value. For the engine's own values it returns the name used across this reference: `Instance` for anything in the tree, `Enum` for a list, `EnumItem` for one item from a list.
+`typeof` returns a string describing the value. For the engine's own values it returns the name used across this reference. That is `Instance` for anything in the tree, `Enum` for a list, and `EnumItem` for one item from a list.
 
 ## Engine values
 
@@ -49,6 +49,6 @@ print(typeof(workspace))             -- Instance
 
 ## See also
 
-- [The Luau standard library](../scripting/luau.md): the rest of what the VM provides.
-- [Instance](../globals/instance.md): the objects typeof reports as Instance.
+- [The Luau standard library](../scripting/luau.md) (the rest of what the VM provides)
+- [Instance](../globals/instance.md) (the objects typeof reports as Instance)
 - [API Reference](../api/index.md)

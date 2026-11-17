@@ -1,6 +1,6 @@
-?# RunService
+# RunService
 
-The engine's clock: signals for each step and queries about where the script is running.
+The engine's clock, with signals for each step and queries about where the script is running.
 
 `RunService` is how a script does something every frame, and how it asks whether it is on the server or a client.
 
@@ -18,7 +18,7 @@ The engine's clock: signals for each step and queries about where the script is 
 | Event | Callback arguments | When it fires |
 | --- | --- | --- |
 | PreSimulation | deltaTime | First of the frame's script signals. State you change here is what the rest of the frame reads. |
-| Stepped | time, deltaTime | Second. `time` is the world clock in seconds since the place started; `deltaTime` is this frame's step. |
+| Stepped | time, deltaTime | Second. `time` is the world clock in seconds since the place started, and `deltaTime` is this frame's step. |
 | Heartbeat | deltaTime | The main once-per-frame tick for game logic. |
 | PostSimulation | deltaTime | Last of the four, so reads here see every change made this frame. |
 | RenderStepped | deltaTime | On a client, just before the frame is drawn. |
@@ -29,9 +29,9 @@ The first four run in that order once per frame, after the physics steps. `Rende
 
 | Method | Returns | What it does |
 | --- | --- | --- |
-| IsServer() | boolean | True on a server: the playtest server in Studio or a dedicated server. |
-| IsClient() | boolean | True on a client: the playtest client in Studio or the Aero Client. |
-| IsStudio() | boolean | True inside Studio: while editing and during a playtest. |
+| IsServer() | boolean | True on a server, which is the playtest server in Studio or a dedicated server. |
+| IsClient() | boolean | True on a client, which is the playtest client in Studio or the Aero Client. |
+| IsStudio() | boolean | True inside Studio, while editing and during a playtest. |
 | BindToRenderStep(name, priority, callback) | nothing | Calls `callback(deltaTime)` before each rendered frame. |
 | UnbindFromRenderStep(name) | nothing | Removes the binding with that name. |
 
@@ -59,7 +59,7 @@ end
 
 ## See also
 
-- [task](../functions/task.md): scheduling without a per-frame signal.
-- [TweenService](tweenservice.md): animation that runs off the same clock.
-- [Instance](../globals/instance.md): the shared members.
+- [task](../functions/task.md) (scheduling without a per-frame signal)
+- [TweenService](tweenservice.md) (animation that runs off the same clock)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

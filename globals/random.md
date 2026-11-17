@@ -48,6 +48,6 @@ end
 
 ## See also
 
-- [BrickColor](brickcolor.md): a palette with its own random picker.
-- [Vector3](vector3.md): what `NextUnitVector` returns.
+- [BrickColor](brickcolor.md) (a palette with its own random picker)
+- [Vector3](vector3.md) (what `NextUnitVector` returns)
 - [API Reference](../api/index.md)

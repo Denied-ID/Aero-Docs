@@ -1,4 +1,4 @@
-﻿# API Reference
+# API Reference
 
 Everything Luau scripts can access. New to Aero? Start with [Get started](../getting-started/index.md).
 
@@ -45,7 +45,7 @@ Everything Luau scripts can access. New to Aero? Start with [Get started](../get
 | [Players](../services/players.md) | Everyone connected, and the signals for joining and leaving. |
 | [Physics](../services/physics.md) | What scripts do to the simulated world. |
 | [ReplicatedStorage](../services/replicatedstorage.md) | Content both sides need. |
-| [RunService](../services/runservice.md) | The engine's clock: signals for each step and queries about where the script is running. |
+| [RunService](../services/runservice.md) | The engine's clock, with signals for each step and queries about where the script is running. |
 | [ServerScriptService](../services/serverscriptservice.md) | Scripts and data that stay on the server. |
 | [SoundService](../services/soundservice.md) | Settings for music and ambience. |
 | [StarterGui](../services/startergui.md) | The interface every player starts with. |

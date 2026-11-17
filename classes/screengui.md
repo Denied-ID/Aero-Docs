@@ -15,9 +15,7 @@ A `ScreenGui` is the root of an interface tree. Frames, labels, and buttons only
 
 ## Members
 
-ScreenGui also has every interface member listed on [Frame](frame.md), including position, size, and the mouse events. Its own `Position` and `Size` are ignored by layout, because the layer always covers the viewport.
-
-It has the shared Instance members too; see [Instance](../globals/instance.md).
+ScreenGui also has every interface member listed on [Frame](frame.md), including position, size, and the mouse events. Its own `Position` and `Size` are ignored by layout, because the layer always covers the viewport. The shared [Instance](../globals/instance.md) members come with it.
 
 ## Example
 
@@ -40,8 +38,8 @@ label.Text = "Ready"
 
 ## See also
 
-- [Frame](frame.md): the container to put inside a layer.
-- [StarterGui](../services/startergui.md): the template each player receives.
-- [UDim2](../globals/udim2.md): sizes and positions.
-- [Instance](../globals/instance.md): the shared members.
+- [Frame](frame.md) (the container to put inside a layer)
+- [StarterGui](../services/startergui.md) (the template each player receives)
+- [UDim2](../globals/udim2.md) (sizes and positions)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

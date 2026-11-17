@@ -6,7 +6,7 @@ Instances under `ReplicatedStorage` are copied to every client. It is the usual 
 
 ## Members
 
-ReplicatedStorage has no properties, events, or methods beyond the shared Instance members. See [Instance](../globals/instance.md).
+ReplicatedStorage adds no properties, events, or methods of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -24,7 +24,7 @@ Both sides can find the same instance by the same path, which is what makes it a
 
 ## See also
 
-- [RemoteEvent](../classes/remoteevent.md): a channel kept here.
-- [ModuleScript](../classes/modulescript.md): shared code kept here.
-- [ServerScriptService](serverscriptservice.md): the container only the server sees.
+- [RemoteEvent](../classes/remoteevent.md) (a channel kept here)
+- [ModuleScript](../classes/modulescript.md) (shared code kept here)
+- [ServerScriptService](serverscriptservice.md) (the container only the server sees)
 - [API Reference](../api/index.md)

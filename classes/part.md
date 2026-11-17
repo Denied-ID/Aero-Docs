@@ -40,7 +40,7 @@ A Sphere uses its X value for all three axes. A Cylinder uses X for both X and Z
 | Material | Enum.Material | The surface material, by enum item, name, or number. |
 | Shape | Enum.PartType | The primitive shape. Also takes the strings `Block`, `Ball`, `Sphere`, `Cylinder`, `Wedge`, and `CornerWedge`. |
 
-`BrickColor` is only a view of `Color`: the part stores channels, not a palette number, so two palette colors with the same channels are indistinguishable when read back.
+`BrickColor` is only a view of `Color`. The part stores channels, not a palette number, so two palette colors with the same channels are indistinguishable when read back.
 
 `Shape` prefers the strings. The enum values for `Ball` and `Cylinder` are numbered differently from the stored shapes, so `Enum.PartType.Cylinder` gives you a sphere and `Enum.PartType.Ball` gives you a cylinder. [Enum](../globals/enum.md) holds the full list.
 
@@ -81,13 +81,15 @@ A part draws six faces, and each face has its own property. All six take an `Enu
 | RightSurface | Right |
 | LeftSurface | Left |
 
-The faces are the same ones `Enum.NormalId` lists. Only `Studs` and `Inlet` survive a write; every other value keeps its number but renders and reads back as `Smooth`. [Enum](../globals/enum.md) lists every item of both lists.
+The faces are the same ones `Enum.NormalId` lists. Only `Studs` and `Inlet` survive a write. Every other value keeps its number but renders and reads back as `Smooth`. [Enum](../globals/enum.md) lists every item of both lists.
 
-A face set to `Studs` or `Inlet` draws that pattern on the part's real surface: flat on a Block, along the incline of a Wedge or CornerWedge, and wrapped around a Cylinder or Sphere. On a Sphere each surface slot owns the region facing it, so `TopSurface` covers the top cap and the six slots together cover the whole ball. Switching Shape keeps a face's setting, so studs configured on a block are still there after a round trip through another shape.
+A face set to `Studs` or `Inlet` draws that pattern on the part's real surface. It is flat on a Block, follows the incline of a Wedge or CornerWedge, and wraps around a Cylinder or Sphere.
+
+On a Sphere each surface slot owns the region facing it, so `TopSurface` covers the top cap and the six slots together cover the whole ball. Switching Shape keeps a face's setting, so studs configured on a block are still there after a round trip through another shape.
 
 ## Members
 
-Part has the members every Instance has, and no methods of its own. See [Instance](../globals/instance.md).
+Part adds no members of its own beyond the properties above. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -105,8 +107,8 @@ Any unanchored part starts falling as soon as it is parented into Workspace.
 
 ## See also
 
-- [MeshPart](meshpart.md): a part with a mesh shape.
-- [CFrame](../globals/cframe.md): positions and rotations.
-- [Enum](../globals/enum.md): materials, shapes, and surface types.
-- [Instance](../globals/instance.md): the shared members.
+- [MeshPart](meshpart.md) (a part with a mesh shape)
+- [CFrame](../globals/cframe.md) (positions and rotations)
+- [Enum](../globals/enum.md) (materials, shapes, and surface types)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

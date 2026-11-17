@@ -18,7 +18,7 @@ Parent a `SurfaceLight` to a part and it shines out of the face you name. It has
 
 ## Members
 
-SurfaceLight has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+SurfaceLight adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -38,7 +38,7 @@ glow.Angle = 90
 
 ## See also
 
-- [PointLight](pointlight.md): light in every direction.
-- [SpotLight](spotlight.md): a cone from a face too.
-- [Part](part.md): the usual parent.
+- [PointLight](pointlight.md) (light in every direction)
+- [SpotLight](spotlight.md) (a cone from a face too)
+- [Part](part.md) (the usual parent)
 - [API Reference](../api/index.md)

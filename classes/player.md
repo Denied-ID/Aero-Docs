@@ -2,7 +2,7 @@
 
 One person in the game.
 
-A `Player` is the engine's record of a connected client: its id, the character it controls, and the containers its interface and tools are copied into. The [Players](../services/players.md) service holds them all.
+A `Player` is the engine's record of a connected client. It holds the player's id, the character it controls, and the containers its interface and tools are copied into. The [Players](../services/players.md) service holds them all.
 
 ## Properties
 
@@ -35,7 +35,7 @@ end)
 
 ## See also
 
-- [Players](../services/players.md): the list of players and the join signals.
-- [Humanoid](humanoid.md): the part of a character that moves and takes damage.
-- [Instance](../globals/instance.md): the shared members.
+- [Players](../services/players.md) (the list of players and the join signals)
+- [Humanoid](humanoid.md) (the part of a character that moves and takes damage)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

@@ -28,7 +28,7 @@ A dead character topples to the ground. With `BreakJointsOnDeath` on, the body p
 | Died | none | Health reached 0. |
 | StateChanged | oldState, newState | The character moved between its states. |
 
-The two arguments are state names. The engine passes one of these six:
+The two arguments are state names. The engine passes one of these six states.
 
 | State | When the character is in it |
 | --- | --- |
@@ -43,7 +43,7 @@ There is no `State` property to read, so keep the last value from `StateChanged`
 
 ## Members
 
-Humanoid has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+Humanoid adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -77,7 +77,7 @@ Player has no `CharacterAdded` event. The character arrives as a change to `Play
 
 ## See also
 
-- [Player](player.md): the player a character belongs to.
-- [Model](model.md): the group a character is built in.
-- [Instance](../globals/instance.md): the shared members.
+- [Player](player.md) (the player a character belongs to)
+- [Model](model.md) (the group a character is built in)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

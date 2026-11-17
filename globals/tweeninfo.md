@@ -2,7 +2,7 @@
 
 Timing settings for an animation.
 
-`TweenInfo` describes how a [TweenService](../services/tweenservice.md) animation should run: how long it lasts, how it eases, how many times it repeats, and how long it waits first.
+`TweenInfo` describes how a [TweenService](../services/tweenservice.md) animation should run. It sets how long the animation lasts, how it eases, how many times it repeats, and how long it waits first.
 
 ## Creating one
 
@@ -21,7 +21,7 @@ Every argument is optional.
 | reverses | boolean | false | Whether each repeat plays backward. |
 | delayTime | number | 0 | Seconds to wait before the first run. |
 
-The two easing arguments accept an enum item, a plain number, or the item's name as a string:
+The two easing arguments accept an enum item, a plain number, or the item's name as a string.
 
 ```lua
 TweenInfo.new(2, Enum.EasingStyle.Bounce)
@@ -65,7 +65,7 @@ print(info.EasingStyle.Name)    -- Quad
 
 ## See also
 
-- [TweenService](../services/tweenservice.md): where a TweenInfo is used.
-- [Tween](../classes/tween.md): the animation object it configures.
-- [Enum](enum.md): the easing lists.
+- [TweenService](../services/tweenservice.md) (where a TweenInfo is used)
+- [Tween](../classes/tween.md) (the animation object it configures)
+- [Enum](enum.md) (the easing lists)
 - [API Reference](../api/index.md)

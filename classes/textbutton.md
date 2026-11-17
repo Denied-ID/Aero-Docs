@@ -6,13 +6,13 @@ A `TextButton` is a [TextLabel](textlabel.md) the player can click. It has the s
 
 ## Members
 
-TextButton has every member of [TextLabel](textlabel.md), which includes every member of [Frame](frame.md), plus the shared Instance members in [Instance](../globals/instance.md).
+TextButton has every member of [TextLabel](textlabel.md), which includes every member of [Frame](frame.md), plus the shared [Instance](../globals/instance.md) members. It adds no methods of its own.
 
 There is no `Activated` event. Use `MouseButton1Click` for a left click and `MouseButton2Click` for a right click.
 
 ## Events
 
-Every [GuiObject](textlabel.md) carries these; none of them passes arguments. A click fires `Down`, then `Up`, then `Click`.
+Every interface object carries these, and none of them passes arguments. A click fires `Down`, then `Up`, then `Click`.
 
 | Event | When it fires |
 | --- | --- |
@@ -52,8 +52,8 @@ end)
 
 ## See also
 
-- [TextLabel](textlabel.md): the text members.
-- [Frame](frame.md): the layout members.
-- [TextBox](textbox.md): text the player can type.
-- [Instance](../globals/instance.md): the shared members.
+- [TextLabel](textlabel.md) (the text members)
+- [Frame](frame.md) (the layout members)
+- [TextBox](textbox.md) (text the player can type)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

@@ -15,11 +15,11 @@ The `task` library starts code on its own thread and controls when that thread r
 
 ## Waiting
 
-`task.wait()` with no argument sleeps 1/60 of a second. At 60 frames per second that is one frame; above 60 the sleep spans more than one. A negative duration counts as zero, so it waits for the next update instead of skipping ahead.
+`task.wait()` with no argument sleeps 1/60 of a second. At 60 frames per second that is one frame, and above 60 the sleep spans more than one. A negative duration counts as zero, so it waits for the next update instead of skipping ahead.
 
 `wait(seconds?)` is the same function as `task.wait`, available as a global for scripts that use the older name.
 
-The return value is how long the wait really took, not the duration you asked for:
+The return value is how long the wait really took, not the duration you asked for.
 
 ```lua
 local elapsed = task.wait(2)
@@ -50,6 +50,6 @@ print("runs second")
 
 ## See also
 
-- [RunService](../services/runservice.md): signals that fire every step.
-- [script](../classes/script.md): the instance a scheduled thread belongs to.
+- [RunService](../services/runservice.md) (signals that fire every step)
+- [script](../classes/script.md) (the instance a scheduled thread belongs to)
 - [API Reference](../api/index.md)

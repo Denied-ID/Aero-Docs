@@ -2,7 +2,7 @@
 
 A color mixed from red, green, and blue.
 
-Each channel is a number from 0 to 1. `Color3` is used anywhere a color is set: parts, lights, interface objects, and effects.
+Each channel is a number from 0 to 1. `Color3` is used wherever a color is set, including parts, lights, interface objects, and effects.
 
 ## Creating one
 
@@ -18,7 +18,7 @@ Each channel is a number from 0 to 1. `Color3` is used anywhere a color is set: 
 
 `fromHSV` wraps the hue into the 0 to 1 range, so negative hues work. Saturation and value are clamped. A saturation of 0 or less gives a grey.
 
-`fromHex` accepts an optional leading `#` and needs exactly six hex digits. A malformed string does not raise: it returns white. That makes a typo in a color constant look like a deliberate white, so check the result if the color matters.
+`fromHex` accepts an optional leading `#` and needs exactly six hex digits. A malformed string does not raise, and returns white instead. That makes a typo in a color constant look like a deliberate white, so check the result if the color matters.
 
 ## Members
 
@@ -61,6 +61,6 @@ print(faded:ToHex())       -- ffc480
 
 ## See also
 
-- [BrickColor](brickcolor.md): a color picked from a fixed palette.
-- [Part](../classes/part.md): where a color usually goes.
+- [BrickColor](brickcolor.md) (a color picked from a fixed palette)
+- [Part](../classes/part.md) (where a color usually goes)
 - [API Reference](../api/index.md)

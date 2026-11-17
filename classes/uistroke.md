@@ -14,12 +14,12 @@ The outline is drawn around an opaque fill. On an object whose `BackgroundTransp
 | Thickness | number | Width in pixels. Default 1. |
 | Transparency | number | 0 is solid, 1 is invisible. |
 | Enabled | boolean | Whether the outline draws. |
-| LineJoinMode | number | 0 round, 1 bevel, 2 miter. Stored for now; every stroke joins the same way. |
-| ApplyStrokeMode | number | 0 border, 1 contextual. Stored for now; both draw the same way. |
+| LineJoinMode | number | 0 round, 1 bevel, 2 miter. Stored, but every stroke joins the same way. |
+| ApplyStrokeMode | number | 0 border, 1 contextual. Stored, but both draw the same way. |
 
 ## Members
 
-UIStroke has no methods of its own. It also has the shared Instance members; see [Instance](../globals/instance.md).
+UIStroke adds no members of its own. What it has comes from [Instance](../globals/instance.md).
 
 ## Example
 
@@ -45,7 +45,7 @@ stroke.LineJoinMode = 0
 
 ## See also
 
-- [UICorner](uicorner.md): rounded corners under the same outline.
-- [UIGradient](uigradient.md): a gradient across the fill.
-- [Frame](frame.md): the usual parent.
+- [UICorner](uicorner.md) (rounded corners under the same outline)
+- [UIGradient](uigradient.md) (a gradient across the fill)
+- [Frame](frame.md) (the usual parent)
 - [API Reference](../api/index.md)

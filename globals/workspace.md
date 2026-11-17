@@ -6,7 +6,7 @@ Shortcut for the Workspace service.
 
 ## What lives here
 
-Parts, models, and characters sit under `workspace`, and that is what makes them part of the world. Creating a part does not put it anywhere by itself; setting its parent does.
+Parts, models, and characters sit under `workspace`, and that is what makes them part of the world. Creating a part does not put it anywhere by itself. Setting its parent does.
 
 ```lua
 local part = Instance.new("Part")
@@ -22,6 +22,6 @@ Workspace has the shared Instance members plus the world properties and the `Ray
 
 ## See also
 
-- [Workspace](../services/workspace.md): the service page.
-- [Part](../classes/part.md): the most common thing to put here.
+- [Workspace](../services/workspace.md) (the service page)
+- [Part](../classes/part.md) (the most common thing to put here)
 - [API Reference](../api/index.md)
