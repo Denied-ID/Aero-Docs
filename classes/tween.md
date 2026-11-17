@@ -54,7 +54,7 @@ tween:Play()
 
 ## See also
 
-- [TweenService](../services/tweenservice.md): builds a tween.
-- [TweenInfo](../globals/tweeninfo.md): the timing settings.
-- [Enum](../globals/enum.md): the PlaybackState list.
+- [TweenService](../services/tweenservice.md) (builds a tween)
+- [TweenInfo](../globals/tweeninfo.md) (the timing settings)
+- [Enum](../globals/enum.md) (the PlaybackState list)
 - [API Reference](../api/index.md)

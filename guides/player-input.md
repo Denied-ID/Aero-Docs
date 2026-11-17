@@ -6,7 +6,7 @@ Input is a client thing. The keyboard and the pointer live on that half, and the
 
 ## React to a key
 
-Drop a LocalScript into StarterPlayer and connect to `InputBegan`:
+Drop a LocalScript into StarterPlayer and connect to `InputBegan`.
 
 ```lua
 local UserInputService = game:GetService("UserInputService")
@@ -32,11 +32,11 @@ UserInputService.InputBegan:Connect(function (input)
 end)
 ```
 
-A click meant for an interface is better served where it lands: [TextButton](../classes/textbutton.md) and the [frame](../classes/frame.md) mouse events carry the click with no hit-testing of your own.
+A click meant for an interface is better served where it lands. [TextButton](../classes/textbutton.md) and the [frame](../classes/frame.md) mouse events carry the click with no hit-testing of your own.
 
 ## Ask what is held
 
-`InputBegan` reports the moment a key went down. For a key that matters the whole time it is held, like sprint on Shift, ask once per frame:
+`InputBegan` reports the moment a key went down. For a key that matters the whole time it is held, like sprint on Shift, ask once per frame.
 
 ```lua
 local RunService = game:GetService("RunService")
@@ -54,7 +54,7 @@ The wheel arrives through `InputChanged` with `UserInputType.MouseWheel`, and `G
 
 ## The gameProcessed flag
 
-Each callback also receives a `gameProcessed` flag. It reads false on every event: the engine's own interface does not claim input, so nothing in it takes a key away from a script.
+Each callback also receives a `gameProcessed` flag. It reads false on every event, because the engine's own interface does not claim input, so nothing in it takes a key away from a script.
 
 ## Touch and gamepad
 
@@ -62,8 +62,8 @@ Neither has a path through the engine. `TouchEnabled` and `GamepadEnabled` alway
 
 ## See also
 
-- [UserInputService](../services/userinputservice.md): the events and the held-key questions.
-- [InputObject](../classes/inputobject.md): what each event carries.
-- [RunService](../services/runservice.md): per-frame work on the client.
-- [Building an interface](building-an-interface.md): clicks that land on buttons instead.
+- [UserInputService](../services/userinputservice.md) (the events and the held-key questions)
+- [InputObject](../classes/inputobject.md) (what each event carries)
+- [RunService](../services/runservice.md) (per-frame work on the client)
+- [Building an interface](building-an-interface.md) (clicks that land on buttons instead)
 - [API Reference](../api/index.md)

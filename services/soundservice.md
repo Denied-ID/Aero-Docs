@@ -31,5 +31,5 @@ SoundService.AmbientReverb = "Hall"
 
 ## See also
 
-- [Instance](../globals/instance.md): the shared members.
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

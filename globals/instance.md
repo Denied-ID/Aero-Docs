@@ -2,7 +2,7 @@
 
 The base of every object, with Instance.new to create them.
 
-Every object in a place is an Instance: parts, scripts, folders, interface objects, and the services themselves. Each one has a class name, a name, a place in the tree, and the members its class adds on top of the ones listed here.
+Every object in a place is an Instance. That covers parts, scripts, folders, interface objects, and the services themselves. Each one has a class name, a name, a place in the tree, and the members its class adds on top of the ones listed here.
 
 ## Creating one
 
@@ -11,7 +11,7 @@ Every object in a place is an Instance: parts, scripts, folders, interface objec
 | `Instance.new(className)` | A new object of that class, with no parent. |
 | `Instance.new(className, parent)` | The same, already parented. |
 
-The class name must be one the engine can build on demand:
+The class name must be one the engine can build on demand.
 
 | Group | Names |
 | --- | --- |
@@ -34,7 +34,7 @@ An unknown name raises `NotAClass is not a valid class name`. Workspace is creat
 | ClassName | string | The class name, read-only. |
 | Parent | Instance or nil | Where the object sits. Setting it moves the object and everything under it. |
 
-Reading a member that is not a property, event, or method with an object's name returns its direct child with that exact name, case-sensitive:
+Reading a member that is not a property, event, or method with an object's name returns its direct child with that exact name, case-sensitive.
 
 ```lua
 local door = workspace.Door          -- same as workspace:FindFirstChild("Door")
@@ -48,7 +48,7 @@ Destroying a service or `game` raises an error, and `ClearAllChildren` is refuse
 
 ## Events
 
-Every class has these:
+Every class has these events.
 
 | Event | Callback arguments | When it fires |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ Every instance sees every method. A method only works on the class it belongs to
 | --- | --- | --- |
 | FindFirstChild(name, recursive?) | any | Returns the first child with that name, or a descendant when `recursive` is truthy. |
 | FindFirstChildOfClass(className) | any | Returns the first direct child of that class. |
-| FindFirstChildWhichIsA(className, recursive?) | any | The same lookup as `FindFirstChildOfClass` here; both accept a base class name. |
+| FindFirstChildWhichIsA(className, recursive?) | any | The same lookup as `FindFirstChildOfClass` here. Both accept a base class name. |
 | FindFirstAncestor(name) | any | Walks up the tree to the first ancestor with that name. |
 | FindFirstAncestorOfClass(className) | any | Walks up to the first ancestor of that class. |
 | WaitForChild(name, timeout?) | any | Yields until a child with that name exists. Returns nil if the timeout passes first. Without a timeout it waits forever. |
@@ -160,6 +160,6 @@ print(part:GetFullName())    -- Workspace.Loot.Part
 
 ## See also
 
-- [game](../globals/game.md): the root of the tree.
-- [Vector3](../globals/vector3.md): positions and directions.
+- [game](../globals/game.md) (the root of the tree)
+- [Vector3](../globals/vector3.md) (positions and directions)
 - [API Reference](../api/index.md)

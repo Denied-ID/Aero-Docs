@@ -12,7 +12,7 @@ A place runs as a server with clients attached. The server loads the place, simu
 | [LocalScript](../classes/localscript.md) | one client | [StarterPlayer](../services/starterplayer.md), [StarterGui](../services/startergui.md) |
 | [ModuleScript](../classes/modulescript.md) | whichever side requires it first | [ReplicatedStorage](../services/replicatedstorage.md) |
 
-A script can ask where it is:
+A script can ask where it is.
 
 ```lua
 local RunService = game:GetService("RunService")
@@ -27,9 +27,9 @@ end
 ## What each side sees
 
 - The server sees the whole tree, including [ServerScriptService](../services/serverscriptservice.md), which clients never receive.
-- [ReplicatedStorage](../services/replicatedstorage.md) reaches both sides: the same instances at the same paths, which is what makes it the home for shared modules and remotes.
+- [ReplicatedStorage](../services/replicatedstorage.md) reaches both sides with the same instances at the same paths, which is what makes it the home for shared modules and remotes.
 - [StarterGui](../services/startergui.md) and [StarterPack](../services/starterpack.md) are templates. Each joining player gets copies in their own PlayerGui and Backpack, and the copy is what runs.
-- A client's copy belongs to that client. A change a client script makes stays on that client; the server learns nothing until a script tells it.
+- A client's copy belongs to that client. A change a client script makes stays on that client, and the server learns nothing until a script tells it.
 
 ## Crossing the gap
 
@@ -44,8 +44,8 @@ The [RemoteEvent](../classes/remoteevent.md) page shows the pair of scripts that
 
 ## See also
 
-- [Script](../classes/script.md) and [LocalScript](../classes/localscript.md): the two classes and where they start.
-- [Player input](player-input.md): keys and clicks on the client half.
-- [Scripting best practices](scripting-best-practices.md): the habits this model rewards.
-- [Testing your place](../tutorials/testing-your-place.md): both halves running in one Studio process.
+- [Script](../classes/script.md) and [LocalScript](../classes/localscript.md) (the two classes and where they start)
+- [Player input](player-input.md) (keys and clicks on the client half)
+- [Scripting best practices](scripting-best-practices.md) (the habits this model rewards)
+- [Testing your place](../tutorials/testing-your-place.md) (both halves running in one Studio process)
 - [API Reference](../api/index.md)

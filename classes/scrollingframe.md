@@ -8,7 +8,7 @@ A `ScrollingFrame` shows part of a larger area and lets the player scroll to the
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| CanvasSize | UDim2 | The size of the scrollable area. Children lay out against its Y; their X uses the frame's own width. |
+| CanvasSize | UDim2 | The size of the scrollable area. Children lay out against its Y. Their X uses the frame's own width. |
 | CanvasPosition | Vector2 | How far the canvas is scrolled, in pixels. Assigning a value wins over an ease already in flight. |
 | ScrollingEnabled | boolean | Whether the mouse wheel moves the canvas. |
 | ScrollBarThickness | number | Width reserved on the right when `VerticalScrollBarInset` is 1, in pixels. Default 12. |
@@ -16,7 +16,7 @@ A `ScrollingFrame` shows part of a larger area and lets the player scroll to the
 | VerticalScrollBarInset | number | 0 reserves nothing, 1 takes `ScrollBarThickness` off the children's width. Clamped to those two values. |
 | AbsoluteCanvasSize | Vector2 | The canvas size in pixels. Read-only. |
 
-There is no scrollbar in the engine. `ScrollBarThickness` and `VerticalScrollBarInset` exist so content can be laid out clear of a bar you add yourself as ordinary widgets beside the frame; a bar parented inside the frame would scroll away with the canvas.
+There is no scrollbar in the engine. `ScrollBarThickness` and `VerticalScrollBarInset` exist so content can be laid out clear of a bar you add yourself as ordinary widgets beside the frame. A bar parented inside the frame would scroll away with the canvas.
 
 The mouse wheel goes to the innermost scrolling frame around the object under the pointer that is `Active`, so set `Active` on the frame or on the content that should scroll.
 
@@ -55,7 +55,7 @@ end
 
 ## See also
 
-- [Frame](frame.md): the members this class starts from.
-- [UDim2](../globals/udim2.md): canvas sizes.
-- [Instance](../globals/instance.md): the shared members.
+- [Frame](frame.md) (the members this class starts from)
+- [UDim2](../globals/udim2.md) (canvas sizes)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

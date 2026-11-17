@@ -18,7 +18,9 @@ Call both methods from a Script. A LocalScript raises an error instead, because 
 
 The values are stored beside the place file, in `town.aestore` next to `town.aepl`. They belong to that place, so copying the place with its sidecar carries its saved values along.
 
-A change is written about two seconds after the last Set, and any pending change is written when the server shuts down. If a script keeps setting values, the store still writes at least every ten seconds. Get sees a value as soon as Set returns, before it reaches disk. A crash can lose up to ten seconds of changes, but never leaves a half-written file behind.
+A change is written about two seconds after the last Set, and any pending change is written when the server shuts down. If a script keeps setting values, the store still writes at least every ten seconds. Get sees a value as soon as Set returns, before it reaches disk.
+
+A crash can lose up to ten seconds of changes, but never leaves a half-written file behind.
 
 A playtest reads the place's saved values and writes to a temporary copy, so testing never changes the real save.
 
@@ -44,5 +46,5 @@ print(store:Get("inventory")[1])
 
 ## See also
 
-- [Saving data](../guides/saving-data.md): loading on join and saving on change.
+- [Saving data](../guides/saving-data.md) (loading on join and saving on change)
 - [API Reference](../api/index.md)

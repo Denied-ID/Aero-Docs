@@ -61,8 +61,8 @@ ping:FireServer("hello")
 
 ## See also
 
-- [RemoteFunction](remotefunction.md): a call that returns a value.
-- [Client and server](../guides/client-and-server.md): the model this channel crosses.
-- [Players](../services/players.md): where players come from.
-- [Instance](../globals/instance.md): the shared members.
+- [RemoteFunction](remotefunction.md) (a call that returns a value)
+- [Client and server](../guides/client-and-server.md) (the model this channel crosses)
+- [Players](../services/players.md) (where players come from)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

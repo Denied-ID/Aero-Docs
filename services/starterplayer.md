@@ -33,7 +33,7 @@ print("client ready for", Players.LocalPlayer.Name)
 
 ## See also
 
-- [LocalScript](../classes/localscript.md): the class that runs here.
-- [StarterGui](startergui.md): interface copied into each player.
-- [Instance](../globals/instance.md): the shared members.
+- [LocalScript](../classes/localscript.md) (the class that runs here)
+- [StarterGui](startergui.md) (interface copied into each player)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

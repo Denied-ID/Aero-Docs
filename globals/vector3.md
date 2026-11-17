@@ -2,7 +2,7 @@
 
 A point or direction in 3D space.
 
-`Vector3` stores three numbers: x, y, and z. Positions, sizes, directions, and velocities all use it. In the world, the units are studs.
+`Vector3` stores three numbers, x, y, and z. Positions, sizes, directions, and velocities all use it. In the world, the units are studs.
 
 ## Creating one
 
@@ -15,12 +15,12 @@ A point or direction in 3D space.
 
 ## Members
 
-The components are read-only. This type accepts capitalized names only: `X`, `Y`, and `Z`, not `x`, `y`, and `z`.
+The components are read-only. This type accepts capitalized names only, so `X`, `Y`, and `Z` work but `x`, `y`, and `z` do not.
 
 | Member | Type | What it does |
 | --- | --- | --- |
 | X, Y, Z | number | The components. |
-| Magnitude | number | Length: the square root of `x*x + y*y + z*z`. |
+| Magnitude | number | Length, which is the square root of `x*x + y*y + z*z`. |
 | Unit | Vector3 | The same direction at length 1. A zero vector gives `(0, 0, 0)`. |
 
 ## Methods
@@ -59,6 +59,6 @@ print(offset:Dot(Vector3.one))  -- 30
 
 ## See also
 
-- [CFrame](cframe.md): a position plus a rotation.
-- [Vector2](vector2.md): the flat version.
+- [CFrame](cframe.md) (a position plus a rotation)
+- [Vector2](vector2.md) (the flat version)
 - [API Reference](../api/index.md)

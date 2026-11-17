@@ -2,7 +2,7 @@
 
 Panels, labels, and buttons that answer the player.
 
-Everything on screen draws under a [ScreenGui](../classes/screengui.md), and the layer is a template: build it once in [StarterGui](../services/startergui.md) and each joining player receives a copy in their own PlayerGui.
+Everything on screen draws under a [ScreenGui](../classes/screengui.md). The layer is a template, so build it once in [StarterGui](../services/startergui.md) and each joining player receives a copy in their own PlayerGui.
 
 ## Lay the interface down
 
@@ -12,7 +12,7 @@ A new frame draws nothing, because `BackgroundTransparency` starts at 1. Give th
 
 ## Put things where you want them
 
-`Position` and `Size` are [UDim2](../globals/udim2.md): a fraction of the parent plus a pixel count on each axis, so a panel can sit at half the screen and stay there through a resize.
+`Position` and `Size` are [UDim2](../globals/udim2.md). Each axis is a fraction of the parent plus a pixel count, so a panel can sit at half the screen and stay there through a resize.
 
 ```lua
 button.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -23,7 +23,7 @@ button.AnchorPoint = UDim2.new(0.5, 0.5, 0.5, 0.5)
 
 ## Words and buttons
 
-A [TextLabel](../classes/textlabel.md) draws text inside its bounds: `Text`, `TextColor3`, `TextSize`, and the two alignments. A [TextButton](../classes/textbutton.md) is a TextLabel the player can click. Connect `MouseButton1Click` for a left click; there is no Activated event.
+A [TextLabel](../classes/textlabel.md) draws text inside its bounds, and the settings that matter are `Text`, `TextColor3`, `TextSize`, and the two alignments. A [TextButton](../classes/textbutton.md) is a TextLabel the player can click. Connect `MouseButton1Click` for a left click, since there is no Activated event.
 
 | Property | Type | What it does |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ A [UICorner](../classes/uicorner.md) under any of them rounds the corners, and a
 
 ## Make it answer
 
-Put a LocalScript under the ScreenGui, next to the things it drives. The copy in PlayerGui is what runs, and `script.Parent` finds the layer from inside it:
+Put a LocalScript under the ScreenGui, next to the things it drives. The copy in PlayerGui is what runs, and `script.Parent` finds the layer from inside it.
 
 ```lua
 local panel = script.Parent:WaitForChild("Panel")
@@ -54,7 +54,7 @@ toggle.MouseButton1Click:Connect(function ()
 end)
 ```
 
-Hover colors read the mouse events, which need `Active` set to true on the object:
+Hover colors read the mouse events, which need `Active` set to true on the object.
 
 ```lua
 toggle.MouseEnter:Connect(function ()
@@ -68,7 +68,7 @@ end)
 
 ## Layers and respawns
 
-Three [ScreenGui](../classes/screengui.md) properties control a whole layer:
+Three [ScreenGui](../classes/screengui.md) properties control a whole layer.
 
 | Property | Type | What it does |
 | --- | --- | --- |
@@ -78,12 +78,12 @@ Three [ScreenGui](../classes/screengui.md) properties control a whole layer:
 
 ## Moving things
 
-[TweenService](../services/tweenservice.md) animates parts, humanoids, and SoundService, and nothing else. A tween built on a Frame runs, fires Completed, and moves nothing. Interface motion is a property write: set `Position` or `Visible` from code and the object lands where you put it.
+[TweenService](../services/tweenservice.md) animates parts, humanoids, and SoundService, and nothing else. A tween built on a Frame runs, fires Completed, and moves nothing. Interface motion is a property write, so set `Position` or `Visible` from code and the object lands where you put it.
 
 ## See also
 
-- [ScreenGui](../classes/screengui.md): the layer everything draws in.
-- [StarterGui](../services/startergui.md): the templates each player receives.
-- [Frame](../classes/frame.md): containers, appearance, and the mouse events.
-- [Player input](player-input.md): keys and clicks away from the interface.
+- [ScreenGui](../classes/screengui.md) (the layer everything draws in)
+- [StarterGui](../services/startergui.md) (the templates each player receives)
+- [Frame](../classes/frame.md) (containers, appearance, and the mouse events)
+- [Player input](player-input.md) (keys and clicks away from the interface)
 - [API Reference](../api/index.md)

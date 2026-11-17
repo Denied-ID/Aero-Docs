@@ -38,7 +38,7 @@ glow.Angle = 90
 
 ## See also
 
-- [PointLight](pointlight.md): light in every direction.
-- [SpotLight](spotlight.md): a cone from a face too.
-- [Part](part.md): the usual parent.
+- [PointLight](pointlight.md) (light in every direction)
+- [SpotLight](spotlight.md) (a cone from a face too)
+- [Part](part.md) (the usual parent)
 - [API Reference](../api/index.md)

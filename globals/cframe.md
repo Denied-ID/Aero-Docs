@@ -6,20 +6,20 @@ A `CFrame` holds a position and a 3x3 rotation matrix. It is how parts, cameras,
 
 ## Creating one
 
-`CFrame.new` reads its arguments by count:
+`CFrame.new` reads its arguments by count.
 
 | Arguments | Result |
 | --- | --- |
-| none | The identity frame: position `(0, 0, 0)`, no rotation. |
+| none | The identity frame, with position `(0, 0, 0)` and no rotation. |
 | 1 Vector3 | That position, no rotation. |
-| 2 Vector3 | `eye` and `target`: a frame at `eye` looking at `target`. |
+| 2 Vector3 | `eye` and `target`, giving a frame at `eye` looking at `target`. |
 | 3 numbers | `x, y, z`, no rotation. |
-| 7 numbers | `x, y, z, qx, qy, qz, qw`: position plus quaternion rotation. |
+| 7 numbers | `x, y, z, qx, qy, qz, qw`, giving position plus quaternion rotation. |
 | 12 or more numbers | `x, y, z` then the nine matrix values in row order. Extra arguments are ignored. |
 
 Any other count raises `invalid argument count to CFrame.new (5)`, with the actual count in the message.
 
-The other constructors live on the `CFrame` table:
+The other constructors live on the `CFrame` table.
 
 | Constructor | What it makes |
 | --- | --- |
@@ -72,7 +72,7 @@ The other constructors live on the `CFrame` table:
 
 `CFrame + CFrame` raises an error, and so does `Vector3 * CFrame`. There is no division operator.
 
-Combining frames reads right to left in effect: in `a * b`, a point is first moved by `b`, then by `a`. This makes `a * b` the right way to place a child in a parent's space.
+Combining frames reads right to left in effect. In `a * b`, a point is first moved by `b`, then by `a`. This makes `a * b` the right way to place a child in a parent's space.
 
 ## Rotation order
 
@@ -97,6 +97,6 @@ The near-zero values are what 90 degrees comes out as in single precision. Use `
 
 ## See also
 
-- [Vector3](vector3.md): points and directions.
-- [Part](../classes/part.md): the object most CFrames describe.
+- [Vector3](vector3.md) (points and directions)
+- [Part](../classes/part.md) (the object most CFrames describe)
 - [API Reference](../api/index.md)

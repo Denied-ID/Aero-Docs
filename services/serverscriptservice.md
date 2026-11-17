@@ -24,6 +24,6 @@ A Script placed here runs on the server. A LocalScript placed here never runs, b
 
 ## See also
 
-- [Script](../classes/script.md): the class that runs on the server.
-- [ReplicatedStorage](replicatedstorage.md): content shared with clients.
+- [Script](../classes/script.md) (the class that runs on the server)
+- [ReplicatedStorage](replicatedstorage.md) (content shared with clients)
 - [API Reference](../api/index.md)

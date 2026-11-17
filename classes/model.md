@@ -8,7 +8,7 @@ A `Model` is a container for parts, usually the pieces of one object such as a g
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| PrimaryPart | Instance or nil | The part that represents the model. Any instance is accepted; the engine does not check that it is a part or that it is inside the model. |
+| PrimaryPart | Instance or nil | The part that represents the model. Any instance is accepted. The engine does not check that it is a part or that it is inside the model. |
 
 ## Members
 
@@ -37,7 +37,7 @@ print(gate.PrimaryPart.Name)    -- Post
 
 ## See also
 
-- [Folder](folder.md): a container without a primary part.
-- [Part](part.md): what a model is usually made of.
-- [Instance](../globals/instance.md): the shared members.
+- [Folder](folder.md) (a container without a primary part)
+- [Part](part.md) (what a model is usually made of)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

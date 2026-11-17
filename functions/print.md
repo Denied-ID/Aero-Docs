@@ -10,7 +10,7 @@ Writes a line to the Output panel.
 | --- | --- |
 | `print(...)` | nothing |
 
-Any number of arguments is allowed, including none. There is no formatting step: tabs separate the values and a newline ends the line.
+Any number of arguments is allowed, including none. There is no formatting step. Tabs separate the values and a newline ends the line.
 
 ## Example
 
@@ -24,6 +24,6 @@ print(crate)                 -- Crate
 
 ## See also
 
-- [warn](warn.md): the same output with a warning label.
-- [Perf](../services/perf.md): timings written to the Output.
+- [warn](warn.md) (the same output with a warning label)
+- [Perf](../services/perf.md) (timings written to the Output)
 - [API Reference](../api/index.md)

@@ -13,13 +13,13 @@ A `BrickColor` stores a palette number, not a freely mixed color. The palette ha
 | `BrickColor.new(Color3.new(1, 0, 0))` | The nearest palette color to the given Color3. |
 | `BrickColor.new(1, 0, 0)` | The nearest palette color to three channels from 0 to 1. |
 
-An unknown name raises `NotAColor is not a valid BrickColor name`. An unknown number is not an error: it resolves to 194, Medium stone grey.
+An unknown name raises `NotAColor is not a valid BrickColor name`. An unknown number is not an error, since it resolves to 194, Medium stone grey.
 
 The three-number form takes channels from 0 to 1, the same range as [Color3](color3.md), not 0 to 255.
 
 ## Palette members
 
-These constants return commonly used entries:
+These constants return commonly used entries.
 
 | Constant | Palette number | Name |
 | --- | --- | --- |
@@ -67,6 +67,6 @@ print(grey.Name)        -- Medium stone grey
 
 ## See also
 
-- [Color3](color3.md): colors mixed from channels.
-- [Part](../classes/part.md): the usual place a BrickColor ends up.
+- [Color3](color3.md) (colors mixed from channels)
+- [Part](../classes/part.md) (the usual place a BrickColor ends up)
 - [API Reference](../api/index.md)

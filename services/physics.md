@@ -28,7 +28,7 @@ Call it from a Script. A LocalScript raises an error instead, because a client c
 
 `center` is a Vector3 in studs. `radius` is the blast's reach in studs. `power` is the speed, in studs per second, that a 1x1x1 brick gains at the epicenter. Bigger bodies get pushed proportionally less, so a wall barely lifts while loose bricks fly. Everything past `radius` is untouched.
 
-`options` is a table, and every field has a default:
+`options` is a table, and every field has a default.
 
 | Field | Default | What it does |
 | --- | --- | --- |
@@ -39,11 +39,11 @@ Call it from a Script. A LocalScript raises an error instead, because a client c
 | VisualColor | warm orange | The Color3 of the explosion sphere. |
 | FilterDescendantsInstances | empty | Instances to skip, with everything under them. |
 
-`Falloff` takes an `Enum.BlastFalloff`: [Enum](../globals/enum.md#blastfalloff) lists `Constant`, `Linear`, `Quadratic`, and `Sharp`. `Quadratic` is the default.
+`Falloff` takes an `Enum.BlastFalloff`. [Enum](../globals/enum.md#blastfalloff) lists `Constant`, `Linear`, `Quadratic`, and `Sharp`. `Quadratic` is the default.
 
-A raw number works too: it is the exponent on the fade curve, so `1.5` sits between Linear and Quadratic.
+A raw number works too. It is the exponent on the fade curve, so `1.5` sits between Linear and Quadratic.
 
-The return value is a table of hits, one per pushed body. Use it for damage, sounds, and scorch marks without running a second query. Each hit holds:
+The return value is a table of hits, one per pushed body. Use it for damage, sounds, and scorch marks without running a second query. Each hit holds four fields.
 
 | Field | Type | What it holds |
 | --- | --- | --- |
@@ -55,9 +55,9 @@ The return value is a table of hits, one per pushed body. Use it for damage, sou
 
 ## Characters
 
-A big enough blast sends a character flying. They tumble through the air, land wherever the debris and geometry leave them, stay down for about three seconds, then get back up. The tumble runs on the player’s own machine, so it looks smooth to them, and the server shares the resulting poses with everyone else.
+A big enough blast sends a character flying. They tumble through the air, land wherever the debris and geometry leave them, stay down for about three seconds, then get back up. The tumble runs on the player's own machine, so it looks smooth to them, and the server shares the resulting poses with everyone else.
 
-Softer blasts don’t knock anyone over. The character gets shoved and staggers for a moment but stays on their feet. The cutoff is the same speed a debris strike needs. Fast debris also staggers characters anywhere in the game, not just near a blast.
+Softer blasts don't knock anyone over. The character gets shoved and staggers for a moment but stays on their feet. The cutoff is the same speed a debris strike needs. Fast debris also staggers characters anywhere in the game, not just near a blast.
 
 Anchored obstacles at head height can topple a character too. If you walk into a block or overhang above the waist, the character leans toward it, and if you keep pressing they fall over backward. Let go early and they straighten up, so you can brush a low beam while running under it. Walking straight into one is a different story.
 
@@ -65,7 +65,7 @@ Slopes steeper than about 45 degrees get climbed rather than walked. The legs an
 
 ## Contacts
 
-Parts report touches as events, so scripts can react to collisions without polling positions. Connect to a part's [Touched](../classes/part.md) event from a server script:
+Parts report touches as events, so scripts can react to collisions without polling positions. Connect to a part's [Touched](../classes/part.md) event from a server script.
 
 ```lua
 local pad = workspace.SpeedPad
@@ -90,7 +90,7 @@ end
 
 ## See also
 
-- [Part](../classes/part.md): the bodies a blast pushes, and their collision flags.
-- [Enum](../globals/enum.md): the `BlastFalloff` list.
-- [Perf](perf.md): the physics stage a blast costs.
+- [Part](../classes/part.md) (the bodies a blast pushes, and their collision flags)
+- [Enum](../globals/enum.md) (the `BlastFalloff` list)
+- [Perf](perf.md) (the physics stage a blast costs)
 - [API Reference](../api/index.md)

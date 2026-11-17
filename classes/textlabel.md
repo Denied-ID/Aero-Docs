@@ -12,8 +12,8 @@ A `TextLabel` draws a string inside the bounds of a [Frame](frame.md). It has ev
 | TextColor3 | Color3 | The text color. |
 | TextTransparency | number | 0 is solid, 1 is invisible. |
 | TextSize | number | Height in pixels. Default 18. |
-| Font | string or Enum.Font | The typeface. `Enum.Font.Sans` and `Enum.Font.Mono` are bundled with the engine; any other string names an installed system family, such as `Arial`. Default `Enum.Font.Sans`. |
-| FontWeight | number | Stroke weight from 100 (thin) to 900 (black). Default 400. The bundled sans offers 400, 500, 600 and 700; mono offers 400 and 700. System families use whatever weights they ship. |
+| Font | string or Enum.Font | The typeface. `Enum.Font.Sans` and `Enum.Font.Mono` are bundled with the engine, and any other string names an installed system family, such as `Arial`. Default `Enum.Font.Sans`. |
+| FontWeight | number | Stroke weight from 100 (thin) to 900 (black). Default 400. The bundled sans offers 400, 500, 600 and 700, and mono offers 400 and 700. System families use whatever weights they ship. |
 | FontItalic | boolean | Slants the text where the family has an italic face. |
 | TextXAlignment | number | 0 left, 1 center, 2 right. |
 | TextYAlignment | number | 0 top, 1 middle, 2 bottom. |
@@ -53,8 +53,8 @@ label.TextYAlignment = 1
 
 ## See also
 
-- [Frame](frame.md): the members this class starts from.
-- [TextButton](textbutton.md): text that can be clicked.
-- [TextBox](textbox.md): text the player can type.
-- [Instance](../globals/instance.md): the shared members.
+- [Frame](frame.md) (the members this class starts from)
+- [TextButton](textbutton.md) (text that can be clicked)
+- [TextBox](textbox.md) (text the player can type)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

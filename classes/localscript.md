@@ -6,7 +6,7 @@ A `LocalScript` holds its code in `Source` and starts it on a client. It never r
 
 ## Members
 
-LocalScript has the same members as [Script](script.md): `Source`, `Disabled`, and the read-only `Running`. The difference is where they start.
+LocalScript has the same members as [Script](script.md), which are `Source`, `Disabled`, and the read-only `Running`. The difference is where they start.
 
 A LocalScript is not a subclass of Script, so `IsA("Script")` is false even though the same properties work.
 
@@ -37,8 +37,8 @@ end)
 
 ## See also
 
-- [Script](script.md): code that runs on the server.
-- [Client and server](../guides/client-and-server.md): the two halves of a place.
-- [UserInputService](../services/userinputservice.md): input on the client.
-- [Instance](../globals/instance.md): the shared members.
+- [Script](script.md) (code that runs on the server)
+- [Client and server](../guides/client-and-server.md) (the two halves of a place)
+- [UserInputService](../services/userinputservice.md) (input on the client)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

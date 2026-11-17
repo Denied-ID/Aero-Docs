@@ -2,7 +2,7 @@
 
 What one input event carries.
 
-An `InputObject` is handed to [UserInputService](../services/userinputservice.md) listeners. It says what was pressed or moved and where it happened. You read them; the engine creates them.
+An `InputObject` is handed to [UserInputService](../services/userinputservice.md) listeners. It says what was pressed or moved and where it happened. Scripts read them and the engine creates them.
 
 ## Properties
 
@@ -40,7 +40,7 @@ end)
 
 ## See also
 
-- [UserInputService](../services/userinputservice.md): where input objects come from.
-- [Enum](../globals/enum.md): the key and input lists.
-- [Instance](../globals/instance.md): the shared members.
+- [UserInputService](../services/userinputservice.md) (where input objects come from)
+- [Enum](../globals/enum.md) (the key and input lists)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

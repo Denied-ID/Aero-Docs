@@ -17,12 +17,12 @@ A point on a flat surface, like a screen.
 
 ## Members
 
-This type accepts either case: `X` or `x`, `Magnitude` or `magnitude`.
+This type accepts either case, so `X` and `x` both work, and so do `Magnitude` and `magnitude`.
 
 | Member | Type | What it does |
 | --- | --- | --- |
 | X, Y | number | The components. |
-| Magnitude | number | Length: the square root of `x*x + y*y`. |
+| Magnitude | number | Length, which is the square root of `x*x + y*y`. |
 | Unit | Vector2 | The same direction at length 1. A vector shorter than about `1e-8` gives `(0, 0)`. |
 
 ## Methods
@@ -30,7 +30,7 @@ This type accepts either case: `X` or `x`, `Magnitude` or `magnitude`.
 | Method | Returns | What it does |
 | --- | --- | --- |
 | Dot(other) | number | Dot product. |
-| Cross(other) | number | The 2D cross product: `x1*y2 - y1*x2`. Unlike [Vector3](vector3.md), this returns a number, not a vector. |
+| Cross(other) | number | The 2D cross product, `x1*y2 - y1*x2`. Unlike [Vector3](vector3.md), this returns a number, not a vector. |
 | Angle(other) | number | Angle between the two vectors, in radians. |
 | Lerp(other, alpha) | Vector2 | Moves `alpha` of the way to `other`. Values outside 0 to 1 extrapolate. |
 | Min(other) | Vector2 | The smaller of each pair of components. |
@@ -64,6 +64,6 @@ print(move.Unit)                       -- 0.6, 0.8
 
 ## See also
 
-- [Vector3](vector3.md): the 3D version.
-- [UDim2](udim2.md): how interface sizes are written.
+- [Vector3](vector3.md) (the 3D version)
+- [UDim2](udim2.md) (how interface sizes are written)
 - [API Reference](../api/index.md)

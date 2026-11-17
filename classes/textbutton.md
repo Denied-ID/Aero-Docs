@@ -52,8 +52,8 @@ end)
 
 ## See also
 
-- [TextLabel](textlabel.md): the text members.
-- [Frame](frame.md): the layout members.
-- [TextBox](textbox.md): text the player can type.
-- [Instance](../globals/instance.md): the shared members.
+- [TextLabel](textlabel.md) (the text members)
+- [Frame](frame.md) (the layout members)
+- [TextBox](textbox.md) (text the player can type)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

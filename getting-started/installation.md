@@ -1,6 +1,6 @@
 # Installation
 
-Aero is a standalone creator-first multiplayer gaming platform. You make places in Studio, add behavior with Luau scripts, and test it all with Play. One download covers everything: Aero Setup installs the Aero Client and Aero Studio, and each app updates itself when you start it.
+Aero is a creator-first platform for multiplayer places. You make places in Studio, add behavior with Luau scripts, and test it all with Play. One download covers everything, because Aero Setup installs the Aero Client and Aero Studio, and each app updates itself when you start it.
 
 ## What you need
 

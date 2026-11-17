@@ -2,7 +2,7 @@
 
 The engine's own interface.
 
-`CoreGui` holds the interface the engine draws itself: the topbar, the chat window, the health display, the player list, the name tags over characters, and the menu. Its contents are built by the engine, not authored by scripts.
+`CoreGui` holds the interface the engine draws itself, including the topbar, the chat window, the health display, the player list, the name tags over characters, and the menu. Its contents are built by the engine, not authored by scripts.
 
 CoreGui is read-only. Scripts can read it and clone it, but creating, deleting, reparenting, or changing properties under it raises an error. Studio shows it read-only too. The client also refuses to apply replicated changes under CoreGui, so a server cannot push interface changes into another player's client.
 

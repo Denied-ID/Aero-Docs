@@ -50,8 +50,8 @@ end)
 
 ## See also
 
-- [TextLabel](textlabel.md): the text members.
-- [TextButton](textbutton.md): a button instead of a field.
-- [Frame](frame.md): the layout members.
-- [Instance](../globals/instance.md): the shared members.
+- [TextLabel](textlabel.md) (the text members)
+- [TextButton](textbutton.md) (a button instead of a field)
+- [Frame](frame.md) (the layout members)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

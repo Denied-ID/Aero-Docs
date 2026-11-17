@@ -2,7 +2,7 @@
 
 A length that scales with its parent, plus pixels.
 
-A `UDim` holds two numbers: a scale, which is a fraction of the parent's size, and an offset, which is a fixed number of pixels. The final length is `scale * parentSize + offset`.
+A `UDim` holds two numbers. The scale is a fraction of the parent's size, and the offset is a fixed number of pixels. The final length is `scale * parentSize + offset`.
 
 Most interface code uses [UDim2](udim2.md), which holds a `UDim` for each axis. Use `UDim` alone when a single length is enough, such as a corner radius.
 
@@ -44,5 +44,5 @@ print(doubled)    -- {0.1, 16}
 
 ## See also
 
-- [UDim2](udim2.md): a UDim for each axis.
+- [UDim2](udim2.md) (a UDim for each axis)
 - [API Reference](../api/index.md)

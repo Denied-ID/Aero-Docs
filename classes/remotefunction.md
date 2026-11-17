@@ -15,7 +15,7 @@ Assigning `OnServerInvoke` from a client raises `OnServerInvoke can only be assi
 
 ## Writing the handler
 
-The handler receives the calling player first, then the arguments passed to `InvokeServer`:
+The handler receives the calling player first, then the arguments passed to `InvokeServer`.
 
 ```lua
 remote.OnServerInvoke = function (player, ...)
@@ -56,7 +56,7 @@ print(ok, message)    -- true, bought
 
 ## See also
 
-- [RemoteEvent](remoteevent.md): messages that do not wait for an answer.
-- [Client and server](../guides/client-and-server.md): the model this call crosses.
-- [Instance](../globals/instance.md): the shared members.
+- [RemoteEvent](remoteevent.md) (messages that do not wait for an answer)
+- [Client and server](../guides/client-and-server.md) (the model this call crosses)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

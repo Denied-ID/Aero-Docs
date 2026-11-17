@@ -38,8 +38,8 @@ label.Text = "Ready"
 
 ## See also
 
-- [Frame](frame.md): the container to put inside a layer.
-- [StarterGui](../services/startergui.md): the template each player receives.
-- [UDim2](../globals/udim2.md): sizes and positions.
-- [Instance](../globals/instance.md): the shared members.
+- [Frame](frame.md) (the container to put inside a layer)
+- [StarterGui](../services/startergui.md) (the template each player receives)
+- [UDim2](../globals/udim2.md) (sizes and positions)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

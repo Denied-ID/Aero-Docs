@@ -8,7 +8,7 @@ A `ModuleScript` never starts on its own. It holds a chunk in `Source` that runs
 
 | Property | Type | What it does |
 | --- | --- | --- |
-| Source | string | The code text. Writing it stores the text; a module that has already been required keeps its cached result. |
+| Source | string | The code text. Writing it stores the text. A module that has already been required keeps its cached result. |
 | Disabled | boolean | Stored like the same property on a Script. Modules start through `require`, not through the script scanner. |
 
 ## Members
@@ -33,7 +33,7 @@ print(Settings.respawnDelay)    -- 5
 
 ## See also
 
-- [require](../functions/require.md): how a module is loaded and cached.
-- [Script](script.md): code that starts by itself.
-- [Instance](../globals/instance.md): the shared members.
+- [require](../functions/require.md) (how a module is loaded and cached)
+- [Script](script.md) (code that starts by itself)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

@@ -51,6 +51,6 @@ print(centered.X.Scale) -- 0.5
 
 ## See also
 
-- [UDim](udim.md): one axis on its own.
-- [Frame](../classes/frame.md): an object placed with UDim2.
+- [UDim](udim.md) (one axis on its own)
+- [Frame](../classes/frame.md) (an object placed with UDim2)
 - [API Reference](../api/index.md)

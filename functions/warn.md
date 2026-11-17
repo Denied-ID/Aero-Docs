@@ -24,6 +24,6 @@ The Output panel shows `Warn: Door is missing from the workspace`.
 
 ## See also
 
-- [print](print.md): the plain output call.
-- [Troubleshooting](../guides/troubleshooting.md): what to do with the errors you find.
+- [print](print.md) (the plain output call)
+- [Troubleshooting](../guides/troubleshooting.md) (what to do with the errors you find)
 - [API Reference](../api/index.md)

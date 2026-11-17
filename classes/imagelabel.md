@@ -11,7 +11,7 @@ An `ImageLabel` draws an image inside the bounds of a [Frame](frame.md). It has 
 | Image | string | Path to the image, such as `Assets/Icon_Chat.png`. Paths resolve from the folder the game runs in, and a missing file draws nothing. |
 | ImageColor3 | Color3 | Tints the image. White leaves it unchanged. |
 | ImageTransparency | number | 0 is solid, 1 is invisible. |
-| ScaleType | number | 0 stretches the image to the frame, 1 fits it inside. Stored for now; the image is drawn stretched either way. |
+| ScaleType | number | 0 stretches the image to the frame, 1 fits it inside. Stored, but the image is drawn stretched either way. |
 
 Images are file paths, not asset ids.
 
@@ -39,7 +39,7 @@ icon.ImageColor3 = Color3.fromRGB(255, 220, 90)
 
 ## See also
 
-- [Frame](frame.md): the members this class starts from.
-- [TextLabel](textlabel.md): text instead of a picture.
-- [Instance](../globals/instance.md): the shared members.
+- [Frame](frame.md) (the members this class starts from)
+- [TextLabel](textlabel.md) (text instead of a picture)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

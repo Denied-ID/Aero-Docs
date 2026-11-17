@@ -42,7 +42,7 @@ gradient.Rotation = 90
 
 ## See also
 
-- [UICorner](uicorner.md): rounded corners.
-- [UIStroke](uistroke.md): an outline.
-- [Frame](frame.md): the usual parent.
+- [UICorner](uicorner.md) (rounded corners)
+- [UIStroke](uistroke.md) (an outline)
+- [Frame](frame.md) (the usual parent)
 - [API Reference](../api/index.md)

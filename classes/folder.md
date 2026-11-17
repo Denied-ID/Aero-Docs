@@ -26,6 +26,6 @@ print(#loot:GetChildren())    -- 3
 
 ## See also
 
-- [Model](model.md): a group that also names a primary part.
-- [Instance](../globals/instance.md): the shared members.
+- [Model](model.md) (a group that also names a primary part)
+- [Instance](../globals/instance.md) (the shared members)
 - [API Reference](../api/index.md)

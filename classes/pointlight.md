@@ -36,7 +36,7 @@ light.Shadows = true
 
 ## See also
 
-- [SpotLight](spotlight.md): a cone instead of every direction.
-- [SurfaceLight](surfacelight.md): light from one face of a part.
-- [Part](part.md): the usual parent.
+- [SpotLight](spotlight.md) (a cone instead of every direction)
+- [SurfaceLight](surfacelight.md) (light from one face of a part)
+- [Part](part.md) (the usual parent)
 - [API Reference](../api/index.md)
