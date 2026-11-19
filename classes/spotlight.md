@@ -1,6 +1,6 @@
 # SpotLight
 
-A cone of light.
+A light that shines the spot it's pointed at.
 
 Parent a `SpotLight` to a part and it shines from one face in a cone. It has the settings every light has, plus the cone angle and the face it points out of.
 
